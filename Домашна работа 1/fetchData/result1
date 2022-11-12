@@ -1,0 +1,792 @@
+{
+  "results": [
+    {
+      "formattedAddress": "Skopje, 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.997695,
+          "lng": 21.3981103
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.99905937989273,
+            "lng": 21.39933607989272
+          },
+          "southwest": {
+            "lat": 41.99635972010728,
+            "lng": 21.39663642010728
+          }
+        }
+      },
+      "name": "Central Perk",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJg28bRjgVVBMR-V3OlQQutCU",
+      "rating": 4.7,
+      "types": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDyofwQh6dPcWX1hiCqvNjLVmyd68FgUU8cI31EXosAwZtmonaWOfnvbBtyVYoYQiZI1nxiBc0KEt7VHSN0iwkXPX0vR_BJX3W0X0ac4VCyRCTmtvAB1nT82KpQJuR0Kq16o8HQu71zlNDmI_ptVJLJOe4ToX6MqlsUM3jW8qndJ5SJZ",
+          "height": 4032,
+          "width": 3024,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/109365462928434370199\"\u003eLin\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 143,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "MK, Blvd. Partizanski Odredi, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 42.00015579999999,
+          "lng": 21.4168236
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.00142622989272,
+            "lng": 21.41814402989273
+          },
+          "southwest": {
+            "lat": 41.99872657010728,
+            "lng": 21.41544437010728
+          }
+        }
+      },
+      "name": "Broz Cafe",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJJcmzQE8UVBMRszoPVyuTRhM",
+      "rating": 4.2,
+      "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDyZj6soUntHPPOWCXzl3QABJMIFBtTWLnUD0D71Q9yQ83UoK3kHn0RHNqIa7wZnLsl4iptEf0uKSAcv5TRBJrQrN4BErSTa9pOMbLwGUFlP3WFGBaqsDrAiC-TT914vz4NrH1eiL-IyWp0geEn_ZSlRVgFKJOb4WZQwLM2Iy9aozygY",
+          "height": 4032,
+          "width": 3024,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/105961864711768345455\"\u003eOgnen Hristovski\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 778,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Maksim Gorki, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.9959852,
+          "lng": 21.4295158
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.99733502989272,
+            "lng": 21.43086562989272
+          },
+          "southwest": {
+            "lat": 41.99463537010728,
+            "lng": 21.42816597010728
+          }
+        }
+      },
+      "name": "Ramona Coffee",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJx0V9J-MVVBMR-joJ-A5ygr0",
+      "rating": 0.0,
+      "types": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDz3knGbXPaP05mDJZ-9KihzsfeDp_XE-jm7e-2lSxzQ0H0UVumiZNG8tiyJWyG3vkBOPQUPtxGou8issqZz5Z0_0VlFN0oLKQsYTBXVWtSocrDSwLL7eBBb6e-Koe0hEv2dC3HPgdwQSNKdNY-viDnJhci1pSpxyQ9pIFxC1UpQDUrf",
+          "height": 2048,
+          "width": 1152,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/108696280629810992813\"\u003eA Google User\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 0,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Boulevard Macedonia Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 42.0012851,
+          "lng": 21.4229702
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.00269407989273,
+            "lng": 21.42437287989272
+          },
+          "southwest": {
+            "lat": 41.99999442010729,
+            "lng": 21.42167322010728
+          }
+        }
+      },
+      "name": "Coffee Shop",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJ_eW-qM4VVBMR6rolKTAnta8",
+      "rating": 5.0,
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDyiqQlTZTgysoy-e7HPQD4ErT-OtcBkNC8YDrbLiPA4dKR9NQUDNVVqh6hnHvyG6mQ5RH32_zA1Xa9x8nYYryVGQRRANlVew3WOfs0vJ_PvnI0b2wF5uYZJbCt9QjlW1sGB4BVRdx1Kqce57kSOfXk-K24bpLZqeri9a25yZsTNca9m",
+          "height": 4032,
+          "width": 2268,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/117264518489134496496\"\u003eA Google User\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 1,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Elisie Popovski Marko 10, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.9906456,
+          "lng": 21.4148107
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.99193757989273,
+            "lng": 21.41614462989272
+          },
+          "southwest": {
+            "lat": 41.98923792010729,
+            "lng": 21.41344497010728
+          }
+        }
+      },
+      "name": "Drip Coffee",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJD3Y08DkUVBMRLGTQ6XjlKf4",
+      "rating": 4.8,
+      "types": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDwwkXFMpnSUA82XuHJ-4kRIWfkWBxvHX3O6i8HcV8h6g3zaUAjBaMITSaVBJKKdGIpTJsJXhXYFKdxzu9xqibUNXS_-aAQynT7gHek2-qBwplc1FNACRt4V0jJFPk6l0CpHlPZaw-e-EgdcF8bdSzsbv_Aifhp7ZKEzd8TUDLbNCh7k",
+          "height": 2268,
+          "width": 4032,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/112225104680946683452\"\u003eDejan Jankov\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 186,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Dame Gruev br.1-aneks MK, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.9917716,
+          "lng": 21.4321552
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.99327247989272,
+            "lng": 21.43340752989272
+          },
+          "southwest": {
+            "lat": 41.99057282010727,
+            "lng": 21.43070787010728
+          }
+        }
+      },
+      "name": "Wake up Skopje",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJ3_RwGc4VVBMRwvxWIoruiNY",
+      "rating": 4.3,
+      "types": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDzmzxNt-xpjcc8auBb8iPPZafL6319mJFUKE57MxC5WILYNbxBxiJMrwIiQ9tV1UCFbvilMNjzcIFDDSIlGEKEXH1FGrfY5qL2RzipPrSgedW5-DLN-Uhi-Gpz2-5rwXXdArR3QOP46xYU-Gx_O3jCU5E8V7bU08BZ7zPn9R9RaJ7GU",
+          "height": 2250,
+          "width": 4000,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/101458491980542595658\"\u003eGoce Sarkovski\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 12,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "MK MK MK, Franklin Ruzvelt 63a, lok. 2, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 42.0037224,
+          "lng": 21.4148992
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.00504577989272,
+            "lng": 21.41641332989272
+          },
+          "southwest": {
+            "lat": 42.00234612010728,
+            "lng": 21.41371367010728
+          }
+        }
+      },
+      "name": "The Gallery Caffe",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJTZrkakUUVBMRnvgmkUtXly4",
+      "rating": 4.5,
+      "types": [
+        "cafe",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDzQhMG4V8BxvhUdw-TjfZ4JsvMmZYRqCgIqMFOGaycTr1SO8GUH846QdbaX5pSM9caKPyRtj9pOMmIQjYyquqiqodN8bBN9qEXDy5MStTBCyAXD9P9g-d4CrLIAWTes-gjrCU5dxarFq5QCC06tCZk0XNG0K8Xp0UNsuJ1vE2MkxVNd",
+          "height": 2048,
+          "width": 2048,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/112903558975555334240\"\u003eThe Gallery\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 1107,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Chair, Skopje, 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.9976606,
+          "lng": 21.4345951
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.99901042989272,
+            "lng": 21.43594492989272
+          },
+          "southwest": {
+            "lat": 41.99631077010728,
+            "lng": 21.43324527010727
+          }
+        }
+      },
+      "name": "Coffee shop Mulliri",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJTxXZG6oVVBMRipshqzeIiJQ",
+      "rating": 4.3,
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDzDjF2267CQgxIhNdiOsmbuzaejh_2kdBr66qOhzwX5TaZmiA1Yu0OxmNS7YwKlTg0zxDbvddSIrySGnZZOv0M9a8Tn4jh1ooQSWN0Kau1NGeWbrkYG2hwwiqeYOo06ImmT9aZ4vibWSf2euYlEnOScYhtiU8GTdHOs734HIC07TzqA",
+          "height": 4032,
+          "width": 1908,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/112944175993174881018\"\u003eBranko Kostadinov\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 160,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Tale Hristov 1/3-3, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 42.0224911,
+          "lng": 21.4409239
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.02379767989271,
+            "lng": 21.44227702989273
+          },
+          "southwest": {
+            "lat": 42.02109802010727,
+            "lng": 21.43957737010728
+          }
+        }
+      },
+      "name": "Ghetto Coffee",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJK_-wok0VVBMRwELz_g0-eUs",
+      "rating": 4.4,
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDx0gtQSQlFqb1ceEqJJKhDzqgl9w2JhftVUf5KcdEgyLviaEN7BUyOl-JyvwpwBZNnDrbYFGWKi7apHHAAdzjJcKFzbQhBq30Oe-NGKQ4k0DosZmXC-7ACA4GpHy-69dsKzjuBWdmk-RolELdAc1y5O10ReSfxMBklT5tssWoAX18Az",
+          "height": 4032,
+          "width": 3024,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/110697845076449281328\"\u003eA Google User\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 76,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "MK, Macedonia St 41, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.9944281,
+          "lng": 21.4306113
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.99583102989272,
+            "lng": 21.43203712989272
+          },
+          "southwest": {
+            "lat": 41.99313137010728,
+            "lng": 21.42933747010728
+          }
+        }
+      },
+      "name": "Mikel Coffee",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJtSGks-kVVBMRgdRLy-RZj2k",
+      "rating": 4.4,
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDzAVnUqA444A9PmHTSza-LjSWfOlmq_4MHonXKiXgp0oLiRNrXuOVlqMxdPYCxwm4laYxhXeatwqRmA16gCzqqtBmFSvLbcXVWqCAzrCdcJGMdZ4f1GBnjuAnAMGT14Nt0jhSU0Gugo2sSP_ls-3YPdSmbqNv_kV5l7Co4K-Vq6KtLh",
+          "height": 3840,
+          "width": 5120,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/108038557363045242700\"\u003eViktor Andonov\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 309,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Kraishka 20, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 42.0302663,
+          "lng": 21.4454501
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.03169512989272,
+            "lng": 21.44681722989272
+          },
+          "southwest": {
+            "lat": 42.02899547010728,
+            "lng": 21.44411757010728
+          }
+        }
+      },
+      "name": "Café „La“",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJZYxyIDwVVBMRhH19KDI82CU",
+      "rating": 4.3,
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDyCcdkrAF8D_UBR4rO9kajji495GLfYunJTvu9ybSliUyKi0wdcFaDFqT2o6CSXdG8xQ2cDbY-Ydjxwp9jVH-LQZcaKKiN9W1wn_y9Fy6lWEWF6dpxaRYHz_gRiLL8Y6JMw9GGXZgG3BEgUchS0syGlsleP1w78uxgBUOBkKzn7JAfo",
+          "height": 3984,
+          "width": 2988,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/103876874250409600482\"\u003eKrenar Hoxha\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 100,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Macedonia St 51, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.9954904,
+          "lng": 21.4310713
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.99637292989272,
+            "lng": 21.43231852989272
+          },
+          "southwest": {
+            "lat": 41.99367327010728,
+            "lng": 21.42961887010728
+          }
+        }
+      },
+      "name": "Cafe „Koffein“",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJP0FatRQVVBMR6hOTJcwiv2E",
+      "rating": 4.3,
+      "types": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDxw9-RU52gsmTZdFH-m5XLkAFS9RYfk99Y2LvKyME2Ay3QWUzc6iUUPhIKKVHG7Jw-s1CihSrpm3F7BUqaZL3KcB8OIrgyXoaSGIRBDro3NaBqQRngGp19RaxYx4GxU4Ug0rdnB7RNHM23Hk2HgsnvLwv60m9p9b2NlpTxGtXEdtzYD",
+          "height": 4032,
+          "width": 1908,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/112944175993174881018\"\u003eBranko Kostadinov\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 4,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Blvd. Partizanski Odredi 23, lok.4, Skopje; 1000, Skopje, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.9982885,
+          "lng": 21.423504
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.99962272989271,
+            "lng": 21.42493467989272
+          },
+          "southwest": {
+            "lat": 41.99692307010727,
+            "lng": 21.42223502010728
+          }
+        }
+      },
+      "name": "Bar „Shakespeare“",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJj465O-kVVBMR2stWRgFRIA4",
+      "rating": 4.6,
+      "types": [
+        "cafe",
+        "bar",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDxeNeb9iAl0nTRYSnj9VdzdupG9N9utNql6YN88gk08oZmVjwNd1_GHOqs2OFwrpN98T07NJvdpskC2eM-e4BlMKT1ymQi76XudUTtbc5OWmQgUH28V4_4OWZOuNmvY33NmSPbUZrMYokx_zW6l2lI5Y7DzTnDCJWBcpoxXznEcCasn",
+          "height": 3456,
+          "width": 5184,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/102329605930722100673\"\u003eA Google User\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 126,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Centar Skopje, 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.9987921,
+          "lng": 21.4253336
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.00028767989273,
+            "lng": 21.42650752989272
+          },
+          "southwest": {
+            "lat": 41.99758802010728,
+            "lng": 21.42380787010728
+          }
+        }
+      },
+      "name": "Café „Mikel“",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJXf9TorYVVBMRXMET5xTcDLk",
+      "rating": 4.4,
+      "types": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDyCtRm7LhI9u3R1CQchgoDO5HMkErSiJtRLcp73VTH5tpw-K7Q7Irv4_JBOrxuKt4crkqTj-G3ZWUfW6s_WBKRZttGwk6p7oImp6CAiA6HJDGXT-sxqSZlN-QpQC6ViVdZYNQORNaNoe9qk-yrKr_zmScmFoj2I5ut2ExtQpgOdV-sd",
+          "height": 4000,
+          "width": 3000,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/112681967810695804177\"\u003eIgor D.\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 244,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Boulevard Jane Sandanski 12, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.98809199999999,
+          "lng": 21.4546705
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.98944182989273,
+            "lng": 21.45602032989272
+          },
+          "southwest": {
+            "lat": 41.98674217010728,
+            "lng": 21.45332067010728
+          }
+        }
+      },
+      "name": "Espresso bar La Strega",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJ46703pQVVBMRBbLeezxDFlk",
+      "rating": 4.6,
+      "types": [
+        "cafe",
+        "bar",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDwmDJx5b234A46z51-vOVWdVsdIUmsDjEMs9Wo8h0vBLgAXVXgNBD1G2VJFuX6JQGY98ZflB_xi5XILeDC4lnl9bAdfg58zTJ_2WDVWIAz1_hzaAdvTwSIvcYqnylafVjJKgVCE-bujEE5nW1Jk83Zv9_4J4zFd77FmliGJsKCDoCoQ",
+          "height": 2976,
+          "width": 3968,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/109424219944269904440\"\u003eZoran Gjoreski\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 357,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "XCWG+34J, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.9951514,
+          "lng": 21.4252397
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.99644157989272,
+            "lng": 21.42659947989272
+          },
+          "southwest": {
+            "lat": 41.99374192010728,
+            "lng": 21.42389982010728
+          }
+        }
+      },
+      "name": "Caffe di bianconeri",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJ96sH9FEVVBMRiWZBeWosL6U",
+      "rating": 5.0,
+      "types": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDynQYNUkJ_AnognyJW7E-43zWNo7WxTBhzJOqJ1H91Yz7PedxkR-pyldQvThOVsogvpG7vK2WhNPpQ0PtBjbh8RljFdDsUpF7a51ebnONNEWmYLNAhmkmjU007XFZ5ask3PQ1fJ_qxRwGVqNbivogz5z3-szblXvJBm8M4BYpoOVK1K",
+          "height": 4032,
+          "width": 1908,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/112944175993174881018\"\u003eBranko Kostadinov\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 1,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Kosturski Heroi 38, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.998586,
+          "lng": 21.4169611
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.99993587989272,
+            "lng": 21.41837632989272
+          },
+          "southwest": {
+            "lat": 41.99723622010728,
+            "lng": 21.41567667010728
+          }
+        }
+      },
+      "name": "Café „Belier“",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "placeId": "ChIJC48JuUgUVBMR0J1npreyy5A",
+      "rating": 4.3,
+      "types": [
+        "cafe",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openingHours": {
+        "openNow": true
+      },
+      "photos": [
+        {
+          "photoReference": "AW30NDxlcaTDv8K5LI2KUvOKGpn88UJczqDncKkLelYfz3HenPaM5b4kV-eZyib2nJIGO_wVXfgPzKPdZLzdODtbyB2Gmt3PA3hAH4wCPWiKgWn7WxDDi3wAQrWjYLZ7OK1X-8R3pLxmk1p3JmDZmmA290hn5OewQ41FmRMNS-rKwjTgoXuv",
+          "height": 1254,
+          "width": 3264,
+          "htmlAttributions": [
+            "\u003ca href\u003d\"https://maps.google.com/maps/contrib/111612688182861334435\"\u003eDimitrij Bogdanovski\u003c/a\u003e"
+          ]
+        }
+      ],
+      "permanentlyClosed": false,
+      "userRatingsTotal": 504,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "formattedAddress": "Ss Cyril \u0026 Methodius 13, Skopje 1000 MK, Skopje 1000, North Macedonia",
+      "geometry": {
+        "location": {
+          "lat": 41.99178999999999,
+          "lng": 21.427193
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.99328507989272,
+      
