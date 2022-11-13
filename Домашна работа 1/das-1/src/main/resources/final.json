@@ -1,0 +1,994 @@
+[
+  {
+    "id": "ChIJJ0m4o6UVVBMRrnVqrC49w94",
+    "lat": 42.0018861,
+    "lng": 21.4414035,
+    "name": "Clock Tower",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxvGojSFOFb6A63a70VetX6LW5M_JhIrDfSiqo7CNjRLQnX7mOsLYcveGcH10HxFaUQvGMpfQELqlIaOTkYHi59h7WIIGkwy_6rCvBa_76R9eIfxwqx1LShVNVFK8Xr_KIltGfllsDng0wKs5-52YO-pXUgsO-DzLChbyemHEI320wn"
+  },
+  {
+    "id": "ChIJN5g3ra8VVBMRSB7eXi9zn9E",
+    "lat": 42.000961,
+    "lng": 21.4371546,
+    "name": "Old Bazaar",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxiqrR9GzEae1gRSeNmBNGZF0r6QDiste1AGTWgSTPC5ma_S7wjwQbSdk23t4mwm9BLS1HQG-PV2KRw4qOwZMl5JQMXXQoLD6asJrMrC3YTmEPvqCLxUlHFosPUrMoq_R_ZvqsAA4SuWwaRQlcXBS0xrTxI09DkpeLA78jXfejSVSja"
+  },
+  {
+    "id": "ChIJV192YLEVVBMR8a_xNXF1E_c",
+    "lat": 41.9971231,
+    "lng": 21.4336171,
+    "name": "Monument „Karpoš“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyDxLWqaS1KqJGpqAvP_R2xyKz6g2R8am167MdZ9abMWj38lKYWXx4HcKB89csb_W69n7OHnPzN4YUMSd-wosb88lxHzsab9ihbzhJiX1vRs7p3eC9cfeo5mv9_Y12ipvuSop3rz6oxZvA2kF9MiG_M1oVcv22IcCMCS5xte5MAM0Er"
+  },
+  {
+    "id": "ChIJvw-CmLEVVBMRkLlWg7eL3Wc",
+    "lat": 41.9959108,
+    "lng": 21.4314632,
+    "name": "Споменик „Александар Македонски“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwaIlJxeujVV4TPcB-7kbjHDaMdnEnv3uqq4tOQyrSp1BSS4SVzAwqSrMgaSz091P-9RT7hym5z-rgmOoSj9ZOMFS0JuL3ZvPYddTx1Bu0CS1q1DDdrclf03IXVQKpj4B2x6-BldGa0tP2VSjq7UTj5aQSWE7Z1OdGi5zKChKDFPbED"
+  },
+  {
+    "id": "ChIJ8_HLtrUVVBMR6lIcYCWPyn0",
+    "lat": 41.993591,
+    "lng": 21.4317104,
+    "name": "Feudal Tower",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxApVcoUblqdviAOYWVP84weV0iAT2_u6n1brBYaV_Z0xys2K3AH-UeYRdRFlg11rXUXRoivqCznR68UdqUzsa1ekotwcNYllP7K3sQ6bw8J4bRIXivQazUsRVoa12eP1vsZurXPlkuzJFpL8ooKNQUSGJpT00z96A2wR_1gU_IlJST"
+  },
+  {
+    "id": "ChIJVdnzZbQVVBMRkkEWVcgxj1E",
+    "lat": 41.9953792,
+    "lng": 21.4312336,
+    "name": "Monument „Tsar Samoil“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDy9zhDMhJsxp9qK2Eim8RXQf8Wtms_WY0CamUU9XYcyis7ihptud3UQ2lCD6J6RxRr8QZsoKNYq2IPjAIAH0nUk0aU5GAos3f7stZ3kC6vi-fkta_DWI3BO2_QPf3DUoelzHizmaluCbGN8uCNLt3KISh0C8FDLWTD1Sa3fipssnn7V"
+  },
+  {
+    "id": "ChIJzcKU4LMVVBMRPgoXjpkscJo",
+    "lat": 41.9969881,
+    "lng": 21.433031,
+    "name": "Stone Bridge",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDz-e8mfbE4nQB2S--6cBW9b-ixAHgstMrxDxXl9joF7ndJl4W-Sre1MUwdkZurtHW5K2qOTuHXygo0KqrQdpvvqXd_rtlmzkLospJTNyyQ_ll_VTBAFjeRt3V136v74kmgkgHWJBHaZ2Mckm5xFSGBI2RafPeV65KXEmAykIFFxhw3l"
+  },
+  {
+    "id": "ChIJjUZoNBsVVBMRCt3eHr2KT8w",
+    "lat": 41.9961073,
+    "lng": 21.4310016,
+    "name": "Monument „Dimitrija Chupovski“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyzrAYqKNbm_jC1Jl6reL9UKyJhU1a3-DZrLum7ztCi2cPBtLo7UWd5XPdfNQS68YX_bvjReBgqnninX7C2tTkOvUUkh8pueBOIwn6UR62dErP8xF7j9Zd2E6b8NDASet1KM1l4hC-6iJ3pV3wBICRcIowN5r6xAgssL38C3Hix22WH"
+  },
+  {
+    "id": "ChIJm1cd76QVVBMR1jrUxKdCKZo",
+    "lat": 42.0003817,
+    "lng": 21.4433776,
+    "name": "Monument „Saint Cyril and Methodius“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwe0_0sw0syYr1avA2jPR_zEk_-bdzNzGIu8gITA-64fbGctDQaF2yTU5O70gSt6wAWXhoV_o2xRDZ7cuHLeQWJM7a-iioNOeGA-m6wAnX00GtfHnjMcNzCUk7GFPyLcIe2xewz8h0PQkZiypsojq8T8M8Arm4Q6KYfHP0l0_GGE_JN"
+  },
+  {
+    "id": "ChIJeZzUtq8VVBMRphS9BgrYPDg",
+    "lat": 42.0015065,
+    "lng": 21.4370689,
+    "name": "Bezisten",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzmxkqrfeqzGG0jaT2xODDJ7Fch5gnzaDocv-P2t-ZSjwenKWTKPlqf76aY-cxkzMHcPxph5Bgld6whGns_ZBoilUdT_7H8c5mjH_oCZMRdb2zJI2cQcTWy-g2BizP6GTZMtTHm4kYm73bqQWjwUd8-HB5EsT5NLoy2z6QADnonbWcr"
+  },
+  {
+    "id": "ChIJfX-e-K4VVBMRNK4TurP3EH8",
+    "lat": 41.996783,
+    "lng": 21.4343423,
+    "name": "Archaeological Museum of the Republic of Macedonia",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwF81-z1o1wQvmeGQ95as6BR6vwCAkbuSti2S6sS89ymodaqlpt399Ol3-qLPtEzEc4G3bZgoOCXSd3-2TwEDocKYE91Si8aG1T77YjcsLQx6m9KCbBrLslJGQN1St7G-RsmnmOlUyBpT9MrFSroDitcWQo6huaFk5ZmEpns_OnolI2"
+  },
+  {
+    "id": "ChIJQyQJdbQVVBMRlHmypEnmICQ",
+    "lat": 41.9962084,
+    "lng": 21.4318933,
+    "name": "Square „Macedonia“",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxYkI-Bflbumsy6_qmVcpQ9stqeDRgbetG4yMUn2KkwvKUi3ErWDn2g81Ckf_e5QmrHIx0gxe3ccsVSteiM63Z7DDT6Q4JvhzZMn0SfPc2_ajvla6Eq-jknepKxHrVQ4NiWbbS8UG2WNxVBZK6HuiC9NMkYZDxsUYRscVdbt_u1aX2d"
+  },
+  {
+    "id": "ChIJnSsZn-wVVBMR80TWrA8JHxA",
+    "lat": 41.9969046,
+    "lng": 21.4322418,
+    "name": "Monument „Iustinianus Primus“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwl-j9bacNtzxr1SNosnuhibZ_8aQa72KNQjPTYSWJXtf6vMA2OUbYuvGCr3x-1Rxnd-drGrt9DAicA3uyFcMY6I5PA6HPloajxRPXYSv-CYGO7nbM-BY4a1rHe7lnazRXDYm3qzg2y09WsQowWaXldHbaxvy90By9PJ_82HxkY0HC5"
+  },
+  {
+    "id": "ChIJzWwgNF4VVBMRthMcpsEljJc",
+    "lat": 41.9933828,
+    "lng": 21.4341331,
+    "name": "Monument to Fallen Heroes for Macedonia",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDz1TJQNDdpyBwQdanGULoRPkweIl-fSUqdCLJUs3v1h8cy_tKScD6lLLOucMJG603KirwyunF8qaLlzNjdFuQP_XDF5UW5HEY3Ksjvjb6lZs0D9ViXdUvW-fbrCnA5qbH1RzVK5Z_lDgFfjgzAWrbsn3JwyLbGb09ySezuaL8sCSoL-"
+  },
+  {
+    "id": "ChIJdSB5orEVVBMRsEiiuJiGQC4",
+    "lat": 41.9984642,
+    "lng": 21.4349934,
+    "name": "Monument „Philip II of Macedonia“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDw0qT32VZwzJs8hArrEnpSHJVn_YO2rHsD-gINd7SlRJr6X_0PZo_mkkvyKqCHBWCZZPaD-RFyM9NJ0kQjXyoLJWPTdY33ujNW-YBG8R4OMOenMUoswerJN27vZJisImoF5RSEEUbUrHc8M8jWDKMfaflvo65krKeckg_tGpDnW2yhV"
+  },
+  {
+    "id": "ChIJb4aC9m0VVBMRK2sObPTFFTU",
+    "lat": 41.98339989999999,
+    "lng": 21.4391156,
+    "name": "Споменик „Тодор Александров“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDx1rb4Jtt7hIlMD_HU-FJSk436y_2Giwf4D96Na815ilpegKwVtTbU6f64F0ukCJJfTOSvYVQ0G1Vq7yYOOQ-OLuatbHZvnqSNnsu_FVNDs6oeT1DCUwok_fz4Pzlnz_HZTCmW1Io7X57h7bHJ9uftlOYDPSlJXBLMjUVQaEF75QnKZ"
+  },
+  {
+    "id": "ChIJwyO9jgoVVBMR2_TlnoAM6DI",
+    "lat": 42.0080169,
+    "lng": 21.4488688,
+    "name": "Gazi Baba Tomb",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwWKkgRwWj6A3HUBBeZRywrAdXKNwP563L-Yvfn_uMj73Byrzn45Rfpt-2tUo1waZnSDeiGKrnHsYMM5z6qNfKU2Of1WcEM2UoY8aw0rUAVSQ1c3M2E6nVyzTnCiGIlA-KYoixMQawxwZjqHRh2JVLhnSFTf8mirdbVbfgtQd6XvxD-"
+  },
+  {
+    "id": "ChIJpaKajKUVVBMRICCHYMKI7bI",
+    "lat": 41.9981294,
+    "lng": 21.4254355,
+    "name": "Skopje",
+    "types": [
+      "locality",
+      "political"
+    ],
+    "photoReference": "AW30NDzMLH5J7e3VglBW_sHQWRtB3bZwkE0YtfuTPbmS2Sb1R23U9dSyqwDQjXlHTmcTCCxRFM58xd4uGbG0g1NJ8ZC9I6mR2EJn5QUBMN4lt2ZDZNUmrxHAleANI7aNTU7ONssa-Sa8jW5TxAmKCA6F4894sYAIv_5-SXT9gah6D1idVX2u"
+  },
+  {
+    "id": "ChIJmUQix9oJXUARdmj_8TGbo08",
+    "lat": 41.9930963,
+    "lng": 21.4303759,
+    "name": "Café „Gorki“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDx2bDiyg33OlSu7Sa5I1WFy9ctdVAvJmS-PjSPChmiKQsOK7hitYidfaSVHJUJyQYxtQHVYyLQmE03lILzqwABIFrr3qBFomaeVRhtgjZWeqLCLXwxxVJq6fLxG8IWVRbfnp9oBygIGF9DlDiuCwlwS_skFOpfO9vSk74yWQ9G2NNi6"
+  },
+  {
+    "id": "ChIJTZrkakUUVBMRnvgmkUtXly4",
+    "lat": 42.0037224,
+    "lng": 21.4148992,
+    "name": "The Gallery Caffe",
+    "types": [
+      "cafe",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyrmuXkADcivqR-e0-qxNFayVvNvwNtYVd4vnHHP4vZavif7v90i52xrh6LatqtOCZjLCLhaRN4csaPToszFrelZ9s7ywyl_wGvngbshEuxZZXvpbNZzScsS0jn2R4fNAD9WYKdaZAjlxR2FFDr3-xByeN5RgYBt2aZ4O2Hnxx2SBaB"
+  },
+  {
+    "id": "ChIJZYxyIDwVVBMRhH19KDI82CU",
+    "lat": 42.0302663,
+    "lng": 21.4454501,
+    "name": "Café „La“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxllC6enXRvozrPkzfrgAle_QpQYpYZLBOg8bYaK8xNqipDcWcigeELXkVybD1i5SZATX1k1y4sWuOyzDGZPIuFPga57FdwPGzefpkunw6F2xOClla4EGBSqeTvgfHG6n9Y_cjZtpQ6Uh_bubW4XO7bTeSkaJYeqxVParmZZhztuNJ5"
+  },
+  {
+    "id": "ChIJR9CoBgwVVBMRgSOpJfSU770",
+    "lat": 41.9951642,
+    "lng": 21.4309353,
+    "name": "Cafe „Coffee Industry“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzxJDpB02ybx-v2NoyIukWBWfcvqImWpf3MaNQvzfRNFD_ZrF1kODTPZRgDcJMwb00X3hqbv7RO8yHAuOTTlG9dpkIo5IEFrYSM-F43-GiOghSzyVngIgPmdBBVVokO0jHy3rY-KkFUHUaM1_f19lyl-nEsaAPsiaFot-sO9Rtemkah"
+  },
+  {
+    "id": "ChIJ_eW-qM4VVBMR6rolKTAnta8",
+    "lat": 42.0012851,
+    "lng": 21.4229702,
+    "name": "Coffee Shop",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyo0ijzgKHxxWuTpTwh8GTXjMFGUm33_kWMjI-cSnCshZ29PVFum6dkyvlZ720pB4fw-dqXtWLsSOGp9aFOD-OHk8DBvfzRuWNYW9bQzazOX_8Ev-MOYfgsimYiPRMf8Ampxeyx6xTAm1WwkaAMPtEmrVkrnT2iXxpUWi093RbSZncM"
+  },
+  {
+    "id": "ChIJ-2Ot4_IVVBMRp8FPf6cz0Sw",
+    "lat": 41.9925706,
+    "lng": 21.4413291,
+    "name": "Café „Knox“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzXEXtSTY9QkYoqtP8Ew5JQB0j2X89vxGWwvMuauFuIyXl5ImZnJGx8bU060CRFShiTG8a0VotAqPCQp7texvBWMHONEmkqHXGuhi9HbJrSiGWYSeDSWqzYnm8d251l6Er1nSKjgD5Il0RdQKr3enXjWReH4Rwviz90Iljdf5iyoc_j"
+  },
+  {
+    "id": "ChIJ2bBakL8VVBMRYDgvjo2VidI",
+    "lat": 41.9888706,
+    "lng": 21.4493384,
+    "name": "Café „Like“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwrS297zi6fs_0Xny3Fh7lerreghWSy6p_hb1l2P7F5AX2NKfi27FhWHegNkYWXIo5UxBeJml17UAtcQCJ8r6hjn1xRcVJOiMjVhm6Ft5HFteSPU08ynbFSfj-660tfQ3gveM1zs_ScQ_Ad3AgDipQchGWvjAl5eDYttycU2jjMti1m"
+  },
+  {
+    "id": "ChIJjXpdykgUVBMRt-WD79a7a1k",
+    "lat": 41.998988,
+    "lng": 21.4172705,
+    "name": "Café „Che“",
+    "types": [
+      "cafe",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzOaESSybd6jlF3EK4NwDjCy1qpelU0JfbkgQwDWxMXc14po6ddg2waxK-wJXUxm7UpuJqVPagjRw7diygMTZLnP377UtpQUdHRaiI2m4BrtDVK67TZ9PRAX2XjTe51KiFvP0BI7FGVpQPqUbhOSMnjrhejzHjhYxHMHvfgeHAH3yKu"
+  },
+  {
+    "id": "ChIJD3Y08DkUVBMRLGTQ6XjlKf4",
+    "lat": 41.9906456,
+    "lng": 21.4148107,
+    "name": "Drip Coffee",
+    "types": [
+      "cafe",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDz7z9-52Pjof8wZipht54L8Zjf0ZKPre2pVUPBT64FFwbY00iECBrWEzQGiep64Zziej5_v16Kx5Q33oguM5SKnAm3qpptUfz5qLoyrDxMaRzI_22LlPep3mWdflEZLryCKk78Nvy6KD20ReqGg9o_AM4wMK9SeAir0nVqj5pGfQmWI"
+  },
+  {
+    "id": "ChIJ3-jsY7QVVBMR_s3K0oeHafw",
+    "lat": 41.9956545,
+    "lng": 21.4310455,
+    "name": "Cafe „Bocata“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDygMcdHd-ZW3Xj5zvFP7jnrPqJ0XohWciBe-5e38sLrsj7oBSZWM4ccUFHe5ajK1nbw9WNgQllFk0VAX-ZKhOlOBQ_pUnvpHtub_mlCWpq0eOfqMQXJ9MzJS-sf2PG_aJf5SRoieS-iGpnHfcy1NIPf1oEMjXb-WJH9v_Q3e3Vbfx8P"
+  },
+  {
+    "id": "ChIJtaFU17EVVBMRCNA9X89_m-Y",
+    "lat": 42.0000023,
+    "lng": 21.4357251,
+    "name": "Café „Harem“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyNP2GBUVNhQq4Rbxr04O3te8la-Ar4vr1ytTk_nAoo1JOt9FYG98P7CTZBKtHR7TVaDhKgrEiVA5r0BpHmiQkD4Z50Ol8KaDXB48pPZyEWZl2EhpnDDxCDSpiccfKcME7JWADkxo_MhZaGu9sRzo-z9uG4J2cz8wq6na147HXCR2E2"
+  },
+  {
+    "id": "ChIJhx5OvrAVVBMRAJjft0O28Ks",
+    "lat": 42.0021236,
+    "lng": 21.3902529,
+    "name": "Cafe „Phoenix“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDy64Pnw5-08nUNeyZoDxqgT2s-HpchQcn3wBCZWHSgrU61PRWeh_bso15EAj0Qh8GNqDDEx9N03W_rqht9JYRbIGB2l6EV3kn2P16l98eYCeNDyktO7rghSw_7BKTUUPZK5f26JsQX99h9Iaq_2waoFcImjgp_JVYn6K8NHzhmeFY_P"
+  },
+  {
+    "id": "ChIJO2NE2rEVVBMRMgY5qBM68yM",
+    "lat": 42.00004939999999,
+    "lng": 21.4357382,
+    "name": "Café „Nargile“",
+    "types": [
+      "cafe",
+      "night_club",
+      "bar",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwjvXI0DHox9NpgAcA8oLNFOsxkVeTM1xy48LpwlcD2pT3Ym94VG5lpXhPAtXObqXhSqITiklDLG9RAHN4cfHPG7jouI86m12F8K9St2ZwCxAM-ORXWEtv-ULqIhi1Agc6BNcWmA5Vo6VzNgH3HSAMC2FpXZ9qt3pv8yXlZiw5n1bRl"
+  },
+  {
+    "id": "ChIJeSg3jTcUVBMRo_310hE4N-k",
+    "lat": 41.9933333,
+    "lng": 21.4163889,
+    "name": "Café „9“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyucRSDu_RiM8rPoZqps7gflVu-rGptdE2OhUwMXyI74BfUokeTzWIweD0oS4rt3biMrMH0XRk-1sxYjy2bMI37WhQDZbK4tqdcRVGJ09R-0ghIjtzP2ojS_VI5Le0Iqcir46nbVuB5OPYjvwABhESBPHrd4mOn5zIuYTrGImGiGnVn"
+  },
+  {
+    "id": "ChIJjRwjrskVVBMR3gN-2P5q5Sg",
+    "lat": 41.9919497,
+    "lng": 21.4321096,
+    "name": "Coffee To Go",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzBQC4edZp2uIWzXw9EugfkQKFKf1dVQi2pNxJfYF_IxME7h2OPDK7B7QzUpf2GT3aikEKFcx7IUZgClwnIhQMLZA1Y_wuEzI8NPEF7ZsJvkRnBUUqLCRn0w2kqqKa5dSNei9_jKkXEcflJpI_e2WXcwVl1LsDPxoKlDIlbY-s-6yER"
+  },
+  {
+    "id": "ChIJvaUjcGkUVBMRkzwRkp8d-gw",
+    "lat": 42.0032079,
+    "lng": 21.4001387,
+    "name": "Cafe „Martini“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxpDmVc_uSx2XsgRa9rk5b2K_TuD67Q0KcB2VfR-3lJ2qWUUhuK_MkwAQ6Zy-Tx-KwGsD6y9Oq0NnJagrGA8x8jQ9K43zAaQSJJGqlRDwid_6hJvvJjf-QgNjw9LLJqJiOp9hcNRM-ivQ1D62JZ1ojbx5mKUdQW1j7q0JMDZ5_XNt7a"
+  },
+  {
+    "id": "ChIJi509w-0VVBMR8bPYQjLmLKM",
+    "lat": 41.9939182,
+    "lng": 21.4303911,
+    "name": "LUX Cafe",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwtO0GIG845lghGXH3ceHjonKOoblOWvXvJwY3JSqQ0V8hu5b3Hjp1KFI4Ti4E6N6gDKnlg-0ZU7unD5rLfjcx0tu6TDjhM4DYoU3kIGFBML6Xost5iyJKC8mb42Ytvz147byL06WX8RRTVnAfSIDnbuToYJhmNVMtq1C_EY61vJS70"
+  },
+  {
+    "id": "ChIJvYSr_W0UVBMRX5zBh2WbSng",
+    "lat": 42.0038865,
+    "lng": 21.3923501,
+    "name": "Café „Play“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyU-ciW16qJqQaFsNXRDOD1AP7A8RrW6RMtZY2j6ygzJgKRb1wMWhN18wwuWJsHnSb_eTNNce7Ak36tmX500M9eGqPmDzVE8mmYxBUEz3jm-bmLxmwBlA1XNg1Nyk5zlNS_yKqKBRVCCIIs_1ffvoA0iOhNbwDmyraya2FNl1GfObv3"
+  },
+  {
+    "id": "ChIJgyMeUTUUVBMRmBXrg-zZ2MA",
+    "lat": 41.9921224,
+    "lng": 21.4270174,
+    "name": "Istanbul Simit Caffe",
+    "types": [
+      "cafe",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwDZMe8EGbe5iI_f6SGScutRwJgXG_PJiRji4sD2wOrEMX4GOh31N99KjkgvNjiLSW_YHnvSc4LjKX4Wszqf8ED4KKnr-WkF8nGX6Ss1rLBxwc_GnZ_gAxW2TksGAhLPOHYAfRiQkUs2qF-AFc6npFL0offcQkVKPjtMNqfJHgHNyT8"
+  },
+  {
+    "id": "ChIJ7Rt_UDUUVBMRCjVaUgWSWDM",
+    "lat": 41.9921713,
+    "lng": 21.426915,
+    "name": "Café „Stage“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxbnDVe7PZex2jydCG8neXccQSvsxNa4sEgik6QZahyXhODfOBOZRGnsiSpRclX27yLiAnjh4Y_Kknh4Pg-J7iLpcV-Vx8t_9vy9KwHCfXm240aR2FwykYdhAJ38Ow_2eVMJnBQSKXvMRszTv7B3u4N4GuaC44jD-OmfocUZWTTnKQR"
+  },
+  {
+    "id": "ChIJY4QDurQVVBMR1nNk8hDSiAM",
+    "lat": 41.9960899,
+    "lng": 21.4283555,
+    "name": "Café „Metanoja“",
+    "types": [
+      "cafe",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxsaZ4LYR1TZQxSn8ngmblzRER6q3Ih1G7mWLRiDztNS_FMPnTFEaqcyPSLEfizRM6BcKhcak0-jTSPcion-JN6FwixSe3HKd6vzHbSieVsnfv55hX8vbMuhPr3jJNTBbKZsKclzwx9n_OeaOYCMquSiB7bVFJu8Tb6qobODA-qFwpN"
+  },
+  {
+    "id": "ChIJJU9PjcsVVBMRfdBRBwT1yTs",
+    "lat": 41.98754599999999,
+    "lng": 21.4318828,
+    "name": "By The Way",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDy6jnAfd-y7RuAn6Fw5xdnQFGlXg1L5lipmCqXsrnbDP13m6POKP0kn8EbDX0nX1aga3QP2S19DSi3LiX4EI0n3H00td1nSl_hsSQjGIDDKaOr3_bo0zGjjrW349MenLWsg75PEkU22La2pTFjVVuJE0hwXcwYSwXCbHeypUmIWF4gs"
+  },
+  {
+    "id": "ChIJkxW7P5UVVBMRFhFtL3c8pFs",
+    "lat": 41.9886431,
+    "lng": 21.4529171,
+    "name": "Caffe Happy",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwzz03GAIAWHiDAxG5QFOqxYGOA5h28NxcLsdSZ9XQKvYNX1cNQ4oKnBQK2nCeO-De2Mj4DQCbI58pWqI0nrQBK7u6BXlzA1CyjRFqAY-ghMmJr7f5-yt7F0erqEs3UBb6m5ty5_vsIYN3txSWsryS6gQwoQ2dnttuYuaG5tszMyWGC"
+  },
+  {
+    "id": "ChIJR8oQ4-gVVBMRPvHxqGj7aTc",
+    "lat": 41.9947449,
+    "lng": 21.4173253,
+    "name": "Mezzo Street Café",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDx3ffpqDaoXGNtuhMY5Zjj2zmf290yLJYl4wQVOGPsjUXIIPtLWswdoXDp2P9VxFjHlsXIAWGHMykg2MJsAeNrpGkm7K3RCLjE-j_W_yXADityuty6pRwJBwr4pIXH1onmeogDTKHUGcszsuD7HXba0TFzZqZevuDv5ragy9uJ-9l0y"
+  },
+  {
+    "id": "ChIJC1LDfUwUVBMRQP28loxRWt4",
+    "lat": 41.9981117,
+    "lng": 21.4245204,
+    "name": "Café „Spalato“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxMy15ZP6MkJEb8jUcL8rTyBTHG3R_yv4YkMeW9_F3zQZJapsHyAA_BjlRE5UP96DvIDTPe5kPb2jtRaIKhgrSsXynLvod_LWnsEWa3LdW0oPzMxPMCVhOx82QPKGpUWLB8sup9BHQRNXxzwGk_jYimnUHYIWUDofCGnCNkksitsTGy"
+  },
+  {
+    "id": "ChIJtSGks-kVVBMRgdRLy-RZj2k",
+    "lat": 41.9944281,
+    "lng": 21.4306113,
+    "name": "Mikel Coffee",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDw2iJo6bHDGYX_9f1Hdg85WB-b1jT8Hz0wqtlnsboBMPez7ErAu8TbKguFCt5DKh_zStcOT9MMVVuTm0AGeFn6dVQNoP3OAz3MqYEcCmMiGpg9UDzkKjfKwyAOVNENSALZLJjNT7ufKFk4szD73hKllJPZag-eCH-32xdQaluwUPEfP"
+  },
+  {
+    "id": "ChIJj-NyI74VVBMRHiHy3JGuZTU",
+    "lat": 42.0002615,
+    "lng": 21.425195,
+    "name": "Кафе бар Само / Samo Caffe Bar",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxcb5oGc2lYvfiaHxc64qIwG-Fy29WZgf5Mrb9f7VqxetaqMHyAuBYD2-3dGsR0HyRK76S9CD1P4Z5SeLZgggKytEjXrRwtx1BIgDNGLJtxkFL4I_QEzEo4igt6FkEAY5CDXNkEn085_5-xZLW9i2YXecgvlYHeNmZgyeM4I3AlzkNK"
+  },
+  {
+    "id": "ChIJp6mpQE8UVBMRVZZJ0W4yyqA",
+    "lat": 42.0001238,
+    "lng": 21.4171743,
+    "name": "Café „Fika“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzlIxSUi6ghNWFr5ce2SCDjmBGe6oVojVMLnBkAR2ZFvqo6X9yuBrjCSq323Cpy37lHMpQy6ldnwmz38AjzjgT8cxHR8mgsdE4XX27DEjOp02QvayILKDkoxsYAE38bUf2kLfFaudUqo-qKF_72LemBpv7nQPs-p7QTuGyCikfPFTdC"
+  },
+  {
+    "id": "ChIJ-XOIqNMTVBMRUYDzQwVJBPQ",
+    "lat": 42.0073513,
+    "lng": 21.3722897,
+    "name": "Border Cafe",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzVMhZIMB0UBSiFTlZf3xV9c_pP2E9b5rXptrfqER_sJchIErJgl3T5Rybz1PwLouPshE4NLho_7eIbhsFa8WGRfkS5zdS5EHEfnZIux7I-h4phVXt9n7PBuYVrg6XrqixfeeIEFqI-eWZ03AW-Iko59Ak0TM50KVWaRvlsHI5o1cX4"
+  },
+  {
+    "id": "ChIJpUsAQNYVVBMR4JBsyUqhkgE",
+    "lat": 41.9940189,
+    "lng": 21.4304369,
+    "name": "Coffee Factory 3",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzgHtoQE_EWQ5fdzZZwpRHF8oDrBLKL1Ry1D3q7NZU3PPma-W6LclCQu8aUY4bGCViyojg5eftJxUfvay4Kw4FtOImWRnJdA78u5Xda0ZIPQRvMJbZOgIOGutuWmDw41xNnG7xou3ce50pOLFl7EPSRgQ2Rs7lfB7RJjd1Mn1oD4wym"
+  },
+  {
+    "id": "ChIJx28-0i4VVBMR40K5V5Lp72Q",
+    "lat": 41.9999718,
+    "lng": 21.4362468,
+    "name": "Mola",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwjdshfnfprepAA3HTg7evmN0FH8eaRLTkhBrTs14acnA5CdTUEyQRXeBfZiIud4PCo-Snwgs1C-6M-AS7g8WeyIYVwZ5jGSKlS2vBcoO-VBT7CLARd6ioODyXk8BJL7Hh3oIdj5xTs-GKTV3AMGTOmG3D25vmciXxuuRyg46JzOz_a"
+  },
+  {
+    "id": "ChIJ_wcoQkwUVBMRqzSkLIYGUZc",
+    "lat": 41.9992428,
+    "lng": 21.4234927,
+    "name": "Café „Coffee Factory“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDx08k6wc0UN0Z1bobah15A7Us14k91BhDJyh-6BCMH8R-1DcSpl6frzdRR12kkjgdqt40rVPrpEpic2XERnaD9jS3RCGJ2Vlb5cIJvG-_X1pDFubg9I-mSZtCzBKM9YoOGqnlZgta4WFSGbCuYyoHd1jtwH-PgqjS6sMQnD2rphiqEe"
+  },
+  {
+    "id": "ChIJl48TYYoVVBMR_nyK2Vc8VbI",
+    "lat": 42.00013149999999,
+    "lng": 21.436049,
+    "name": "Café „Little Coffee“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzySL4GZznw-epC9KdcJ77BMliYl8YsCunXguzKdnxebDYZi4ekWGzEc_JdzjlVmpJq2DATM4YC4gjRRUZimaCPeXfMeei-1V2dNct-QCsSEUYOvx0jGrHvUlkVRjJE38ktefmvvU-TPzj5ejicg8eLsk137_33-0JFR4THdL3LDxko"
+  },
+  {
+    "id": "ChIJ2bcgFmoVVBMRCNDiy4EAfuE",
+    "lat": 41.9976677,
+    "lng": 21.405705,
+    "name": "Dabov Specialty Coffee Macedonia",
+    "types": [
+      "cafe",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzVXo7UEFGmOgmNttU2OWt0lmZC9ly0p_CrgV-OTFTip0V76Y-jYe3cpxQdXGJ-KabEqgq9ynt5-EFodLNrk1t79Eiiw5ayN2x2f8SiTxG-AJ0IgafsuV20LDc9reH8jPBZrLnEuTfyZX5lIbj1B_RLie0-smXERaEOYoxLufjRLl7M"
+  },
+  {
+    "id": "ChIJveFQFZ0VVBMRwwX_j1J0I7o",
+    "lat": 42.0027078,
+    "lng": 21.4612891,
+    "name": "Cafe Le Petit",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzWi0FLYIZiyMfhYOy__2ZSM9iVgRcLh6sEjn12CMknub2FTIg_Bv0feFoqYc_F5IO1CWaFnw8oflAYWXeoyLtrzmboG27sM5u_jx33rdvFghUiZ0W8KDdWyIQgmxLx8aRoP2ow8av4MWMHNA0797hcZ-9idODzwXd3JhFxTyqHewvH"
+  },
+  {
+    "id": "ChIJF7GFrE0UVBMRUZNvBTFzpJI",
+    "lat": 42.0003052,
+    "lng": 21.4242035,
+    "name": "Deus",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDy5B_fZDQDBNGAu5CAEpy4V_HyZd7s_0_MTXRj38bJetK3DJ7EjlZIXFREBl4_iTVblgibNpATbZwy5InVSVO4QEyhr5Sr3SOAMNAXOb-fR84gw4Z8c9m_Tr9dhkBw5CiDk1al8rqlnn54ygIL0l3tVJbCg2JcKIMo2QxLEzzEfkJdS"
+  },
+  {
+    "id": "ChIJrUvA9JUVVBMRVqhfb3IA26E",
+    "lat": 41.9930154,
+    "lng": 21.4309479,
+    "name": "Café „Bookva“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzwxAYmsEea6RScWTaezGBLtL1SONxWf8wIjiZ2gC0iCYV3h64u7jRF78U8VphHZGeI4VajYN0v3TQhjat3y81kIaD5aqHtBwmQp6nusMdRRBXzr4G2PasyMT74DUlSVX8sEXFcadMpbzBuLwVvtpQF0kQDKwfELD2F3NLr_4mZT5mH"
+  },
+  {
+    "id": "ChIJj465O-kVVBMR2stWRgFRIA4",
+    "lat": 41.9982885,
+    "lng": 21.423504,
+    "name": "Bar „Shakespeare“",
+    "types": [
+      "cafe",
+      "bar",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDygp2EsKuI1Eu4db1pDau8up8FqNvtMYIvE1sMQWcKxD5UZu5cR_I2sTTgzqTtqKxTFWDka0uXOMi0Liuf92-_78TmbPs5_PZBfUYLop9_uGpL6IDUSAf9gKjQ35kT1czNE5yQmOGVFbl0nrzcFz77vabnhWaUp-k67cWbA1CcHfZJ7"
+  },
+  {
+    "id": "ChIJg28bRjgVVBMR-V3OlQQutCU",
+    "lat": 41.997695,
+    "lng": 21.3981103,
+    "name": "Central Perk",
+    "types": [
+      "cafe",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxyWu2zSb5u9TAOZqXTxIoKL13Vk3vjQTgQzQ8IIbhFd2gkQUGh1GwMo1YY-Gzvm8UU-_B7PO6PVU7lFGWTXQJv78a8yWhaJ4IHF7xKvFpHrNVG6q9B5m93V0X0ck_uYPRd9Gy8jY5x01m9euhdGb225-QWZYY_ZvJglG35M84fPtYe"
+  },
+  {
+    "id": "ChIJh0J8qdQVVBMRsrVjHcMzkmI",
+    "lat": 41.9886451,
+    "lng": 21.4360137,
+    "name": "Coffee \u0026 Friends",
+    "types": [
+      "cafe",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzwGkHTn5WZMvWIk46w0etX71kJDRos3mVmXvaNb3mXvozKaE0CiqNhfA3HO9jcu5p7OP0Cy0sTrO25J2kRhehlBZJRPSAcQVtIL72HsFzd-O99tq3sWKsAK1OKZ3e-wsOGXa5JP4N7q5RphqX4bkShJDChvBtdchLDo3jOQ0KKHHoU"
+  },
+  {
+    "id": "ChIJh0RZSkwUVBMRVHAzsSJrH9c",
+    "lat": 41.9998951,
+    "lng": 21.422972,
+    "name": "Café „Krug“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxowL2fuuTCoQau3c5SSIFA8VuBDUK1u1wWHg2OgpNr5_M9z77e_A9oo22wQeH-r7E-34We0eGt6wcRPufmtPA5_QbRPA1aNLXIO0afzXqbXIIrhSXxeV4miYxmk0z0CPqBA5MC75vKmBzPcrSZoMu2dKciCd6tV0sCcfkFAcU7k-yL"
+  },
+  {
+    "id": "ChIJV4qVp8kVVBMRJ4Osm9tCD3c",
+    "lat": 41.9885542,
+    "lng": 21.4356429,
+    "name": "World Of Coffee",
+    "types": [
+      "cafe",
+      "food",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwZoKkGEwTmyJdM1AHFSJZEshZx6M3ZIiQ8zrlVGZHb8tONqGDMmzhVnYfLRxF7pc9olNccdWAy2E58jjppy3qMPFGrh1QWXGtmEoyXYIdFW8Lf88ijimxUepbwrtyzf07ngXHEEaETKy8D_mwl7b74T5hZHFB_4OWj0rFopiLAcOQM"
+  },
+  {
+    "id": "ChIJM3MZWLMVVBMRtfDGbRc-muU",
+    "lat": 41.99699760000001,
+    "lng": 21.42831,
+    "name": "Manda Coffee bar",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwCffBs7AaYVKpWCDm1qS4YFWKxDdhHVLcT-clWTbmCLRCT6A4nqC_lyrKPZ4PmKb8uKOfCSVKvWau2u2ZcUA0hNgKNCSbcDNQAaeg4PAP-ZhataBLQ4k1v_bG_BOoWZ4i4Hkyl61Gd1Sbmz7bsfCK0bFe7LC8AsG6fMcnAWfGQ-o2J"
+  },
+  {
+    "id": "ChIJr2dHIbQVVBMRGOYPHeoYvZU",
+    "lat": 41.9946107,
+    "lng": 21.433269,
+    "name": "Café „Chevignon“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxBTYgQ8jNHPLClsgFgRsk2lVnTjocvO88p_75LZ6Q4XnT0OHRpM026_VKaD0eyYatzTrzTqiB8XLDES02XXFgn8H8LQy1LGfJkbniK-5pNtiFOtktnoF4FM87earyuzO98QcKoMP0GTa9H3GVBNQ0fSSciISYHt-Oqgw83w66wtNKA"
+  },
+  {
+    "id": "ChIJJcmzQE8UVBMRszoPVyuTRhM",
+    "lat": 42.00015579999999,
+    "lng": 21.4168236,
+    "name": "Broz Cafe",
+    "types": [
+      "cafe",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzB6Pv5Okzv2BJ1XqyylqNT3Kl0yuqOd8_utvi3gr_tUPI12atJD81L0WkUmwvOTI3HYIOMxrWwZDYN1ZPl2Ed7gNdu4FLrD3ekQ8-vOFQwu2uGQFV_x7bCqZMZCqfNlBuqxXgSv80BmBqGY_ONjBA97YdAMGWPYFJYoYHzqAvYXm9u"
+  },
+  {
+    "id": "ChIJJ2zSZa8VVBMRWrU25GSJClM",
+    "lat": 42.0029315,
+    "lng": 21.4390182,
+    "name": "Xheski cafe Lavazza",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyIt4Z4LN8gzl1F7gNPKx-Io412mA9TjAdOoLSE4yHVIXQPn-_sO2ixuHJWIH-3fEGHxVLawJQ8NTfY4oHqV5HOF69E5yAd-Brr1IWOkAnnM3X3E8uTPp3mt4AxukriQvVISDus4bFqNAMrkhwLdda3WxhFlsaX-bD5AREv0mS7gkRt"
+  },
+  {
+    "id": "ChIJSSkEbi8SVBMRw7mlKjzJq0E",
+    "lat": 42.0005906,
+    "lng": 21.3211932,
+    "name": "Caffe Tini",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxRIWFLDUUtU6nR_L0dO44hssTmTKHuDYHYp4DOOyWK60yTOFmI3PD-aKBYmEnsIEUUtR6eZNGgyGrcQJDmHjqIB-zSws4v8k02p6zl-27s14k_Nm853Wyb7pUBvbyBndssb_D5kTKCDbMSpnSNrD9u6i3AteJSX7PvCJJV39b8TN_w"
+  },
+  {
+    "id": "ChIJC48JuUgUVBMR0J1npreyy5A",
+    "lat": 41.998586,
+    "lng": 21.4169611,
+    "name": "Café „Belier“",
+    "types": [
+      "cafe",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwaDRznHfA5oq5mlIZ7S8Om2qTW4DNb7qZya-iKIl6BMPcBBOY1-zhlsO1P0sjeC1HQ5cHd0IVtWuvNqlmevK-5vSjQe2sycGYRhn8WaQZfEhcm-SHWErV2L99vhJj69v5G4XhVtUX7HXgFXLoAhIks5YLE35QMK1O2uf8F_5OsdBYq"
+  },
+  {
+    "id": "ChIJsQCwSTYUVBMRyqeJHO2tDZ8",
+    "lat": 41.9927667,
+    "lng": 21.4191349,
+    "name": "Caffe Izzi",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwTp8G6CAXmhAf7PR2OlFV_nvhju8sw7haAZ68G6cuS9K84svV1umrerxMqVk8vTsCiWWej8B2VE4ByR0mOiaQmyqafF7nayNBLJGGnIj3b42PGvcai2PrWqwwtN28elf7JIaHsWPhW2qAdKoFOJ5myZVvAhEWZcwXt3Id0yNapfrjx"
+  },
+  {
+    "id": "ChIJcySFP3QVVBMRRy2V73wgOn0",
+    "lat": 41.9998909,
+    "lng": 21.4371994,
+    "name": "Café „Urban“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwyLp00kRrhjxzOQ-u2APJw1z2sbvi6ktfWRu-J3b0uZi0WtzwEhA9kZ-OuS7_31ZNyL1Cg7nZQ3PoqDHRiXeH4y6jEFsAxD4FDYgmqTohnRayQUypOXdKzuRBFaOrSpGEixfgW5hzN9_VuIQRcZLQqoZSmG6ejEjEBjl7oCXKRsZ55"
+  },
+  {
+    "id": "ChIJXf9TorYVVBMRXMET5xTcDLk",
+    "lat": 41.9987921,
+    "lng": 21.4253336,
+    "name": "Café „Mikel“",
+    "types": [
+      "cafe",
+      "food",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxXL8C7NNS9DtnKD3SZW2hI57znS4r2rTKF9CBPX_496o428trXkhvXRQPFm18JAJ49Jx8ytf6Se4cakbmMWIRTebBi9SjJj2H-jxHQmJRRr7-rcUtycOTFefGx_AaojSAulXd_uZ11o5D-J0gEZVgD3R5nAymE8wfMzTe1wNU2Cd_c"
+  },
+  {
+    "id": "ChIJX5_9f8UVVBMR96y_DWuFAS8",
+    "lat": 41.9929876,
+    "lng": 21.4159988,
+    "name": "M\u0026F Cafe",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwEtTDwOmPomsLl-UYy_k2GatG4myx0N2qA5QoNx8Mmzs0Pn9y8UQkc0ag9MLiMMidMWvNV5IawJbY_g-QbOZJT3xE5zb87jDtEjX1tQx7OFDEe3zgPJ17NE69l-D533NQnF7DNLL3Wl3RDf1Pkc14_mJRl08jOO8ddn0hSdepIEYJN"
+  },
+  {
+    "id": "ChIJu2MPz-sVVBMRxBq1oF6UIcw",
+    "lat": 41.9768181,
+    "lng": 21.4443967,
+    "name": "Point Café",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDya02x6KznrDheaF4wKls01hQJG-VkgvcRBu37KyKNd56i0aR7I7McZ0op_ZOqAQJVv33tgKdWxcqimvfKHwDY8_nrJ3zozsGxnxknxBJ3JJ4H8xdrgsRaYvIJgVjt-IygiCBgf_NbPdOAQapIQX0OLHOuHxpEoFLkPteRGcELT30gY"
+  },
+  {
+    "id": "ChIJW5cCRWcVVBMRWsPxCjLOhQQ",
+    "lat": 41.9930142,
+    "lng": 21.4302822,
+    "name": "Joy Café and Bakery",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyjSZ6Tp5BJjJg1HNRUfDRqk8-olRIBz9H7phbVQ-Qg_OXoYYsofhXToHVXqmk20xSY96FDT4I_TR0Zy5WeB5qUAdf-3BOHfI5bSd4df7T8L1e1ixhirBOdeIOLla7ncrexYWIcQB-RPV_9r_4Cwh7uVj1F1YlRj7xE7gPwDpbaXEyz"
+  },
+  {
+    "id": "ChIJi-mRM4gVVBMR4E5YLkdZsEY",
+    "lat": 41.9990955,
+    "lng": 21.4392651,
+    "name": "CAFFE TERASSA",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzayE-5UL_GAvn0CHNEKgnL_o6owYDM1IPztfOdYoh2HnjOKqQ9Bbo8EvTgXkSM4M6yT2oErEipazGBaZvw544zkpyhEsesN66NuU7KKiloyPf4fdBoIKG5LkwtzJMJK0bohU4iC471X6QQ2wICTk_2jnrv4-zZktS8aMKQmb1kam82"
+  },
+  {
+    "id": "ChIJTxXZG6oVVBMRipshqzeIiJQ",
+    "lat": 41.9976606,
+    "lng": 21.4345951,
+    "name": "Coffee shop Mulliri",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDz-EAXJNCNfCwwn4-uX6q4xCmgfw4tRHm9j8CAk9tZkn2oDB1lQrIkdPMt_oZtlS-1WLiAtvPftf1r3Gib52om3opAyaIDK7YNqf626rD829pHWrr-Es_S-omttwgf8a1g9EsDBcdUoT3LfbEUqOh0yHUKvbX4pg6-VJAMTT-0RCZUE"
+  },
+  {
+    "id": "ChIJtdG8xLYVVBMRkcFEt20k2To",
+    "lat": 42.0015882,
+    "lng": 21.4367457,
+    "name": "Café „Mon Frėre“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxMHjI869iIY0S2c0C_EaC1HgPsYVZMajk0CiGGcaVLcochgO-x7OVf0-8ihOGaBVjkj7ivA98bcwV47lbBQLTyYYOx9pHGQmSzN1tLr7beBD4UQp4P21z5lbn8mgSCFCN8gPw6jXBAAx9s1AyrDD32GUlVuPy4vmft5w91QlExbfxU"
+  },
+  {
+    "id": "ChIJbxyBht0VVBMRwoR56lyHxVU",
+    "lat": 42.0004454,
+    "lng": 21.4372167,
+    "name": "Café „Mon Ami“",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxfe_9tzOjuHyP6xHPuzrRh5Ol9FIHucucEpG2oTt5o-kQc2hm28ImtvxoDBxHfa1PFNjl2h17bSRgtD5ynx8yZmG08YE-mjsVwXWR72i3lGaP_RRMHBkcwgjPj-bGcGu72LHuIxQRsRaSewvzmNRmjJCDrTX1Qn1DWZgsRwi3AMbkp"
+  },
+  {
+    "id": "ChIJ46703pQVVBMRBbLeezxDFlk",
+    "lat": 41.98809199999999,
+    "lng": 21.4546705,
+    "name": "Espresso bar La Strega",
+    "types": [
+      "cafe",
+      "bar",
+      "food",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyHlzBu-Ujw3PMvs6rGTZ2L05TknFuzfTXD8HQI6ltex0SFgxaVNLxjyUNvhdMaAFBFlgduPUFcfO34t_05XtmS5djsSWU2fdnl9Hnbq_y13ZYgfqIFNhPdBpRlkxnQxee31t9HX-hvGSUyiT1jrUdox-q3bXbyBa-fu3othYnekYRB"
+  }
+]

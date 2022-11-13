@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DAS.iml" filepath="$PROJECT_DIR$/.idea/DAS.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Домашна работа 1/fetchData/fetchData.iml" filepath="$PROJECT_DIR$/Домашна работа 1/fetchData/fetchData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Домашна работа 1/das-1/das-1.iml" filepath="$PROJECT_DIR$/Домашна работа 1/das-1/das-1.iml" />
     </modules>
   </component>
 </project>
