@@ -15,7 +15,7 @@ import java.time.format.DateTimeParseException;
 
 public class Utilities {
 
-	public static final String GCP_API_KEY = "AIzaSyCZMPjDh82Z_NKVyeTHsddOYS_hMAmQg8w";
+	public static final String GCP_API_KEY = "INSERT YOUR API KEY HERE";
 
 	public static PlacesSearchResponse wrapWithContext(ContextedMethods methods) throws IOException, InterruptedException, ApiException {
 		GeoApiContext context = new GeoApiContext.Builder().apiKey(GCP_API_KEY).build();
