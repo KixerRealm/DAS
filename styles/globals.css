@@ -21,6 +21,11 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: #171717;
   }
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
