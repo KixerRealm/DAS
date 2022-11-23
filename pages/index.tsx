@@ -1,58 +1,75 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import {StarIcon, UserPlusIcon} from "@heroicons/react/24/solid";
+import Image from 'next/image';
+import GameModeCard from "../components/game-mode-card";
+import GameModeCardRow from "../components/game-mode-card-row";
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Skopje GeoGuessr</title>
-        <meta name="description" content="GeoGuessr clone meant only for places in Skopje." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+    const gameModes = [
+        [
+            {
+                title: 'All Places', description: 'This includes the entire data set that we currently have,' +
+                    ' regardless of type (aka,coffee shops, landmarks, etc.).', img: "/thumbnails/skopje.jpg"
+            },
+            {
+                title: 'Coffee Shops',
+                description: 'This only includes coffee shops that we have gathered in our data set.',
+                img: "/thumbnails/pub18.jpg"
+            },
+            {
+                title: 'Landmarks',
+                description: 'This only includes landmarks that we have gathered in our data set.',
+                img: "/thumbnails/aleksandar.jpg"
+            }
+        ]
+    ]
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
+    return (
+        <div>
+            <main className={"w-full h-full text-center"}>
+                {/*Title*/}
+                <div className={'pt-12'}>
+                    <h1>
+                        <span className={"font-bold text-6xl"}>
+                            Skopje GeoGuessr
+                        </span>
+                    </h1>
+                </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+                {/*Promotional message*/}
+                <div className={"p-8"}>
+                    <p className={'font-medium  text-xl text-neutral-600'}>
+                        Explore different locations throughout Skopje while also testing your knowledge of the city!
+                        <br/>
+                        The better you are, the higher you can climb the leaderboards!
+                    </p>
+                </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+                {/*<div className={"h-0.5 bg-neutral-800"}/>*/}
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+                {/*Buttons for play*/}
+                <div className={"flex flex-row justify-center w-full p-4"}>
+                    <button className={"inline-flex items-center rounded mx-2 bg-cyan-600 hover:bg-cyan-700 py-2 px-4"}>
+                        Register
+                        <UserPlusIcon className={"ml-1 h-6 fill-cyan-100"}/>
+                    </button>
+                    <button className={"inline-flex items-center rounded mx-2 bg-cyan-600 hover:bg-cyan-700 py-2 px-4"}>
+                        Leaderboards
+                        <StarIcon className={"ml-1 h-6 fill-cyan-100"}/>
+                    </button>
+                </div>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+
+                {/*Game modes choose*/}
+                <div className={"my-12"}>
+                    <h1 className={"text-3xl text-white italic font-bold text-left ml-8"}>
+                        Game modes
+                    </h1>
+
+                    {gameModes.map((mode, idx) => <GameModeCardRow key={idx} cards={mode}/>)}
+                </div>
+
+            </main>
         </div>
-      </main>
-    </div>
-  )
+    )
 }
