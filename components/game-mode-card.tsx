@@ -11,7 +11,7 @@ export default function GameModeCard(params: GameModeCardParameters) {
         <a href={"#"}
            className={
                "basis-1/3 mx-8 flex flex-col items-center border rounded-lg shadow-md" +
-               " border-neutral-700 bg-neutral-800 hover:bg-neutral-700"
+               " border-neutral-700 bg-neutral-800 hover:bg-neutral-700 hover:shadow-xl"
            }>
             <Image className={"object-cover w-full rounded-t-lg h-96"}
                    src={params.img} alt=""

@@ -21,13 +21,6 @@ export default function Home() {
                 description: 'This only includes landmarks that we have gathered in our data set.',
                 img: "/thumbnails/aleksandar.jpg"
             }
-        ],
-        [
-            {
-                title: 'Restaurants (TBA)',
-                description: 'TO BE ADDED!',
-                img: '/thumbnails/skopje.jpg'
-            }
         ]
     ]
 
@@ -66,11 +59,12 @@ export default function Home() {
                     </button>
                 </div>
 
-                <div className={"h-0.5 bg-neutral-800"}/>
 
                 {/*Game modes choose*/}
                 <div className={"my-12"}>
-                    <h1>Game modes</h1>
+                    <h1 className={"text-3xl text-white italic font-bold text-left ml-8"}>
+                        Game modes
+                    </h1>
 
                     {gameModes.map((mode, idx) => <GameModeCardRow key={idx} cards={mode}/>)}
                 </div>
