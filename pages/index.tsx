@@ -1,6 +1,4 @@
 import {StarIcon, UserPlusIcon} from "@heroicons/react/24/solid";
-import Image from 'next/image';
-import GameModeCard from "../components/game-mode-card";
 import GameModeCardRow from "../components/game-mode-card-row";
 
 export default function Home() {
