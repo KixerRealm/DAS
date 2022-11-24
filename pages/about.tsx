@@ -75,7 +75,7 @@ export default function About() {
                                     linkedIn={'https://www.linkedin.com/in/kristijan-kostovski-10ba44251/'}
                                 />
                             </div>
-                            <p className={'text-sm text-neutral-200 my-1 mb-4'}>Junior full-stack developer.</p>
+                            <p className={'text-sm text-neutral-200 my-1 mb-4'}>Junior full-stack developer for 6 months.</p>
 
                             <ul className={'ml-8 list-disc'}>
                                 <li className={'list-disc text-neutral-200 my-2'}>
