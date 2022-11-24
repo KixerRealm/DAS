@@ -18,7 +18,7 @@ export default function NavItem(params: NavItemParameters) {
                         <span className={
                             router.route != params.href ?
                                 'bg-left-bottom bg-gradient-to-r from-slate-400 to-slate-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out' :
-                                'underline underline-offset-4 decoration-slate-100'
+                                'underline underline-offset-4 decoration-slate-400'
                         }>
                             {params.text}
                         </span>
