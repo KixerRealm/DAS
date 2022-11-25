@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {executeLogin, UserCredentials} from "../hooks/useLogin";
 import {useMutation} from "@tanstack/react-query";
-import {useAtom} from "jotai";
 import {useRouter} from "next/router";
 import {userAtom} from "../components/user-nav-bar";
 import {useUpdateAtom} from "jotai/utils";
@@ -24,8 +23,6 @@ export default function Login() {
         onSuccess: async data => {
             updateUser(data);
             await router.push("/");
-        },
-        onError: async (_) => {
         }
     });
 

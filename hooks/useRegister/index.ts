@@ -2,13 +2,19 @@ import {useMutation} from "@tanstack/react-query";
 import {APIError, LeaderboardRecord} from "../../pages/api/leaderboards";
 import {User} from "../../pages/api/oauth/login";
 
-export type UserCredentials = {
+export type UserRegistration = {
     email: string;
     password: string;
+    displayName: string;
+    confirm: string;
 }
 
-export async function executeLogin(data: UserCredentials) {
-    return await fetch("http://localhost:3000/api/oauth/login", {
+export async function executeRegister(data: UserRegistration) {
+    if (data.password != data.confirm) {
+        throw new Error("Passwords don't match!");
+    }
+
+    return await fetch("http://localhost:3000/api/oauth/register", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -20,7 +26,5 @@ export async function executeLogin(data: UserCredentials) {
                 const error = (await res.json()) as APIError;
                 throw new Error(error.message);
             }
-
-            return (await res.json()) as User;
         });
 }
