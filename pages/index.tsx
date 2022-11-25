@@ -1,5 +1,6 @@
 import {StarIcon, UserPlusIcon} from "@heroicons/react/24/solid";
 import GameModeCardRow from "../components/game-mode-card-row";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -51,10 +52,12 @@ export default function Home() {
                         Register
                         <UserPlusIcon className={"ml-1 h-6 fill-cyan-100"}/>
                     </button>
-                    <button className={"inline-flex items-center rounded mx-2 bg-cyan-600 hover:bg-cyan-700 py-2 px-4"}>
-                        Leaderboards
-                        <StarIcon className={"ml-1 h-6 fill-cyan-100"}/>
-                    </button>
+                    <Link href={"/leaderboards"}>
+                        <button className={"inline-flex items-center rounded mx-2 bg-cyan-600 hover:bg-cyan-700 py-2 px-4"}>
+                            Leaderboards
+                            <StarIcon className={"ml-1 h-6 fill-cyan-100"}/>
+                        </button>
+                    </Link>
                 </div>
 
 

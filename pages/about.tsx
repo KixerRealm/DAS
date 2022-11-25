@@ -5,7 +5,7 @@ import RedirectAnchor from "../components/redirect-anchor";
 export default function About() {
     return (
         <div className={"w-full h-full text-center"}>
-            {/*About the team*/}
+            {/*Leaderboards the team*/}
             <div className={'grid h-screen place-items-center'}>
                 <h1 className={"italic text-4xl mt-8"}>
                     About the team
@@ -39,8 +39,10 @@ export default function About() {
                             <ul className={'ml-8 list-disc'}>
                                 <li className={'list-disc text-neutral-200 my-2'}>
                                     Developed and designed the UI of the application using{' '}
-                                    <RedirectAnchor url={'https://tailwindcss.com/'} text={'Tailwind CSS'}/> &{' '}
-                                    <RedirectAnchor url={'https://nextjs.org/'} text={'NextJS'}/>.
+                                    <RedirectAnchor url={'https://tailwindcss.com/'} text={'Tailwind CSS'}/>,{' '}
+                                    <RedirectAnchor url={'https://nextjs.org/'} text={'NextJS'}/>,{' '}
+                                    <RedirectAnchor url={'https://tanstack.com/query/v4/'} text={'React Query'}/> &{' '}
+                                    <RedirectAnchor url={'https://fakerjs.dev/'} text={'FakerJS'}/>.
                                     <br/>
                                     Other than development and design, he also acted as a PO, software architect and
                                     DevOps
