@@ -7,7 +7,7 @@ export default function Register() {
 
     const router = useRouter();
 
-    const {mutate, isLoading, error, isError} = useMutation({
+    const {mutate, error} = useMutation({
         mutationFn: (event: any) => {
             event.preventDefault();
 

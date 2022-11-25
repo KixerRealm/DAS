@@ -1,6 +1,5 @@
 import NavItem from "./nav-item";
 import UserNavBar from "./user-nav-bar";
-import ClientOnly from "./meta/client-only";
 
 export default function Navbar() {
     return (
@@ -10,7 +9,7 @@ export default function Navbar() {
                 <NavItem href={'/leaderboards'} text={"Leaderboards"}/>
                 <NavItem href={'/about'} text={"About Us"}/>
             </ul>
-            <ul className={'absolute right-0 top-4 pr-4 basis-1/6 text-neutral'}>
+            <ul className={'absolute right-6 top-4 pr-4 basis-1/6 text-neutral'}>
                 <UserNavBar/>
             </ul>
         </nav>

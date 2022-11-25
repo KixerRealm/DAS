@@ -1,6 +1,6 @@
-import GithubIcon from "./icons/GithubIcon";
+import GithubIcon from "./icons/github-icon";
 import {InboxStackIcon} from "@heroicons/react/24/solid";
-import LinkedInIcon from "./icons/LinkedInIcon";
+import LinkedInIcon from "./icons/linked-in-icon";
 
 interface SocialsParameters {
     github: string;
