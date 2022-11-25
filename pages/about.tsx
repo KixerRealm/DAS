@@ -5,7 +5,7 @@ import RedirectAnchor from "../components/redirect-anchor";
 export default function About() {
     return (
         <div className={"w-full h-full text-center"}>
-            {/*Leaderboards the team*/}
+            {/*About the team*/}
             <div className={'grid h-screen place-items-center'}>
                 <h1 className={"italic text-4xl mt-8"}>
                     About the team
