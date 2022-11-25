@@ -5,8 +5,6 @@ import {executeRegister, UserRegistration} from "../hooks/useRegister";
 
 export default function Register() {
 
-
-
     const router = useRouter();
 
     const {mutate, isLoading, error, isError} = useMutation({
@@ -54,7 +52,6 @@ export default function Register() {
                                        className={"border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-neutral-800 border-neutral-500 placeholder-neutral-500 text-neutral-200"}
                                        placeholder={"name@company.com"} required/>
                             </div>
-
 
                             <div>
                                 <label htmlFor={"password"}
