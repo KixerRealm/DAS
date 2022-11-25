@@ -41,8 +41,8 @@ export default function About() {
                                     Developed and designed the UI of the application using{' '}
                                     <RedirectAnchor url={'https://tailwindcss.com/'} text={'Tailwind CSS'}/>,{' '}
                                     <RedirectAnchor url={'https://nextjs.org/'} text={'NextJS'}/>,{' '}
-                                    <RedirectAnchor url={'https://nextjs.org/'} text={'Jotai'}/>,{' '}
-                                    <RedirectAnchor url={'https://jotai.org/'} text={'React Query'}/> &{' '}
+                                    <RedirectAnchor url={'https://jotai.org/'} text={'Jotai'}/>,{' '}
+                                    <RedirectAnchor url={'https://tanstack.com/query/v4/'} text={'React Query'}/> &{' '}
                                     <RedirectAnchor url={'https://fakerjs.dev/'} text={'FakerJS'}/>.
                                     <br/>
                                     Other than development and design, he also acted as a PO, software architect and
