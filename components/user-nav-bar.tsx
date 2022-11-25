@@ -1,27 +1,23 @@
 import {useAtom} from "jotai";
 import {ArrowRightOnRectangleIcon} from "@heroicons/react/24/solid";
 import Link from "next/link";
-import {atomWithStorage, useUpdateAtom} from "jotai/utils";
+import {atomWithStorage} from "jotai/utils";
 import {User} from "../pages/api/oauth/login";
 import {useHasMounted} from "../hooks/useHasMounted";
 import Image from 'next/image';
 import {useState} from "react";
 import DropdownIcon from "./icons/dropdown-icon";
-import {useRouter} from "next/router";
 
 export const userAtom = atomWithStorage<User | null>('user', null);
 
 export default function UserNavBar() {
-    const router = useRouter();
     const [user, setUser] = useAtom(userAtom);
     const hasMounted = useHasMounted();
     const [open, setOpen] = useState(false);
 
     const handleLogout = async () => {
-        console.log("called...");
         setUser(null);
         setOpen(false);
-        await router.push("/");
     }
 
     if (!hasMounted) {

@@ -1,4 +1,3 @@
 export enum QueryType {
-    LEADERBOARD_RECORDS = "leaderboardRecords",
-    LOGIN = "login"
+    LEADERBOARD_RECORDS = "leaderboardRecords"
 }
