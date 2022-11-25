@@ -12,13 +12,13 @@ export type LeaderboardRecord = {
     profilePictureUrl: string;
 }
 
-export type LeaderboardError = {
+export type APIError = {
     message: string;
 }
 
 export default function handler(
     req: NextApiRequest,
-    res: NextApiResponse<LeaderboardRecord[] | LeaderboardError>
+    res: NextApiResponse<LeaderboardRecord[] | APIError>
 ) {
     const gameMode = validateAndGetGameMode(req, res);
     if (gameMode == null) {
@@ -53,7 +53,7 @@ export default function handler(
 
 function validateAndGetGameMode(
     req: NextApiRequest,
-    res: NextApiResponse<LeaderboardRecord[] | LeaderboardError>
+    res: NextApiResponse<LeaderboardRecord[] | APIError>
 ): GameModeType | null {
     const {gameMode} = req.query;
 

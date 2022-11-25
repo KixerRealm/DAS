@@ -1,12 +1,15 @@
 import Footer from "./footer";
 import Navbar from "./navbar";
 import Head from "next/head";
+import {useRouter} from "next/router";
 
 interface LayoutParameters {
     children: JSX.Element|JSX.Element[];
 }
 
 export default function Layout(params: LayoutParameters) {
+    const router = useRouter();
+
     return (
         <>
             <Head>
@@ -16,7 +19,7 @@ export default function Layout(params: LayoutParameters) {
             </Head>
             <Navbar/>
             <main>{params.children}</main>
-            <Footer/>
+            {!['/login', '/register'].includes(router.route) ? <Footer/> : <></>}
         </>
     )
 }

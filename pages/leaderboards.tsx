@@ -1,9 +1,5 @@
-import {fetchLeaderboards, useLeaderboards} from "../hooks/useLeaderboards";
 import {GameModeType} from "../enums/game-mode-type";
 import {useState} from "react";
-import {Duration} from "ts-duration";
-import Image from "next/image";
-import LeaderboardRecordComponent from "../components/leaderboard-record-component";
 import LeaderboardsTable from "../components/leaderboards-table";
 
 const focusedStyles = "z-10 ring-2 ring-yellow-500 bg-yellow-700";
@@ -42,20 +38,3 @@ export default function Leaderboards() {
         </div>
     );
 }
-
-
-// export const getStaticProps = async () => {
-//     const queryClient = new QueryClient();
-//
-//     await queryClient.prefetchQuery({
-//         queryKey: [QueryType.LEADERBOARD_RECORDS, GameModeType.ALL],
-//         queryFn: () => fetchLeaderboards(GameModeType.ALL)
-//     });
-//
-//     return {
-//         props: {
-//             dehydratedState: dehydrate(queryClient),
-//         }
-//     };
-// }
-
