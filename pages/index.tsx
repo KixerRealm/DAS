@@ -48,10 +48,13 @@ export default function Home() {
 
                 {/*Buttons for play*/}
                 <div className={"flex flex-row justify-center w-full p-4"}>
-                    <button className={"inline-flex items-center rounded mx-2 bg-cyan-600 hover:bg-cyan-700 py-2 px-4"}>
-                        Register
-                        <UserPlusIcon className={"ml-1 h-6 fill-cyan-100"}/>
-                    </button>
+                    <Link href={"/register"}>
+                        <button
+                            className={"inline-flex items-center rounded mx-2 bg-cyan-600 hover:bg-cyan-700 py-2 px-4"}>
+                            Register
+                            <UserPlusIcon className={"ml-1 h-6 fill-cyan-100"}/>
+                        </button>
+                    </Link>
                     <Link href={"/leaderboards"}>
                         <button className={"inline-flex items-center rounded mx-2 bg-cyan-600 hover:bg-cyan-700 py-2 px-4"}>
                             Leaderboards

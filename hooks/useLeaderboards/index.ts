@@ -1,5 +1,5 @@
 import {GameModeType} from "../../enums/game-mode-type";
-import {LeaderboardError, LeaderboardRecord} from "../../pages/api/leaderboards";
+import {APIError, LeaderboardRecord} from "../../pages/api/leaderboards";
 import {useQuery} from "@tanstack/react-query";
 import {QueryType} from "../../enums/query-type";
 
@@ -10,7 +10,7 @@ export async function fetchLeaderboards(gameMode: GameModeType): Promise<Leaderb
     }))
         .then(async (data) => {
             if (data.status == 400) {
-                const error = (await data.json()) as LeaderboardError;
+                const error = (await data.json()) as APIError;
                 throw new Error(error.message);
             }
 
