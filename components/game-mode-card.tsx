@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export interface GameModeCardParameters {
     title: string;
@@ -8,7 +9,7 @@ export interface GameModeCardParameters {
 
 export default function GameModeCard(params: GameModeCardParameters) {
     return (
-        <a href={"#"}
+        <Link href={"/game"}
            className={
                "basis-1/3 mx-8 flex flex-col items-center border rounded-lg shadow-md" +
                " border-neutral-700 bg-neutral-800 hover:bg-neutral-700 hover:shadow-xl"
@@ -25,6 +26,6 @@ export default function GameModeCard(params: GameModeCardParameters) {
                     {params.description}
                 </p>
             </div>
-        </a>
+        </Link>
     )
 }

@@ -26,7 +26,7 @@ export default function LeaderboardsTable(params: LeaderboardsTableParameters) {
                     className={"w-full text-sm text-left text-gray-400 border-l border-r border-neutral-800"}>
                     <caption
                         className={"p-5 text-lg font-semibold text-left text-white bg-neutral-800"}>
-                        <h1 className={"text-2xl"}>{translations[params.gameMode]} (Top 15)</h1>
+                        <h1 className={"text-2xl"}>{translations[params.gameMode]} (Top {data?.length})</h1>
                     </caption>
                     <thead className={"text-xs uppercase bg-gray-700 text-gray-400"}>
                     <tr>
