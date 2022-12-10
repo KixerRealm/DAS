@@ -15,6 +15,22 @@
   "mapTypeId": "roadmap",
   "styles": [
     {
+      "featureType": "poi.place_of_worship",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.attraction",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
       "featureType": "poi.business",
       "stylers": [
         {

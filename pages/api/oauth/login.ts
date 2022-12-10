@@ -11,12 +11,12 @@ export type User = {
     profilePictureUrl: string;
 }
 
-const allowedEmails: string[] = [
+export const allowedEmails: string[] = [
     'csprogrammers@outlook.com',
     'andrej.mishevski@gmail.com',
     'kixer.wade2000@outlook.com',
-    'admin@admin.com',
-]
+    'admin@admin.com'
+];
 
 export default function handler(
     req: NextApiRequest,

@@ -1,5 +1,4 @@
-import {useMutation} from "@tanstack/react-query";
-import {APIError, LeaderboardRecord} from "../../pages/api/leaderboards";
+import {APIError} from "../../pages/api/leaderboards";
 import {User} from "../../pages/api/oauth/login";
 
 export type UserCredentials = {

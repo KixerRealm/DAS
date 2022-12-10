@@ -8,6 +8,11 @@ import LatLng = google.maps.LatLng;
 import GameStateWindow, {gameStateAtom, GameStateInstance} from "../components/game-state-window";
 import GameCompletedModal from "../components/game-completed-modal";
 import mapOptions from "../styles/maps-style.json";
+import {useStartGame, useStartGameEffect} from "../hooks/useStartGame";
+import {userAtom} from "../components/user-nav-bar";
+import {GameModeType} from "../enums/game-mode-type";
+import {useRouter} from "next/router";
+import {useHasMounted} from "../hooks/useHasMounted";
 
 export type Guess = {
     id?: string;
@@ -19,6 +24,9 @@ export class GuessInstance implements Guess {
     location: LatLng | null = null;
 }
 
+type GameParameters = {
+    gameType: GameModeType;
+}
 
 export const guessAtom = atom<Guess>(new GuessInstance());
 export const inGameAtom = atom<boolean>(false);
@@ -26,20 +34,32 @@ export const gameCompletedAtom = atom<boolean>(false);
 
 
 export default function Game() {
+    const [user, _1] = useAtom(userAtom);
+    const router = useRouter();
+    const query = router.query as GameParameters;
+    const hasMounted = useHasMounted();
     const [_, setMap] = useState(null);
     const [guess, setGuess] = useAtom(guessAtom);
     const [gameCompleted, setGameCompleted] = useAtom(gameCompletedAtom);
-    const [_1, setGameState] = useAtom(gameStateAtom);
+    const [gameState, setGameState] = useAtom(gameStateAtom);
     const updateGame = useUpdateAtom(inGameAtom);
+
     useEffect(() => {
         updateGame(true);
-    }, [null]);
+    }, [updateGame]);
 
     useExit(() => {
         updateGame(false);
         setGameCompleted(false);
         setGameState(new GameStateInstance());
         setGuess(new GuessInstance());
+    });
+
+    useStartGameEffect(user?.email ?? "", query.gameType, async (data: any) => {
+        setGameState(prevState => ({
+            ...prevState,
+            id: data!.id
+        }));
     });
 
     const {isLoaded} = useJsApiLoader({
@@ -51,14 +71,14 @@ export default function Game() {
             ...prevState,
             ['location']: mapsMouseEvent.latLng!
         }));
-    }, []);
+    }, [setGuess]);
 
     const removeMarker = useCallback((event: any) => {
         setGuess(prevState => ({
             ...prevState,
             ['location']: null
         }));
-    }, []);
+    }, [setGuess]);
 
 
     const onLoad = useCallback((map: any) => {
@@ -69,9 +89,13 @@ export default function Game() {
         setMap(null)
     }, []);
 
+    if(!hasMounted) {
+        return null;
+    }
+
     return (
         <div className={'h-screen w-screen'}>
-            <GameStateWindow/>
+            <GameStateWindow gameModeType={query.gameType}/>
             {
                 isLoaded ? (
                     <GoogleMap
@@ -83,7 +107,7 @@ export default function Game() {
                         onLoad={onLoad}
                         onUnmount={onUnmount}
                     >
-                        {gameCompleted ? <GameCompletedModal/> : <></>}
+                        {gameCompleted ? <GameCompletedModal type={query.gameType} points={gameState.points} placements={1}/> : <></>}
                         {guess?.location != null ? <Marker position={guess.location!} onClick={removeMarker}/> : <></>}
                     </GoogleMap>
                 ) : <></>

@@ -1,19 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
+import {GameModeType} from "../enums/game-mode-type";
 
 export interface GameModeCardParameters {
     title: string;
     description: string;
     img: string;
+    type: GameModeType;
 }
 
 export default function GameModeCard(params: GameModeCardParameters) {
     return (
-        <Link href={"/game"}
-           className={
-               "basis-1/3 mx-8 flex flex-col items-center border rounded-lg shadow-md" +
-               " border-neutral-700 bg-neutral-800 hover:bg-neutral-700 hover:shadow-xl"
-           }>
+        <Link href={{
+            pathname: "/game",
+            query: {gameType: params.type}
+        }}
+              className={
+                  "basis-1/3 mx-8 flex flex-col items-center border rounded-lg shadow-md" +
+                  " border-neutral-700 bg-neutral-800 hover:bg-neutral-700 hover:shadow-xl"
+              }>
             <Image className={"object-cover w-full rounded-t-lg h-96"}
                    src={params.img} alt=""
                    width={320} height={180}

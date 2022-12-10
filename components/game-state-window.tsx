@@ -1,18 +1,32 @@
 import Image from "next/image";
 import {CheckIcon} from "@heroicons/react/24/solid";
-import {useCallback, useState} from "react";
+import {useCallback, useEffect} from "react";
 import {gameCompletedAtom, Guess, guessAtom, GuessInstance} from "../pages/game";
 import {atom, useAtom} from "jotai";
+import {useNextGuess} from "../hooks/useNextGuess";
+import {GameModeType} from "../enums/game-mode-type";
+import {useSubmitGame} from "../hooks/useSubmitGame";
+import {userAtom} from "./user-nav-bar";
+import {useRouter} from "next/router";
+import {useHasMounted} from "../hooks/useHasMounted";
+
+type GameStateWindowParameters = {
+    gameModeType: GameModeType;
+}
 
 type GameState = {
+    id: string;
     image: string;
+    correctLocation: number[];
     points: number;
     guessesLeft: number;
     guessesMade: Guess[];
 };
 
 export class GameStateInstance implements GameState {
+    id: string = '';
     image: string = "/thumbnails/pub18.jpg";
+    correctLocation: number[] = [0, 0];
     points: number = 0;
     guessesLeft: number = 4;
     guessesMade: Guess[] = [];
@@ -20,25 +34,62 @@ export class GameStateInstance implements GameState {
 
 export const gameStateAtom = atom<GameState>(new GameStateInstance());
 
-export default function GameStateWindow() {
+export default function GameStateWindow(params: GameStateWindowParameters) {
     const [gameState, setGameState] = useAtom(gameStateAtom);
     const [guess, setGuess] = useAtom(guessAtom);
     const [_, setGameCompleted] = useAtom(gameCompletedAtom);
+    const [user, _1] = useAtom(userAtom);
+    const hasMounted = useHasMounted();
+
+    const nextGuessMutation = useNextGuess(async (data: any) => {
+        setGameState(prevState => ({
+            ...prevState,
+            image: data.image,
+            correctLocation: data.location
+        }));
+    });
+
+    const nextGameMutate = nextGuessMutation.mutate;
+
+    const submitGameMutation = useSubmitGame(async (data: any) => {
+
+    });
+
+    const submitGameMutate = submitGameMutation.mutate;
 
     const submitGuess = useCallback((event: any) => {
         const submittedGuess = JSON.parse(JSON.stringify(guess)) as Guess;
+        // fetch next guesses
         setGuess(new GuessInstance());
         setGameState(prevState => ({
-            image: "/thumbnails/aleksandar.jpg",
+            ...prevState,
             guessesLeft: prevState.guessesLeft - 1,
             points: prevState.points + 2000,
             guessesMade: prevState.guessesMade.concat([submittedGuess])
         }));
-
+        nextGameMutate(params.gameModeType);
         if (gameState.guessesLeft <= 1) {
             setGameCompleted(true);
+            submitGameMutate({
+                id: gameState.id,
+                email: user?.email ?? "",
+                guesses: gameState.guessesMade.concat([submittedGuess]),
+                points: gameState.points + 2000
+            });
         }
-    }, [gameState]);
+    }, [gameState.guessesLeft, gameState.guessesMade, gameState.id, gameState.points, guess, nextGameMutate,
+        params.gameModeType, setGameCompleted, setGameState, setGuess, submitGameMutate, user?.email]);
+
+
+    useEffect(() => {
+        if (params.gameModeType == undefined)
+            return;
+        nextGameMutate(params.gameModeType);
+    }, [params.gameModeType, nextGameMutate]);
+
+    if(!hasMounted) {
+        return null;
+    }
 
     return (
         <div
