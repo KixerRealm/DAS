@@ -7,7 +7,7 @@ export type UserCredentials = {
 }
 
 export async function executeLogin(data: UserCredentials) {
-    return await fetch("http://localhost:3000/api/oauth/login", {
+    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/oauth/login`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

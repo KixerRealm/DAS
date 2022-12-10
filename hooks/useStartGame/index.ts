@@ -10,7 +10,7 @@ type StartGameParameters = {
 };
 
 export async function startGame(email: string, gameModeType: GameModeType) {
-    return await fetch("http://localhost:3000/api/game/start", {
+    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/game/start`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

@@ -5,7 +5,7 @@ import {useMutation} from "@tanstack/react-query";
 
 
 export async function nextGuess(gameModeType: GameModeType) {
-    return await fetch("http://localhost:3000/api/game/next-guess", {
+    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/game/next-guess`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

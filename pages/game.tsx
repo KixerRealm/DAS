@@ -93,6 +93,10 @@ export default function Game() {
         return null;
     }
 
+    if(user == null) {
+        router.push("/");
+    }
+
     return (
         <div className={'h-screen w-screen'}>
             <GameStateWindow gameModeType={query.gameType}/>

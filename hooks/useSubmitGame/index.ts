@@ -6,7 +6,7 @@ import {GameSubmissionRequest} from "../../pages/api/game/submit";
 
 
 export async function submitGame(id: string, email: string, guesses: Guess[], points: number) {
-    return await fetch("http://localhost:3000/api/game/submit", {
+    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/game/submit`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
