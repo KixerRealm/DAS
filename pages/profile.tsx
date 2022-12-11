@@ -6,6 +6,7 @@ import {GameModeType} from "../enums/game-mode-type";
 import {translations} from "../constants/enum-translations";
 import {useEffect} from "react";
 import {useRouter} from "next/router";
+import useListAttempts from "../hooks/useListAttempts";
 
 const data = [
     [
@@ -24,29 +25,22 @@ const data = [
 ];
 
 const peakPlacements = [
-    {position: 20, datePlayed: new Date(), gameMode: GameModeType.ALL},
-    {position: 10, datePlayed: new Date(), gameMode: GameModeType.COFFEE},
-    {position: 16, datePlayed: new Date(), gameMode: GameModeType.LANDMARKS},
+    {placement: 20, datePlayed: new Date(), gameMode: GameModeType.ALL},
+    {placement: 10, datePlayed: new Date(), gameMode: GameModeType.COFFEE},
+    {placement: 16, datePlayed: new Date(), gameMode: GameModeType.LANDMARKS},
 ];
 
 const currentPlacements = [
-    {position: 45, datePlayed: new Date(), gameMode: GameModeType.ALL},
-    {position: 14, datePlayed: new Date(), gameMode: GameModeType.COFFEE},
-    {position: 16, datePlayed: new Date(), gameMode: GameModeType.LANDMARKS},
+    {placement: 45, datePlayed: new Date(), gameMode: GameModeType.ALL},
+    {placement: 14, datePlayed: new Date(), gameMode: GameModeType.COFFEE},
+    {placement: 16, datePlayed: new Date(), gameMode: GameModeType.LANDMARKS},
 ];
 
 export default function Profile() {
     const [user, _] = useAtom(userAtom);
     const hasMounted = useHasMounted();
     const router = useRouter();
-
-    useEffect(() => {
-        const dummies = 6 - data[data.length - 1].length;
-        for (let i = 0; i < dummies; i++) {
-            // @ts-ignore
-            data[data.length - 1].push(null);
-        }
-    }, []);
+    const {data, error, isLoading} = useListAttempts(user?.email ?? '');
 
     if (!hasMounted) {
         return null;
@@ -54,6 +48,10 @@ export default function Profile() {
 
     if (user == null) {
         router.push("/");
+        return null;
+    }
+
+    if (data == null) {
         return null;
     }
 
@@ -79,7 +77,7 @@ export default function Profile() {
                             <ul className={'list-disc pl-6 pt-4'}>
                                 {peakPlacements.map((placement, idx) => (
                                     <li key={idx}>{translations[placement.gameMode]}:
-                                        #{placement.position} ({placement.datePlayed.toLocaleDateString()})</li>
+                                        #{placement.placement} ({placement.datePlayed.toLocaleDateString()})</li>
                                 ))}
                             </ul>
                         </div>
@@ -89,7 +87,7 @@ export default function Profile() {
                             <ul className={'list-disc pl-6 pt-4'}>
                                 {currentPlacements.map((placement, idx) => (
                                     <li key={idx}>{translations[placement.gameMode]}:
-                                        #{placement.position} ({placement.datePlayed.toLocaleDateString()})</li>
+                                        #{placement.placement} ({placement.datePlayed.toLocaleDateString()})</li>
                                 ))}
                             </ul>
                         </div>
@@ -111,14 +109,18 @@ export default function Profile() {
                                                 <h5 className={
                                                     "mb-2 text-2xl font-bold tracking-tight text-neutral-900 dark:text-white"
                                                 }>{translations[item.gameMode]}</h5>
+                                                <p className={"font-normal text-neutral-300 mb-2 text-sm"}>
+                                                    Total points: {item.totalPoints} p.
+                                                </p>
                                                 <p className={"font-normal text-neutral-200"}>
                                                     Placed: #{item.placement}
                                                 </p>
                                                 <p className={"font-normal text-neutral-400"}>
-                                                    Time taken: {item.timeTaken} minutes
-                                                </p>
-                                                <p className={"font-normal text-neutral-400"}>
                                                     Date played: {item.datePlayed.toLocaleDateString()}
+                                                </p>
+                                                <p className={"font-normal mt-2 text-neutral-400"}>
+                                                    Time taken:<br/>
+                                                    {Math.floor(item.timeTaken)} minutes {Math.round((item.timeTaken - Math.floor(item.timeTaken)) * 60)} seconds
                                                 </p>
                                             </div>
                                         </div>
