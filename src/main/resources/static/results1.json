@@ -1,0 +1,680 @@
+[
+  {
+    "id": "ChIJJ0m4o6UVVBMRrnVqrC49w94",
+    "lat": 42.001884,
+    "lng": 21.441404,
+    "name": "Clock Tower",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDy5aG0jzvA4DNyndHSvPRQid-a3cLXM8Pj4sF6RIjIy95nUB9-MMgCy8O8SxnxsnwD7pkH3-s5O6OQJ-TiqRY07voUvM4MNUS1yJsJWI-_dibNJgJAKU8d0GRIfqRl_yjkSdfwN8Ku6rXdCYjjiMSu9Pt5NJTi3gYKvS-kOgndiXZx7"
+  },
+  {
+    "id": "ChIJN5g3ra8VVBMRSB7eXi9zn9E",
+    "lat": 42.00096,
+    "lng": 21.437155,
+    "name": "Old Bazaar",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwwisFe1wP3zow5EbFGL4LnR6btyORDEQINBpSv2hS99oF7pt8amJWIXYLCLsplFbLqw3OWQqc8AG-xJOJOuBFWAezrl1Y1rcx4twCaAZJ1Z8UeGPdiKRNfw_klloUrsAIv-RAl8qnS__3v53K5XodHd0VNYxUGDD6dL8dKA-D3Lelw"
+  },
+  {
+    "id": "ChIJl97A7H8VVBMRd3r7oXM8hbc",
+    "lat": 41.996964,
+    "lng": 21.442474,
+    "name": "Monument to Partisan Munitions Factory",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ]
+  },
+  {
+    "id": "ChIJV192YLEVVBMR8a_xNXF1E_c",
+    "lat": 41.997124,
+    "lng": 21.433617,
+    "name": "Monument „Karpoš“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDweWPXNJdBus6vMj6FEEs3O6rEwsJCyAlE3HzIOBmQfwGGLRVth62PDK8Y8-Bbu_SVKOSPICX2YhrNrB0G85Z37Mu5Wd1DxyS-qof5zMxQZIvLcympggfuHbUzoOY3dVtVpuUsDcVSkRB7vvsq2Dk0Hs0m9QpMlybEP4AfxatkvQqj0"
+  },
+  {
+    "id": "ChIJVdnzZbQVVBMRkkEWVcgxj1E",
+    "lat": 41.99538,
+    "lng": 21.431234,
+    "name": "Monument „Tsar Samoil“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDw1NkfqHVJmTBToGAIb76wkJJfta3SejP9mWSWeyjmvGMwv06mCdgdNiD_e0oAXmKrRsWqxDL67JJC-tdRLooEy5GmR3juk76be0K8Js53D4nP5lY0Bj_3xgOEEQMbTWzF7F2rhFdFxetwZyLgc9xnIemUD_WS1xg2ispHgFdCPoj4C"
+  },
+  {
+    "id": "ChIJvw-CmLEVVBMRkLlWg7eL3Wc",
+    "lat": 41.99591,
+    "lng": 21.431463,
+    "name": "Споменик „Воин на Коњ“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDydOTQ_wargrtbNBh98Mn4COkLzeKMJoRT9AHOxpzX6hI6Kq7XYgqby66-JgWkwC0FGbVqAMGmILa0IYSb33d52TQ2Yf8Wh-mOPyQOzV6XKQR-QGXrhCTCoXtjKe9gpfeRZv-M58WphJ7oF2gbrvKAUZ288oWLIOPEBcqnu_GNUSf_i"
+  },
+  {
+    "id": "ChIJ8_HLtrUVVBMR6lIcYCWPyn0",
+    "lat": 41.99359,
+    "lng": 21.431711,
+    "name": "Feudal Tower",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzTWDMJ1fOV1Y0_h61KLRsUulajrwslbYSjW8_HgCxgrIYPyknFjoO0hga2R4T2yrxQKiiMnf4XHPIc168Bvw4m-UEqzQLL1usMobKXL9Lq_YDBebrhnAQT2obokdDW8SuP3hJqPQVemxTIsVK8oC9Ag4yzMdZFVmF-T5NpfjwDE8tT"
+  },
+  {
+    "id": "ChIJzcKU4LMVVBMRPgoXjpkscJo",
+    "lat": 41.996986,
+    "lng": 21.433031,
+    "name": "Stone Bridge",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxGO4xiKxdux8IiQtUPV1JKVx2MOIG4yruUAy_ao9AGdhymBDj5qBxGzNO6k-sTu7Ln79W0O2pNTxpEjwmXRyRJBbiCwNyGAspGL-v4glnbNi_1CeVNIB_yLHaCXs7DY24kB4L4eR2wAz16Zlfg_DN-ChYVPGY7wi87B-IIjc0fQPF0"
+  },
+  {
+    "id": "ChIJl7cKNi0VVBMRpUc56gjho7w",
+    "lat": 41.99924,
+    "lng": 21.43742,
+    "name": "Town Square “ 𝐆𝐉. 𝐂𝐀𝐒𝐓𝐑𝐈𝐎𝐓 𝐒𝐂𝐄𝐍𝐃𝐄𝐑𝐁𝐄𝐆 “ Skopje",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ]
+  },
+  {
+    "id": "ChIJnSsZn-wVVBMR80TWrA8JHxA",
+    "lat": 41.996906,
+    "lng": 21.432241,
+    "name": "Monument „Iustinianus Primus“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDy8J-N0xuMQwSBdQfY7i_53usl11ui4dbbOfs8rHVBlk5j_jCUlMdHYNUIWGT0JDJDNIlyAQCIKZUbV8KAj9dSec-pFTaASJpwXWvza3CT_Dcg3nne9DCdkwL3jhC-8nSktHes7XkdW_EuOdCSa-s_H_Wj6ck7hCH4Fr7wbiCMggn-s"
+  },
+  {
+    "id": "ChIJm1cd76QVVBMR1jrUxKdCKZo",
+    "lat": 42.00038,
+    "lng": 21.443378,
+    "name": "Monument „Saint Cyril and Methodius“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxtUGFy7IoVczcZspPvuxfA-DMuPEqAXmrAya-GVEEAWn4OKDIil7ytYc4iv1w3aF8gz1HPq52OWRbinHf8xkBTrXQcxIrVVv-iJJ3xOWgF7ewCewJ4MjJmxqFzozNGLu3zFpLvx42XhrFSneGXMRgfQSWCqHCIkjOR_tYlgCEoTjL3"
+  },
+  {
+    "id": "ChIJjUZoNBsVVBMRCt3eHr2KT8w",
+    "lat": 41.99611,
+    "lng": 21.431002,
+    "name": "Monument „Dimitrija Chupovski“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDydGx6esp6ynEvS-_SYCRM6ZLDPgQ3s2rajcYN2wW6PAtRjfea0OcMd26oin2kNGraZO5u1ZjfW2T6rfoO2qJYNyHu_yQbwL_3CJAhzuaxn6pnys3GP_3rWaT9wE251IxHvQzxkaTzVshwOoP7ZPkDJTC82eZNKi10l5xJuYZDSCs41"
+  },
+  {
+    "id": "ChIJdSB5orEVVBMRsEiiuJiGQC4",
+    "lat": 41.998463,
+    "lng": 21.434994,
+    "name": "Monument „Philip II of Macedonia“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzeCmQVNt6XvDlgh4n-zMIViZmEiDAN0wzqJK9uELJOcOrb3WmV7gweoCSCyHcX01toPD9hhSgYo_K7462QFR7_bDJtrIhSLWmUOFyLkLD4q29sNoKRcTpRWfWIPE9hc3hvqkEJitP2GXQQONNn9kTnn_s3Q-dQhnVb76ku0rD_YX4x"
+  },
+  {
+    "id": "ChIJeZzUtq8VVBMRphS9BgrYPDg",
+    "lat": 42.001507,
+    "lng": 21.437069,
+    "name": "Bezisten",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxM9N86NEhTCg9t5QYp8QUn7_7aYKR3Aq3sKMzUfnFIQaw9bqo9IYEPW4B7LkwVrtgGbCGTT1OKJ1sJ-JI453VhSqVY6-wgAmu4uxJLEAbDuSSDOUu-N3W78WH1DnVgT6XEg4DTtEYvG3G_kyj6xEpTIXUuBHQFW-fqZN6EG0cIO2P2"
+  },
+  {
+    "id": "ChIJfX-e-K4VVBMRNK4TurP3EH8",
+    "lat": 41.996784,
+    "lng": 21.434341,
+    "name": "Archaeological Museum of the Republic of Macedonia",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxe8OTufNCFeacTRLWoQ3JsfXUvDZpC1-Atbg5n2GKR6v4qmsrTaiVS-DWYS7tqhtuBzD027TLmg29X0G-2GJ4F10hRowXy49_XnEYuN-D1zosCrRatoR9jSEcaVCgjlfaZnJ5u4JhruS_TdUHoHdKVSQc2JcEq61PnEw4e-tJR8HZg"
+  },
+  {
+    "id": "ChIJQyQJdbQVVBMRlHmypEnmICQ",
+    "lat": 41.99621,
+    "lng": 21.431892,
+    "name": "Square „Macedonia“",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxc9zyUl4cLlXoYCouaYBPvag76nf8GIobRhwLx4py8SWDDP1j99FASidIpYmbC3JYM4zUm-K8k-VHGvBaOX3XS4CHKU4K4xMlxIdZt1aDl2sucRQ_aNAUj7wh9VrCUQUdg16pUQ39LiT9QoViKHbCDyqyEpYyznyy8ZGLKBZs4nqlD"
+  },
+  {
+    "id": "ChIJ0QHgQrEVVBMRdEC0CEF8A9g",
+    "lat": 41.991047,
+    "lng": 21.42897,
+    "name": "Old Railway Station „Skopje“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ]
+  },
+  {
+    "id": "ChIJzWwgNF4VVBMRthMcpsEljJc",
+    "lat": 41.99338,
+    "lng": 21.434134,
+    "name": "Monument „Fallen Heroes for Macedonia“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyGQOtKLvefHLkw7Tn-4FRI-xSsgdAPvScXhEDRKIZPMaur0m-bHkMScuE6lyC3EGIPp4cWNAhfXKj47yulrFamYlRGqTj7QAFisxMT7FnZ6bQ9YS1ZLWh56NJov7zzyIwB9E2eXMjYTzL0Cp9NojFtB2nxuLBSkUwsvBLJLXgzK8PD"
+  },
+  {
+    "id": "ChIJq20tZrIVVBMRLjSS1I8llyo",
+    "lat": 42.000134,
+    "lng": 21.431274,
+    "name": "House - Museum „Lazar Ličenovski“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwSUm_HZI5AH3bgeDT7429bC_Rj6Si_cqQuvbUjEfAxVynf-fezRPRRKjYuWJSQi1HTZ7OceooEOGdGGB8hNVvxqptixSyowRrI-vLlBW-vqsy5_x_g_II0Q6JZ0wjrTWW0PoP3MvJ6AxlY2vCWFK-UrSLfV0i1rNMpP0xBtsP0C07o"
+  },
+  {
+    "id": "ChIJG755urEVVBMRUPqJREkQzyI",
+    "lat": 41.99869,
+    "lng": 21.43577,
+    "name": "National Gallery of Macedonia Daut Pasha Hammam",
+    "types": [
+      "art_gallery",
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDx31QzZDr238EDEZY4ok4iqLkk5bznYPKNmwgsKa1agrg2rWTQqHu0zsgHYCDht-IH6kvfXhkvx9SqxY6q8mJLTZO-KDeBPtXjh43wBmO9z3OVALv42zzRyRaaLP1crCS1ifFsiykn1JaQynZAIFDzdfyBP0WmgFkOWiPG7qhxZWcSs"
+  },
+  {
+    "id": "ChIJoazI0KQVVBMRtV--d9Yn6YQ",
+    "lat": 41.999912,
+    "lng": 21.436323,
+    "name": "Стара Чаршија СКОПЈЕ",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwE65Rx6hEp-1tO1g_8dgqEvbUSHCtUWcghI4SU7p6VrTK5ErN98uP7WdtVyABhZrYdMrr7lg0DZVMFAKxAA-95sxCssCBYLTp_eufYlhXpEQTt3pSZwQkpwyq18xJ7hRyyjM9dN_FvOqO149F3Qfb_WlyZAxFZt57TK8vpKjLjzDX2"
+  },
+  {
+    "id": "ChIJu9ZJLfsUVBMRn0ey-_Gsvjg",
+    "lat": 42.02241,
+    "lng": 21.418865,
+    "name": "Скопски аквадукт",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDx01uhHqNrCgzmQQA09S4iXYQ62XfjylVol1VLdUB8arB56ztwvS_miAqncGoJXaH00ArEovZTD30ARZpWQjJ5i5b-z2cKOQVtzXj0d8twCY5WEcbCLMyHFOwRfZgNxH2CXKoY5_NEb7sRO6yS6Q4inXhHJx7uqJdGouRVUobqc-uwx"
+  },
+  {
+    "id": "ChIJwyO9jgoVVBMR2_TlnoAM6DI",
+    "lat": 42.00802,
+    "lng": 21.44887,
+    "name": "Gazi Baba Tomb",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDz4CbVsLKkYCJZQ6sbj-i6BY_3p2UwncMokcsRBZXAYQQ6pl4dlMV7kMLRGAjWy1W_ArglvQG5D-4jmqBeJf7XTc86KvDS2ec3cwdyCIq4aXXOQXB2PitxXG7GqMvbiPYZuSfuzlmy2DobylXP2XRfLzDYVEwDsEVd6YXVb6CT_Sdsr"
+  },
+  {
+    "id": "ChIJGwPymNoVVBMRjewYGjbi0wg",
+    "lat": 42.00042,
+    "lng": 21.432295,
+    "name": "Monument „Strength, Glory and Victory“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDz5ICGmTDLhRyQetNYie0mMB1dPotGJQsTgA0niVp68x0E2c1QQOwULCOStXqvS1oPWjr_wAe4DQ_6B-AB9HjTx5ECXwx308eam6DMLkdlmQ6kmD6ZYnAO7vMxtupX0Pjee4BvGHLKNpEa1rEYZH0mPzcF_XrVO2tJCxXJGNf0RttY8"
+  },
+  {
+    "id": "ChIJ-9kz2MAVVBMRyy1kiPS8spo",
+    "lat": 41.994038,
+    "lng": 21.43462,
+    "name": "Спомен-плоча Борис Боцевски - Боте - ГТЦ",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ]
+  },
+  {
+    "id": "ChIJoedousMVVBMR2I9lG2rs840",
+    "lat": 41.997208,
+    "lng": 21.4331,
+    "name": "Monument „Metodija Šatorov - Šarlo“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzg-ZMbKfyG5pYXarrm0CIgXcBZy1A9U5bNwomUl-RAMhg7DUrjmNyhu5WsD5MEsoYYXJPtYIP1MOlhq24Erg9MWCgdFv_a_mjSP0gtB4ECLIE_LnLkcrbCqYUuqvBxGpfi2fZonyemYzh9JVowizh-B9AjP1UqD_kmmIPkvhZtisSl"
+  },
+  {
+    "id": "ChIJk2adrroVVBMRD73VDWiMxjs",
+    "lat": 41.999054,
+    "lng": 21.439949,
+    "name": "Monument of the Albanian Fascist „Hasan Priština“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzCIcmSmK1v9gx5lk5byBpM0XHnOPamINdISkVc79L6BT2Ui6xYSQcflPrcVLYOcZ7O3VcJB0a61_cADANBKEosXU6cPxPuWhlFiFFwdXIdc2-HtOipQU7K46UGjxqTputABf4M2PUAg5DPg0CLX7NtASRqLBoe2612JL-CZ8srbOpl"
+  },
+  {
+    "id": "ChIJAb9YzGcVVBMRw5OkvIEyiAc",
+    "lat": 41.995274,
+    "lng": 21.431995,
+    "name": "Спомен плоча на Мајка Тереза",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxxlYA-HQ0XVL7TInUeYhvGOmkYcb8NIQsSfwYo67D4S8D5CEusEEBcYkbg_8zd0nMece4iBsNeD0J_DZq-Lj9uN86ZMlWpj4QUOJd38qz31pJxHvGR3ySHfFtnzeZ4VGQM5UdieJAwiN7BxE1DyzMNLMxkABI9-hhRqCQ8nh7fbuMm"
+  },
+  {
+    "id": "ChIJe7fSCtkVVBMRjwiMJpFAWPE",
+    "lat": 41.99399,
+    "lng": 21.430775,
+    "name": "Споменик „Мајка Тереза“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwdYdl6HBG5BvqLSa5ry_Cu-jqDD4L-InR1DNleumr16Sa9q-IWldMJ6ddzx-YQtMGKieOLgVktdkfVK9ilorG48oo9-v8_1ukggzFTj1Zh-hAT9fdQdNmrK_RKq7RSBH1PmAFWs0z53QKJUqGn3SltCzretke2tzSMP5CKJ5TAXz7G"
+  },
+  {
+    "id": "ChIJc0yWgLEVVBMR9LEsnUIrAG8",
+    "lat": 41.998394,
+    "lng": 21.43341,
+    "name": "Macedonian Holocaust Museum",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyUMUzDhE92ClrRkNIRJKELhKs6h2e0HFkiXE93wRTyB8tyrGkA0KWqUCYlkwLJFR1uTwYDIw9l6K-EdZCydCeGFYJV4YoiqACV9i7ddN2IYi6GMz0nrCl1xAOHDN7t3i3cWWoOAqRm5KrHuGoK-YSMAyqr4iIgUS0wfhSBO6Zsx3-o"
+  },
+  {
+    "id": "ChIJw70_mDUVVBMRdQb5aZQl_rs",
+    "lat": 42.002083,
+    "lng": 21.435438,
+    "name": "Mosque „Mustafa Pasha“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzXuVSt37uNAfxtC7-DkzBxmyj_ozF6_dHMv8hTiKXEaL5b6Z3HJ4sTEYXMso4FV7SWFhv-KCqYMLHIkXTrHhwNzqCKnD0FCuMV5sp9Tq2v0WOxXIL2qwDo7dJCL51glZh3MivGZbYFbSRI-EvqTiZ8ih3KPLaUdV0ozpoaknWxqWgQ"
+  },
+  {
+    "id": "ChIJ8-NGLRgVVBMRaP9aSO_5AyI",
+    "lat": 41.986782,
+    "lng": 21.436983,
+    "name": "Old ramp - Kisela Voda",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwzaTT7oFNPr1Vpf8iDMGJ8nb814CxlNhsKpYYER4NXRQJxvVk4Ivi4S8N-_8OdQmm1cfNRQgeo2OFOMi3n81qN2mNc6GwZXiLDcxcqq6wtQAp3aOVeU2HEAILN2D4emPj8ALJ2QDjTYszkXK6ufGxdEM01UJeG8p0mwiPQgwJ7S8lH"
+  },
+  {
+    "id": "ChIJb4aC9m0VVBMRK2sObPTFFTU",
+    "lat": 41.9834,
+    "lng": 21.439116,
+    "name": "Споменик „Тодор Александров“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxO6oPLUkXp_xMPy9r7Fxw_j5WbQobP9j8WkQqdk8Z0Sevfny3rVBDVljnRl-53UE55CRqTgKrlDFyG14fWC6L_CeDaJ3D1qiDiTH2H0yL1A7BGeep4RadSPQpdjsycaFtP8JgYkgzGpEiJc_wRhIY7JC3nR3kgQTxrS0rLkAgchP5h"
+  },
+  {
+    "id": "ChIJsb8Mv0wUVBMRf9issIqO_gk",
+    "lat": 41.99868,
+    "lng": 21.426462,
+    "name": "Church „St. Clement of Ohrid“",
+    "types": [
+      "tourist_attraction",
+      "church",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxibMtgaXEsRbHRmTg1DwLR8IiHal8AR5QoUTn2xmb0ikKRlJoMROhBktl0GIx1KBJ8Jk-UhhQHvDA3P-8ovKaXQP7GJpokjKZQMrMgRKDo-J7d9jGPMFAsNTXbPanTH89Z-AyuD_a0UNHpRI-Ji73l2XLsWT9O0KeJI9ADrsogmT1a"
+  },
+  {
+    "id": "ChIJ9xOWRK4VVBMRFvfRsTVuw_k",
+    "lat": 42.002026,
+    "lng": 21.43542,
+    "name": "Mustafa Paša",
+    "types": [
+      "mosque",
+      "tourist_attraction",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzYRF29bsjz6Dl--KY9WpzVrFLDV-o_ajjr82EA0Nsf95MEgHBq886cD3xK01jGP2t-4optOCP7BVAiR5OD9LRs2h3AaOGtCQHiR9REIhnvlHJWc2h4puE1swtu9PBcbhayAtLkq6NqBA2vkJV8wuBGbQIisrspnOIOXQ0iWyzC0oBv"
+  },
+  {
+    "id": "ChIJzaXdliAVVBMRtnteI0NY5D0",
+    "lat": 41.995747,
+    "lng": 21.430616,
+    "name": "Monument „Metodija Andonov - Čento“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyLtJHrzJO9-iqAzRWBlycNkNMHvSWyzLsl9yax1iRiORa2j3-gf0VvBN9VjYEClze-v3q1fuyl_sUlyvalqenMq2b3bC2Fn3dMeGgKw-YPgJ7QorR3Ku4Q36LC6qqvGnlrNOtkkdNGhgzrapefW9dNQ9XYeD5xarVulwkJ7BQOH1ON"
+  },
+  {
+    "id": "ChIJdcPD9UsVVBMRUAr2heoAHOo",
+    "lat": 41.99535,
+    "lng": 21.435926,
+    "name": "Monument „Mara Buneva“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwjM-Mwzr4WtdGMbhV0D9lyFfzNp2bmEUEGdXeVm9Ou4a6owjbPMVrIXCjlgETMHRCXwzS9jMD5kcFxtUx7rVIF72uKXUKStc7cIW9x2WsveFFkD77uSihx5oO8u62MFdijZlj80zmkXQh9qABaFETsm3D35gy4lJADT8ruIQ0IWjhM"
+  },
+  {
+    "id": "ChIJ9bheqbUVVBMR_e0Sr1BQ-sQ",
+    "lat": 41.99382,
+    "lng": 21.430872,
+    "name": "Memorial House of Mother Teresa",
+    "types": [
+      "tourist_attraction",
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyPjG2I4NWwoBfcPQcU_-l93s2D4-5JhwWWLy_Yj57TO04ogjibe736Ce4-vimiu_mIvV5kWDMizy1UMDG8AdXubGOmSnt2VIYGY1zfX0pnuJ9xdE0R58n1Yu47Oe7d1cFjAf7imxlhvhpMxyd1qFm9DHiqR_y8LcBR3lOVufFQgWcu"
+  },
+  {
+    "id": "ChIJP7va90gVVBMR99ACBzprvZg",
+    "lat": 42.019287,
+    "lng": 21.394691,
+    "name": "The Bardovci Hill",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDz85vVGed4Ht4LDlKTUB4d9BGbbJr6GRUTcCrJVErxw-NRJ0CZOdwTch_Ol0X1UZhn9RMOVVj_7Xq_e9zii0WZjlhsyx5ejfhCyxhIGEglbm5FSiYt4L635oyGz6-O-dJJMsxKhiIoOb4mjBwZSapeDKSPK33ydsboYWZGTo8UPuUPn"
+  },
+  {
+    "id": "ChIJG2s_OrQVVBMRfCRVsE3u7S4",
+    "lat": 41.99447,
+    "lng": 21.432432,
+    "name": "Macedonia Gate",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzTWbK7y7siwZwrjnX3sxlC-akqfZVL8LBCrb3YPBsToRoV3RwlbYQ3nZ8NPdSmrk978v_AoQrCE5BJv-OQ4T0JZ2HlENaqqpvBUW_tBBxBNCKXXKlVSuMqBKsKZUO0FQHYYCQtM9Ik_vnyxhTqqw1HN8ggEP2DqACPsGR7U1al30cE"
+  },
+  {
+    "id": "ChIJGz0v-H4VVBMRHIFOcq9MNv8",
+    "lat": 41.99554,
+    "lng": 21.429993,
+    "name": "Палата „Ристиќ“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ]
+  },
+  {
+    "id": "ChIJedefjDEVVBMRXuDAE9-CR5c",
+    "lat": 41.979645,
+    "lng": 21.47102,
+    "name": "Monument „Alexander of Macedon“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzZt5PGJq59Nbf4z0nrZJGSRaRbMUeYaynEESImAJEDlrHpmdvNSDaCDDxsXaByJHjhKW9ZRWD2fXMc0fBdP5oC0x3WMAhl_926h_EUxHHYwp9uJM1NFwGOrUbZLux3OgkYH2btYeq3MMY9QkNFOj4fobRE8t_IAHbt_5daI1YDtHBB"
+  },
+  {
+    "id": "ChIJa7q31aMVVBMRRovZOguhNzA",
+    "lat": 42.00175,
+    "lng": 21.461815,
+    "name": "Monument „Philip II of Macedonia“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyEMS8-OsQnUA458A4hxwP0RNyzfiqqNwP-whAAnaGUvusAHM_ClfNMeFfccga6MPqVZHyleJBeioCZ0p6QPFMUy8K2SgCctzCRNcvgD0yI5QB2Yyg6Q5xSn-Iy2kTZzkNLPahHzzjKHl43Jz1VxblzOnyVA2yK7jO-rMRbMQA0CcOe"
+  },
+  {
+    "id": "ChIJNa0Ctm8VVBMRjttk_ZFrP3o",
+    "lat": 41.994034,
+    "lng": 21.433317,
+    "name": "Споменик на децата бегалци",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ]
+  },
+  {
+    "id": "ChIJkyyGoIUVVBMRkQMiff4DUZE",
+    "lat": 41.99841,
+    "lng": 21.43888,
+    "name": "Monument „Saint Clement of Ohrid“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwIUGfKMPCglteeYOk-s-XBdxlk-i9N6A7Ws4C7dwoghtjy33cRC-2E81gO2eMxUfVFsBXgEEhH96_CetjnsKpTBqDMH8nZXFggqWQaf4o1Myzs5tK1BClPG4VxmWb0E-SBwyy7gifdA2h21mb-oFS6ZL3zxpM1DC8aJz94iZMN7usd"
+  },
+  {
+    "id": "ChIJlUhpQWEVVBMR2MKr68w9YMQ",
+    "lat": 42.00903,
+    "lng": 21.384893,
+    "name": "The Path/Патче",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxDdCeMSOMa9e4KDVy64vdpHQ_W8MgYzU7qEYrV5epNb5XppC5aQ-ZxvUF2zi9BEZB_FRsR9LdRegIDA_FHQagmZVw5sn2G9fFGyZW6kudsRDRskgrhSdpFE-LpP-RC4YqfCz9QeVKosKp0wStkFKtFLese00Sdko4LtWlJkvzprfTy"
+  },
+  {
+    "id": "ChIJT23GY9EVVBMRA8I3oHELxUE",
+    "lat": 42.00233,
+    "lng": 21.423481,
+    "name": "Palace „Ruben“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwFtfvY9uagmZSINTMOVbEoapSx8gfTRPZ2dtkFaBoGbV5DxNShNM08W3K5x43d3nmy0Dxzj1f2kRYv4zd2vBcFnqcoSw07gu80186Jv-B-duvWxbAGW_szDqLRop_2xRUU2GKE-IiTnaeY1O-Q5nsH8PKvSI7O88uWi04cWsjoSlH4"
+  },
+  {
+    "id": "ChIJyXGKy0UVVBMRHfr5UjlWtYM",
+    "lat": 41.997803,
+    "lng": 21.43462,
+    "name": "House „Ibni Pajko“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxaWSa9y_AaWbFJrvExuUiS-ey6PHDtS-CNW_u7sK6ajsAZh30SdNJBJRgMdpb1ZsKiuo6HJZKmJpLkrNHsOpXlnMLDkjJpFWaxURomJ6e4h5DUKNTsj12Q9xkUw1r_Zahbe88KeJ8x1R2zLFEELMuxXFXVCpayuEaTxoOJMDzXgxEN"
+  },
+  {
+    "id": "ChIJ3_maXm8VVBMR-jl1-L6g8CQ",
+    "lat": 41.993755,
+    "lng": 21.433277,
+    "name": "Спомен плоча на Невена Георгиева - Дуња",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxFy9g20llpF_PH6wGptml4iFsUg0c_6ws6lLURp9IyoaWbT7uVnTHPeLOdSrfLjnVXNrt5m0ry8_vBTTp5qto5h5hCM9Vs7djrHTWYx1xOZ4YOUReJjX82WQ14BX_c91gF9nlPVp5a6xbDf8ZVdD1kGxTD6WLC7kCc3zVy4vleaao_"
+  },
+  {
+    "id": "ChIJG4wv3ZwVVBMR2PBeaivfZeA",
+    "lat": 42.00184,
+    "lng": 21.462254,
+    "name": "Square „Philip II”",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDy4yL4uspw9Z_ePW6pLUpGUdT0AYMLX9kHtBcsJZYEERqT2f7pgj-U8DxuUpvxUSsslYuZ79FuGGubC1asDr1ERZNQFYOg_gutGoNcN0e8HXCiXs9uWLfNaMl4ggouoTlxrMilR69Gxr4w5WtRC3_2cCSAcMb0f5gvQSkUdIMJ9UzxQ"
+  },
+  {
+    "id": "ChIJZ3grKTcVVBMRO9BgEZLE7CA",
+    "lat": 41.99698,
+    "lng": 21.44256,
+    "name": "Споменик Бомба",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDzIYWZFvG6EHFrtm3zocwr3WOHXfwQwL6_uB5zSl7SpGLkK7vkuMTXfU2XZipOWEzyR8j569z_Kiz66Wc_lEcZsdRIqHUekH2Ebw51kNl2UCEDtLX7o8VV5cEbV79mZZZEJSFdCDaR2jt2sR__PRgXsfAD6hgu-IZNwoRsQniQkPTYj"
+  },
+  {
+    "id": "ChIJAQAAMKwVVBMRAz-uaD8LTfw",
+    "lat": 42.00066,
+    "lng": 21.432629,
+    "name": "Skopje Fortress",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDxl2yRwEJxp1ZFnYzjnck6xMVFlU_KkHINruCxo6dkWZn4jG4eLCKdKdu0OactbdLXkjiXMjVwsvaslQvCg-TpFq9yphR88DNqkO_bNvC5FYklDRLX2sd9tF3FCx6X44c04cxwDBrliZBKyAbrBA9XNqQTxRGlRnwHhGl2qwdpsEMvd"
+  },
+  {
+    "id": "ChIJtbkXuYsVVBMROig7jmtFFO4",
+    "lat": 41.98323,
+    "lng": 21.470243,
+    "name": "Штркот на Аеродром",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwJMkIdmDtUQo5EKQ-FM2lCgHhYT8Y20kyOD7ZQHhdWNXQA3zVJCSbcOmufbBHTYlzaEtkeSr8iFIqWmYAUcjMDkDmnouucrP_mWr4nOB0LwkDcvjWAY6Lvge8_88oiZ6hs6iOcx6TqgqDiU82EiLZoagVkUZ07_W6L9blICcMJTMpn"
+  },
+  {
+    "id": "ChIJIwP3_boVVBMRj15LkfXI6Ig",
+    "lat": 41.996983,
+    "lng": 21.442558,
+    "name": "Споменик „НОБ“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDz_vtywfMSXQzfOURJxtCLdcqs8TWfbNfwwa3FjHHxFqnkG0EZO9jYDPDzLtz02QilBxa46p9Qncs_pz0QA5zJvJ7PTmrkDwuPv995ChaZqdpgZqsddvul5MAeKNNk8eQX7jus7kBVxQENQAhj64W_xCDaCLZGa-9M9fBv98GtJ2KAj"
+  },
+  {
+    "id": "ChIJU2gjrn0VVBMR7zzvAivvosk",
+    "lat": 41.98321,
+    "lng": 21.47111,
+    "name": "Monument „Jane Sandanski“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwwswif7k94K0fRxL9pfMyjei02yV4Bzn09bs6x-7DkXbov7pt8fT4ckcPWyINmtuCYi6Gr0Klu_D4tWpgmtVBR0iTciGwJsTJh_YhyeH1emaLFsU6vMGe_yYoHXPz1H8nPMQYiUxg-E3ncFnQfB5cIc8m1o1etoGffqUJO_hEd6z7m"
+  },
+  {
+    "id": "ChIJjfRZ7kUVVBMRThai1OGztC0",
+    "lat": 41.992233,
+    "lng": 21.43772,
+    "name": "Споменик УРС-ви синдикати",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ]
+  },
+  {
+    "id": "ChIJMbvS6soVVBMRWlrxbvwPZnA",
+    "lat": 41.9911,
+    "lng": 21.429113,
+    "name": "Museum of the City of Skopje",
+    "types": [
+      "museum",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDyA9QuxR9BIjm7f8y3u7-k2ytSInkPa5uZIuK4o7a6UFJveCWEs5kNGuJtGu4VJDygmY4Jt7p4QbYfrUNoRq-es7C2sF9QqwaN-S0z_v6nLjJGkMiOvBNYyZ6_top21h3yTEbmi7VvJ7P3fMjFidXg5e8_aQWPRgftMCsArgJAKhDYs"
+  },
+  {
+    "id": "ChIJEVJRWHsVVBMRghnDoIZvEOE",
+    "lat": 42.002384,
+    "lng": 21.420822,
+    "name": "Стара учителска школа Скопје",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDwlEgFiONHmZ19mL0vApT8gXEqr7TdGMcllDXz-x6nMnI7n_6BjndmtkVZTzujMQIEr0pmkoOUEByqMrrICFUk7tYDQZDDS2PvJw-WdtDBFpT8FbtcQvTN3f9Mr6UzSpsNBewlKDIuvcI3Uz-8z-QGO7nVO3vauB8vfX4T2MAbEeMD4"
+  },
+  {
+    "id": "ChIJL6lWg7kWVBMR_3lG08ZSQhc",
+    "lat": 41.965137,
+    "lng": 21.39435,
+    "name": "Millennium Cross",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "AW30NDw_zWFdskIAZ3YgTKmYpK7QJCzdDRVp3Vws2S2NJl9Hx5jv55gME1pJYFUqRiM-3fPP8oqausjX0CELgSuTsUtqPMq3tCquiMoSdgjM3WizlkzvOSHhX74T21jrKIVCZgb2Wp2vdNenyC4gGk1TcBqQDbtQgyg0lNSqnS9A8o9avJ9t"
+  },
+  {
+    "id": "ChIJ91Os1uwVVBMRhAT1H-ChFt4",
+    "lat": 41.996372,
+    "lng": 21.442116,
+    "name": "Споменик „Студентска младина“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ]
+  }
+]
