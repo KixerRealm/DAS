@@ -2,18 +2,11 @@ import {useAtom} from "jotai";
 import {userAtom} from "../components/user-nav-bar";
 import Image from "next/image";
 import {useHasMounted} from "../hooks/useHasMounted";
-import {GameModeType} from "../enums/game-mode-type";
 import {translations} from "../constants/enum-translations";
 import {useRouter} from "next/router";
 import useListAttempts from "../hooks/useListAttempts";
 import useCurrentPlacements from "../hooks/useCurrentPlacements";
 import usePeakPlacements from "../hooks/usePeakPlacements";
-
-const peakPlacements = [
-    {placement: 20, datePlayed: new Date(), gameMode: GameModeType.ALL},
-    {placement: 10, datePlayed: new Date(), gameMode: GameModeType.COFFEE},
-    {placement: 16, datePlayed: new Date(), gameMode: GameModeType.LANDMARKS},
-];
 
 export default function Profile() {
     const [user, _] = useAtom(userAtom);

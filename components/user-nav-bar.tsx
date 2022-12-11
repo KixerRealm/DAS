@@ -61,12 +61,13 @@ export default function UserNavBar() {
                                     className={"block py-2 px-4 hover:bg-neutral-600 hover:text-white"}>Profile</span>
                             </Link>
                         </li>
-                        <li>
-                            <Link href={"#"}>
-                                <span
-                                    className={"block py-2 px-4 hover:bg-neutral-600 hover:text-white"}>Settings</span>
-                            </Link>
-                        </li>
+                        {/*TODO: Implement Settings page*/}
+                        {/*<li>*/}
+                        {/*    <Link href={"#"}>*/}
+                        {/*        <span*/}
+                        {/*            className={"block py-2 px-4 hover:bg-neutral-600 hover:text-white"}>Settings</span>*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
                     </ul>
                     <button onMouseDown={handleLogout} className={'w-full text-left py-1'}>
                         <span
