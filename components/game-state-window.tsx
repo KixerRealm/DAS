@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {CheckIcon, HomeIcon} from "@heroicons/react/24/solid";
+import {CheckIcon} from "@heroicons/react/24/solid";
 import {useCallback, useEffect} from "react";
 import {gameCompletedAtom, Guess, guessAtom, GuessInstance} from "../pages/game";
 import {atom, useAtom} from "jotai";

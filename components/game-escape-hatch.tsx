@@ -1,5 +1,4 @@
-import Image from "next/image";
-import {CheckIcon, HomeIcon} from "@heroicons/react/24/solid";
+import {HomeIcon} from "@heroicons/react/24/solid";
 import {useAtom} from "jotai";
 import {userAtom} from "./user-nav-bar";
 import {gameStateAtom, GameStateInstance} from "./game-state-window";
