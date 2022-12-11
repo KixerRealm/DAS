@@ -103,7 +103,10 @@ export default function Game() {
     }
 
     if (user == null) {
-        router.push("/");
+        router.push({
+            pathname: "/login",
+            query: {returnPath: router.asPath}
+        });
     }
 
     return (
