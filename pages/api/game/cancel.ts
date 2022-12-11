@@ -3,13 +3,17 @@ import {APIError} from "../leaderboards";
 import {allowedEmails} from "../oauth/login";
 import {GameAttempt} from "./start";
 import {getCookie, setCookie} from "cookies-next";
-import {GameSubmissionRequest} from "./submit";
+
+export type GameCancelRequest = {
+    id: string;
+    email: string;
+}
 
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<APIError | object>
 ) {
-    const submission = req.body as GameSubmissionRequest;
+    const submission = req.body as GameCancelRequest;
     if (!allowedEmails.includes(submission.email)) {
         res.status(400).json({
             message: 'User invalid... Please try again...'
