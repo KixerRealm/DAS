@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className={"w-full h-full text-center"}>
             {/*About the team*/}
-            <div className={'grid h-screen place-items-center'}>
+            <div className={'grid min-h-screen place-items-center'}>
                 <h1 className={"italic text-4xl mt-8"}>
                     About the team
                 </h1>
@@ -65,7 +65,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    <hr className={"w-full my-6 border-neutral-200 sm:mx-auto dark:border-neutral-700 lg:my-8"}/>
+                    <hr className={"w-full my-6 sm:mx-auto border-neutral-700 lg:my-8"}/>
 
                     {/* Kiko */}
                     <div className={'flex flex-row justify-center w-full h-full mt-4 text-left'}>
@@ -116,7 +116,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    <hr className={"w-full my-6 border-neutral-200 sm:mx-auto dark:border-neutral-700 lg:my-8"}/>
+                    <hr className={"w-full my-6 sm:mx-auto border-neutral-700 lg:my-8"}/>
 
                     {/* Anche */}
                     <div className={'flex flex-row justify-center w-full h-full mt-4 text-left'}>
