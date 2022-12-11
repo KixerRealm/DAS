@@ -7,7 +7,7 @@ export default function Footer() {
 
     return (
         <footer onClick={() => setOpen(false)}>
-            <hr className={"my-6 border-neutral-200 sm:mx-auto dark:border-neutral-700 lg:my-8"}/>
+            <hr className={"mb-6 border-neutral-200 sm:mx-auto dark:border-neutral-700 lg:mb-8"}/>
             <span className={"block text-sm text-neutral-500 sm:text-center dark:text-neutral-400 pb-8"}>
                 © 2022{' '}
                 <Link href={'/'}>
