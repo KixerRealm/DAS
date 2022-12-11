@@ -1,24 +1,25 @@
-import {useAtom} from "jotai";
+import {atom, useAtom} from "jotai";
 import {ArrowRightOnRectangleIcon} from "@heroicons/react/24/solid";
 import Link from "next/link";
 import {atomWithStorage} from "jotai/utils";
 import {User} from "../pages/api/oauth/login";
 import {useHasMounted} from "../hooks/useHasMounted";
 import Image from 'next/image';
-import {useState} from "react";
+import {useCallback, useState} from "react";
 import DropdownIcon from "./icons/dropdown-icon";
 
 export const userAtom = atomWithStorage<User | null>('user', null);
+export const openAtom = atom(false);
 
 export default function UserNavBar() {
     const [user, setUser] = useAtom(userAtom);
     const hasMounted = useHasMounted();
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useAtom(openAtom);
 
-    const handleLogout = async () => {
+    const handleLogout = useCallback(async () => {
         setUser(null);
         setOpen(false);
-    }
+    }, [setUser]);
 
     if (!hasMounted) {
         return null;
@@ -38,7 +39,7 @@ export default function UserNavBar() {
     } else {
         return (
             <div className={'w-full'}>
-                <button onClick={() => setOpen(!open)} onBlur={() => setOpen(false)}
+                <button onClick={() => setOpen(!open)}
                         className={"flex items-center text-sm font-medium rounded-lg hover:text-blue-500 md:mr-0 focus:ring-4 focus:ring-neutral-700 text-white px-12 w-full"}
                         type={"button"}>
                     <Image className={"mr-2 rounded-full my-2"} src={user.profilePictureUrl}
@@ -53,19 +54,20 @@ export default function UserNavBar() {
                         <div className={"font-medium "}>{user.displayName}</div>
                         <div className={"truncate"}>{user.email}</div>
                     </div>
-                    <ul className={"py-1 text-sm text-neutral-200"}>
+                    <ul className={"py-1 text-sm text-neutral-200"} onClick={() => setOpen(false)}>
                         <li>
-                            <Link href={"#"}>
+                            <Link href={'/profile'}>
                                 <span
                                     className={"block py-2 px-4 hover:bg-neutral-600 hover:text-white"}>Profile</span>
                             </Link>
                         </li>
-                        <li>
-                            <Link href={"#"}>
-                                <span
-                                    className={"block py-2 px-4 hover:bg-neutral-600 hover:text-white"}>Settings</span>
-                            </Link>
-                        </li>
+                        {/*TODO: Implement Settings page*/}
+                        {/*<li>*/}
+                        {/*    <Link href={"#"}>*/}
+                        {/*        <span*/}
+                        {/*            className={"block py-2 px-4 hover:bg-neutral-600 hover:text-white"}>Settings</span>*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
                     </ul>
                     <button onMouseDown={handleLogout} className={'w-full text-left py-1'}>
                         <span

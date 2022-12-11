@@ -4,8 +4,6 @@ import {useMutation} from "@tanstack/react-query";
 import {useRouter} from "next/router";
 import {userAtom} from "../components/user-nav-bar";
 import {useUpdateAtom} from "jotai/utils";
-import {useCallback} from "react";
-import {any} from "prop-types";
 
 export default function Login() {
 

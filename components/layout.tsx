@@ -4,6 +4,7 @@ import Head from "next/head";
 import {useRouter} from "next/router";
 import {useAtom} from "jotai";
 import {inGameAtom} from "../pages/game";
+import {openAtom} from "./user-nav-bar";
 
 interface LayoutParameters {
     children: JSX.Element | JSX.Element[];
@@ -12,6 +13,7 @@ interface LayoutParameters {
 export default function Layout(params: LayoutParameters) {
     const router = useRouter();
     const [game, _] = useAtom(inGameAtom);
+    const [_1, setOpen] = useAtom(openAtom);
 
     return (
         <>
@@ -21,7 +23,7 @@ export default function Layout(params: LayoutParameters) {
                 <link rel="icon" href={"/favicon.ico"}/>
             </Head>
             {!game ? <Navbar/> : <></>}
-            <main>{params.children}</main>
+            <main onClick={() => setOpen(false)}>{params.children}</main>
             {!game && !['/login', '/register'].includes(router.route) ? <Footer/> : <></>}
 
         </>

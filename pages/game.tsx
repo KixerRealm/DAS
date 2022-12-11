@@ -14,6 +14,7 @@ import {GameModeType} from "../enums/game-mode-type";
 import {useRouter} from "next/router";
 import {useHasMounted} from "../hooks/useHasMounted";
 import GameEscapeHatch from "../components/game-escape-hatch";
+import getMinutesBetweenDates from "../utilities/minutes-between-dates";
 
 export type Guess = {
     id?: string;
@@ -29,12 +30,6 @@ export class GuessInstance implements Guess {
 
 type GameParameters = {
     gameType: GameModeType;
-}
-
-
-function getMinutesBetweenDates(startDate: Date, endDate: Date) {
-    const diff = endDate.getTime() - startDate.getTime();
-    return (diff / 60000);
 }
 
 export const guessAtom = atom<Guess>(new GuessInstance());
@@ -125,7 +120,9 @@ export default function Game() {
                         onLoad={onLoad}
                         onUnmount={onUnmount}
                     >
-                        {gameCompleted ? <GameCompletedModal type={query.gameType} points={gameState.points} minutesTaken={gameState.endedAt != undefined ? getMinutesBetweenDates(gameState.startedAt, gameState.endedAt) : 0.}/> : <></>}
+                        {gameCompleted ? <GameCompletedModal type={query.gameType} points={gameState.points}
+                                                             minutesTaken={gameState.endedAt != undefined ? getMinutesBetweenDates(gameState.startedAt, gameState.endedAt) : 0.}/>
+                            : <></>}
                         {guess?.location != null ? <Marker position={guess.location!} onClick={removeMarker}/> : <></>}
                     </GoogleMap>
                 ) : <></>
