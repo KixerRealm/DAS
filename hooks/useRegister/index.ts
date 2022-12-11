@@ -1,6 +1,4 @@
-import {useMutation} from "@tanstack/react-query";
-import {APIError, LeaderboardRecord} from "../../pages/api/leaderboards";
-import {User} from "../../pages/api/oauth/login";
+import {APIError} from "../../pages/api/leaderboards";
 
 export type UserRegistration = {
     email: string;
@@ -14,7 +12,7 @@ export async function executeRegister(data: UserRegistration) {
         throw new Error("Passwords don't match!");
     }
 
-    return await fetch("http://localhost:3000/api/oauth/register", {
+    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/oauth/register`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

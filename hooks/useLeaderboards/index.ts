@@ -5,7 +5,7 @@ import {QueryType} from "../../enums/query-type";
 
 
 export async function fetchLeaderboards(gameMode: GameModeType): Promise<LeaderboardRecord[]> {
-    return await fetch("http://localhost:3000/api/leaderboards?" + new URLSearchParams({
+    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/leaderboards?` + new URLSearchParams({
         gameMode
     }))
         .then(async (data) => {

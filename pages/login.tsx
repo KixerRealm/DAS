@@ -4,6 +4,8 @@ import {useMutation} from "@tanstack/react-query";
 import {useRouter} from "next/router";
 import {userAtom} from "../components/user-nav-bar";
 import {useUpdateAtom} from "jotai/utils";
+import {useCallback} from "react";
+import {any} from "prop-types";
 
 export default function Login() {
 
@@ -22,6 +24,11 @@ export default function Login() {
         },
         onSuccess: async data => {
             updateUser(data);
+            const {returnPath} = router.query;
+            if (returnPath != undefined) {
+                await router.push(returnPath as string);
+                return;
+            }
             await router.push("/");
         }
     });
@@ -56,7 +63,8 @@ export default function Login() {
                                        required/>
                             </div>
                             {error != null && error instanceof Error ?
-                                <h1 className={"text-red-500 text-sm text-left mb-4"}>{error.message}</h1> : <div className={'mb-4'}/>
+                                <h1 className={"text-red-500 text-sm text-left mb-4"}>{error.message}</h1> :
+                                <div className={'mb-4'}/>
                             }
                             <div className={"flex justify-between"}>
                                 <span className={"text-sm hover:underline text-blue-600"}>

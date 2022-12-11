@@ -1,6 +1,10 @@
 import {StarIcon, UserPlusIcon} from "@heroicons/react/24/solid";
 import GameModeCardRow from "../components/game-mode-card-row";
 import Link from "next/link";
+import {useAtom} from "jotai";
+import {userAtom} from "../components/user-nav-bar";
+import {useHasMounted} from "../hooks/useHasMounted";
+import {GameModeType} from "../enums/game-mode-type";
 
 export default function Home() {
 
@@ -8,20 +12,29 @@ export default function Home() {
         [
             {
                 title: 'All Places', description: 'This includes the entire data set that we currently have,' +
-                    ' regardless of type (aka,coffee shops, landmarks, etc.).', img: "/thumbnails/skopje.jpg"
+                    ' regardless of type (aka,coffee shops, landmarks, etc.).', img: "/thumbnails/skopje.jpg",
+                type: GameModeType.ALL
             },
             {
                 title: 'Coffee Shops',
                 description: 'This only includes coffee shops that we have gathered in our data set.',
-                img: "/thumbnails/pub18.jpg"
+                img: "/thumbnails/pub18.jpg",
+                type: GameModeType.COFFEE
             },
             {
                 title: 'Landmarks',
                 description: 'This only includes landmarks that we have gathered in our data set.',
-                img: "/thumbnails/aleksandar.jpg"
+                img: "/thumbnails/aleksandar.jpg",
+                type: GameModeType.LANDMARKS
             }
         ]
     ]
+
+    const [user, _] = useAtom(userAtom);
+    const hasMounted = useHasMounted();
+    if (!hasMounted) {
+        return null;
+    }
 
     return (
         <div>
@@ -49,14 +62,15 @@ export default function Home() {
                 {/*Buttons for play*/}
                 <div className={"flex flex-row justify-center w-full p-4"}>
                     <Link href={"/register"}>
-                        <button
-                            className={"inline-flex items-center rounded mx-2 bg-cyan-600 hover:bg-cyan-700 py-2 px-4"}>
+                        <button disabled={user != null}
+                                className={"inline-flex items-center rounded mx-2 bg-cyan-600 hover:bg-cyan-700 py-2 px-4 disabled:opacity-50"}>
                             Register
                             <UserPlusIcon className={"ml-1 h-6 fill-cyan-100"}/>
                         </button>
                     </Link>
                     <Link href={"/leaderboards"}>
-                        <button className={"inline-flex items-center rounded mx-2 bg-cyan-600 hover:bg-cyan-700 py-2 px-4"}>
+                        <button
+                            className={"inline-flex items-center rounded mx-2 bg-cyan-600 hover:bg-cyan-700 py-2 px-4"}>
                             Leaderboards
                             <StarIcon className={"ml-1 h-6 fill-cyan-100"}/>
                         </button>
