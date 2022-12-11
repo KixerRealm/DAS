@@ -34,7 +34,7 @@ export default function Login() {
     });
 
     return (
-        <div className={'grid w-full h-screen place-items-center'} style={{
+        <div className={'grid w-full min-h-screen place-items-center'} style={{
             background: 'url(/backgrounds/sn7.jpg) no-repeat center center fixed',
             backgroundPositionY: '100%',
             objectFit: 'scale-down'
