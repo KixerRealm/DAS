@@ -2,15 +2,8 @@ import {NextApiRequest, NextApiResponse} from "next";
 import {APIError} from "../leaderboards";
 import {allowedEmails} from "../oauth/login";
 import {GameAttempt} from "./start";
-import {Guess} from "../../game";
-import {deleteCookie, getCookie, setCookie} from "cookies-next";
-
-export type GameSubmissionRequest = {
-    id: string;
-    email: string;
-    points: number;
-    guesses: Guess[];
-};
+import {getCookie, setCookie} from "cookies-next";
+import {GameSubmissionRequest} from "./submit";
 
 export default function handler(
     req: NextApiRequest,
@@ -40,8 +33,6 @@ export default function handler(
         if (element.id == attempt.id) attempts.splice(index, 1);
     });
     attempt.endedAt = new Date();
-    attempt.guesses = submission.guesses;
-    attempt.totalPoints = submission.points;
     attempts.push(attempt);
     setCookie('attempts', JSON.stringify(attempts), {req, res});
     res.status(200).json({});

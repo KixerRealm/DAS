@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {CheckIcon} from "@heroicons/react/24/solid";
+import {CheckIcon, HomeIcon} from "@heroicons/react/24/solid";
 import {useCallback, useEffect} from "react";
 import {gameCompletedAtom, Guess, guessAtom, GuessInstance} from "../pages/game";
 import {atom, useAtom} from "jotai";
@@ -127,7 +127,7 @@ export default function GameStateWindow(params: GameStateWindowParameters) {
 
             <div className={"m-2"}>
                 <button disabled={guess.location == null} onClick={submitGuess}
-                        className={"inline-flex items-center rounded mx-2 bg-blue-600 disabled:hover:bg-blue-600 hover:bg-blue-700 py-2 px-4 disabled:opacity-50"}>
+                        className={"inline-flex items-center rounded mx-2 bg-blue-600 disabled:hover:bg-blue-600 hover:bg-blue-700 py-2 px-8 disabled:opacity-50"}>
                     Submit
                     <CheckIcon className={"ml-1 h-6 fill-cyan-100"}/>
                 </button>

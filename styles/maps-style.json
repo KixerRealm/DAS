@@ -1,6 +1,7 @@
 {
   "mapTypeControl": true,
   "mapTypeControlOptions": {
+    "position": 2,
     "mapTypeIds": [
       "roadmap",
       "hybrid"

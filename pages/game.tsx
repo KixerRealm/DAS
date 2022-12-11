@@ -13,6 +13,7 @@ import {userAtom} from "../components/user-nav-bar";
 import {GameModeType} from "../enums/game-mode-type";
 import {useRouter} from "next/router";
 import {useHasMounted} from "../hooks/useHasMounted";
+import GameEscapeHatch from "../components/game-escape-hatch";
 
 export type Guess = {
     id?: string;
@@ -112,6 +113,7 @@ export default function Game() {
     return (
         <div className={'h-screen w-screen'}>
             <GameStateWindow gameModeType={query.gameType}/>
+            <GameEscapeHatch/>
             {
                 isLoaded ? (
                     <GoogleMap
