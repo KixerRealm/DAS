@@ -8,7 +8,7 @@ import LatLng = google.maps.LatLng;
 import GameStateWindow, {gameStateAtom, GameStateInstance} from "../components/game-state-window";
 import GameCompletedModal from "../components/game-completed-modal";
 import mapOptions from "../styles/maps-style.json";
-import {useStartGame, useStartGameEffect} from "../hooks/useStartGame";
+import {useStartGameEffect} from "../hooks/useStartGame";
 import {userAtom} from "../components/user-nav-bar";
 import {GameModeType} from "../enums/game-mode-type";
 import {useRouter} from "next/router";
@@ -16,16 +16,24 @@ import {useHasMounted} from "../hooks/useHasMounted";
 
 export type Guess = {
     id?: string;
-    location: LatLng | null;
+    location?: LatLng;
+    correctLocation?: LatLng;
+    points: number;
 };
 
 export class GuessInstance implements Guess {
     id?: string;
-    location: LatLng | null = null;
+    points: number = 2000;
 }
 
 type GameParameters = {
     gameType: GameModeType;
+}
+
+
+function getMinutesBetweenDates(startDate: Date, endDate: Date) {
+    const diff = endDate.getTime() - startDate.getTime();
+    return (diff / 60000);
 }
 
 export const guessAtom = atom<Guess>(new GuessInstance());
@@ -43,6 +51,7 @@ export default function Game() {
     const [gameCompleted, setGameCompleted] = useAtom(gameCompletedAtom);
     const [gameState, setGameState] = useAtom(gameStateAtom);
     const updateGame = useUpdateAtom(inGameAtom);
+
 
     useEffect(() => {
         updateGame(true);
@@ -76,7 +85,7 @@ export default function Game() {
     const removeMarker = useCallback((event: any) => {
         setGuess(prevState => ({
             ...prevState,
-            ['location']: null
+            ['location']: undefined
         }));
     }, [setGuess]);
 
@@ -89,11 +98,11 @@ export default function Game() {
         setMap(null)
     }, []);
 
-    if(!hasMounted) {
+    if (!hasMounted) {
         return null;
     }
 
-    if(user == null) {
+    if (user == null) {
         router.push("/");
     }
 
@@ -111,7 +120,7 @@ export default function Game() {
                         onLoad={onLoad}
                         onUnmount={onUnmount}
                     >
-                        {gameCompleted ? <GameCompletedModal type={query.gameType} points={gameState.points} placements={1}/> : <></>}
+                        {gameCompleted ? <GameCompletedModal type={query.gameType} points={gameState.points} minutesTaken={gameState.endedAt != undefined ? getMinutesBetweenDates(gameState.startedAt, gameState.endedAt) : 0.}/> : <></>}
                         {guess?.location != null ? <Marker position={guess.location!} onClick={removeMarker}/> : <></>}
                     </GoogleMap>
                 ) : <></>

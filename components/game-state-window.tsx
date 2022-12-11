@@ -7,8 +7,9 @@ import {useNextGuess} from "../hooks/useNextGuess";
 import {GameModeType} from "../enums/game-mode-type";
 import {useSubmitGame} from "../hooks/useSubmitGame";
 import {userAtom} from "./user-nav-bar";
-import {useRouter} from "next/router";
 import {useHasMounted} from "../hooks/useHasMounted";
+import LatLng = google.maps.LatLng;
+import computeDistanceBetween from "../utilities/compute-distance-between";
 
 type GameStateWindowParameters = {
     gameModeType: GameModeType;
@@ -17,20 +18,23 @@ type GameStateWindowParameters = {
 type GameState = {
     id: string;
     image: string;
-    correctLocation: number[];
+    correctLocation?: LatLng;
     points: number;
     guessesLeft: number;
     guessesMade: Guess[];
+    startedAt: Date;
+    endedAt?: Date;
 };
 
 export class GameStateInstance implements GameState {
     id: string = '';
     image: string = "/thumbnails/pub18.jpg";
-    correctLocation: number[] = [0, 0];
     points: number = 0;
     guessesLeft: number = 4;
     guessesMade: Guess[] = [];
+    startedAt: Date = new Date();
 }
+
 
 export const gameStateAtom = atom<GameState>(new GameStateInstance());
 
@@ -52,19 +56,27 @@ export default function GameStateWindow(params: GameStateWindowParameters) {
     const nextGameMutate = nextGuessMutation.mutate;
 
     const submitGameMutation = useSubmitGame(async (data: any) => {
-
     });
 
     const submitGameMutate = submitGameMutation.mutate;
 
     const submitGuess = useCallback((event: any) => {
         const submittedGuess = JSON.parse(JSON.stringify(guess)) as Guess;
+
+        // calculate guess accuracy points
+        const distance = computeDistanceBetween(guess.location!, gameState.correctLocation!); // in meters
+        const calculatedPoints = submittedGuess.points - Math.floor(distance);
+        submittedGuess.points = Math.max(calculatedPoints, 0);
+
+        // set correct location for the guess
+        submittedGuess.correctLocation = gameState.correctLocation;
+
         // fetch next guesses
         setGuess(new GuessInstance());
         setGameState(prevState => ({
             ...prevState,
             guessesLeft: prevState.guessesLeft - 1,
-            points: prevState.points + 2000,
+            points: prevState.points + submittedGuess.points,
             guessesMade: prevState.guessesMade.concat([submittedGuess])
         }));
         nextGameMutate(params.gameModeType);
@@ -76,9 +88,13 @@ export default function GameStateWindow(params: GameStateWindowParameters) {
                 guesses: gameState.guessesMade.concat([submittedGuess]),
                 points: gameState.points + 2000
             });
+            setGameState(prevState => ({
+                ...prevState,
+                endedAt: new Date()
+            }));
         }
-    }, [gameState.guessesLeft, gameState.guessesMade, gameState.id, gameState.points, guess, nextGameMutate,
-        params.gameModeType, setGameCompleted, setGameState, setGuess, submitGameMutate, user?.email]);
+    }, [gameState.correctLocation, gameState.guessesLeft, gameState.guessesMade, gameState.id, gameState.points,
+        guess, nextGameMutate, params.gameModeType, setGameCompleted, setGameState, setGuess, submitGameMutate, user?.email]);
 
 
     useEffect(() => {
@@ -87,7 +103,7 @@ export default function GameStateWindow(params: GameStateWindowParameters) {
         nextGameMutate(params.gameModeType);
     }, [params.gameModeType, nextGameMutate]);
 
-    if(!hasMounted) {
+    if (!hasMounted) {
         return null;
     }
 

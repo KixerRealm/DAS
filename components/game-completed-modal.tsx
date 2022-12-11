@@ -11,13 +11,14 @@ import {useStartGame} from "../hooks/useStartGame";
 
 type GameCompleteParameters = {
     points: number;
-    placements: number;
     type: GameModeType;
+    minutesTaken: number;
 };
+
 
 export default function GameCompletedModal(params: GameCompleteParameters) {
     const [gameCompleted, setGameCompleted] = useAtom(gameCompletedAtom);
-    const [_, setGameState] = useAtom(gameStateAtom);
+    const [gameState, setGameState] = useAtom(gameStateAtom);
     const [user, _1] = useAtom(userAtom);
     const hasMounted = useHasMounted();
 
@@ -54,7 +55,6 @@ export default function GameCompletedModal(params: GameCompleteParameters) {
     }, [nextGuessMutate, params.type, setGameCompleted, setGameState, startGameMutate, user?.email]);
 
 
-
     if (!hasMounted) {
         return null;
     }
@@ -78,8 +78,12 @@ export default function GameCompletedModal(params: GameCompleteParameters) {
                             <span className={'font-semibold text-lg'}>{params.points} / 8000</span>
                         </p>
                         <p className={"text-white-500 dark:text-white-400"}>
-                            <span className={"font-semibold text-xl"}>Estimated placement: </span>
-                            <span className={'font-semibold text-lg'}>{params.placements}</span>
+                            <span className={"font-semibold text-xl"}>Time taken: </span>
+                            <span
+                                className={'font-semibold text-lg'}>
+                                {Math.floor(params.minutesTaken)} minutes{' '}
+                                {Math.round((params.minutesTaken - Math.floor(params.minutesTaken)) * 60)} seconds
+                            </span>
                         </p>
                         <div className={'text-white-400'}>
                             <p>Your attempt has been submitted for review by our system,
