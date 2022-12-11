@@ -55,7 +55,7 @@ async function listAttempts(email: string) {
 
 export default function useListAttempts(email: string) {
     return useQuery({
-        queryKey: [QueryType.LIST_ATTEMPTS],
+        queryKey: [QueryType.LIST_ATTEMPTS, email],
         queryFn: () => {
             if (email == undefined)
                 return null;

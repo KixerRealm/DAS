@@ -4,25 +4,10 @@ import Image from "next/image";
 import {useHasMounted} from "../hooks/useHasMounted";
 import {GameModeType} from "../enums/game-mode-type";
 import {translations} from "../constants/enum-translations";
-import {useEffect} from "react";
 import {useRouter} from "next/router";
 import useListAttempts from "../hooks/useListAttempts";
-
-const data = [
-    [
-        {timeTaken: 3, placement: 10, datePlayed: new Date(), gameMode: GameModeType.ALL},
-        {timeTaken: 3, placement: 10, datePlayed: new Date(), gameMode: GameModeType.COFFEE},
-        {timeTaken: 3, placement: 10, datePlayed: new Date(), gameMode: GameModeType.LANDMARKS},
-        {timeTaken: 3, placement: 10, datePlayed: new Date(), gameMode: GameModeType.ALL},
-        {timeTaken: 3, placement: 10, datePlayed: new Date(), gameMode: GameModeType.LANDMARKS},
-        {timeTaken: 3, placement: 10, datePlayed: new Date(), gameMode: GameModeType.ALL}
-    ], [
-        {timeTaken: 3, placement: 10, datePlayed: new Date(), gameMode: GameModeType.COFFEE},
-        {timeTaken: 3, placement: 10, datePlayed: new Date(), gameMode: GameModeType.ALL},
-        {timeTaken: 3, placement: 10, datePlayed: new Date(), gameMode: GameModeType.ALL},
-        {timeTaken: 3, placement: 10, datePlayed: new Date(), gameMode: GameModeType.COFFEE}
-    ]
-];
+import useCurrentPlacements from "../hooks/useCurrentPlacements";
+import usePeakPlacements from "../hooks/usePeakPlacements";
 
 const peakPlacements = [
     {placement: 20, datePlayed: new Date(), gameMode: GameModeType.ALL},
@@ -30,17 +15,17 @@ const peakPlacements = [
     {placement: 16, datePlayed: new Date(), gameMode: GameModeType.LANDMARKS},
 ];
 
-const currentPlacements = [
-    {placement: 45, datePlayed: new Date(), gameMode: GameModeType.ALL},
-    {placement: 14, datePlayed: new Date(), gameMode: GameModeType.COFFEE},
-    {placement: 16, datePlayed: new Date(), gameMode: GameModeType.LANDMARKS},
-];
-
 export default function Profile() {
     const [user, _] = useAtom(userAtom);
     const hasMounted = useHasMounted();
     const router = useRouter();
-    const {data, error, isLoading} = useListAttempts(user?.email ?? '');
+    const {data} = useListAttempts(user?.email ?? '');
+
+    const currentPlacementsQuery = useCurrentPlacements(user?.email ?? '');
+    const currentPlacements = currentPlacementsQuery.data;
+
+    const peakPlacementsQuery = usePeakPlacements(user?.email ?? '');
+    const peakPlacements = peakPlacementsQuery.data;
 
     if (!hasMounted) {
         return null;
@@ -51,7 +36,7 @@ export default function Profile() {
         return null;
     }
 
-    if (data == null) {
+    if (data == null || currentPlacements == null || peakPlacements == null) {
         return null;
     }
 
