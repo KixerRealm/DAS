@@ -1,4 +1,0 @@
-[submodule ".\\Domashna rabota 2\\technical-prototype"]
-	path = .\\Domashna rabota 2\\technical-prototype
-	url = git@github.com:KixerRealm/DAS.git
-	branch = feature/SKO-12-front-end-project
