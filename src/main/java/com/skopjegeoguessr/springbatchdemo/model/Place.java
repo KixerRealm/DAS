@@ -3,7 +3,6 @@ package com.skopjegeoguessr.springbatchdemo.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -12,15 +11,13 @@ import java.util.List;
 
 @Entity
 @Data
-@Table(name = "Data")
+@Table(name = "places")
 @AllArgsConstructor
 @NoArgsConstructor
-public class AllData {
+public class Place {
 
     @Id
     @Column(name = "id", length = 36)
-    @GeneratedValue(generator = "strategy-uuid2")
-    @GenericGenerator(name = "strategy-uuid2", strategy = "uuid2")
     private String id;
 
     @Column(name = "lat")
@@ -32,9 +29,13 @@ public class AllData {
     @Column(name = "name")
     private String name;
 
+    @Transient
     @Convert(converter = StringListConverter.class)
     private List<String> types = new ArrayList<>();
 
     @Column(name = "photoReference")
     private String photoReference;
+
+    @Enumerated(EnumType.STRING)
+    private PlaceType placeType;
 }

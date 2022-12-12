@@ -9,9 +9,8 @@ import com.google.maps.GeoApiContext;
 import com.google.maps.PlacesApi;
 import com.google.maps.errors.ApiException;
 import com.google.maps.model.PlacesSearchResult;
-import com.skopjegeoguessr.springbatchdemo.model.AllData;
-import com.skopjegeoguessr.springbatchdemo.model.AllDataDto;
-import com.skopjegeoguessr.springbatchdemo.repository.DataRepository;
+import com.skopjegeoguessr.springbatchdemo.model.Place;
+import com.skopjegeoguessr.springbatchdemo.repository.PlaceRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -45,7 +44,7 @@ public class SpringBatchConfig {
     private JobBuilderFactory jobBuilderFactory;
 
     private StepBuilderFactory stepBuilderFactory;
-    private DataRepository dataRepository;
+    private PlaceRepository placeRepository;
 
     //public static final String GCP_API_KEY = "AIzaSyCZMPjDh82Z_NKVyeTHsddOYS_hMAmQg8w";
 
@@ -63,7 +62,7 @@ public class SpringBatchConfig {
     @Bean
     public Step CoffeeStep() throws IOException, InterruptedException, ApiException {
         return stepBuilderFactory.get("CoffeeStep")
-                .<AllData, AllData>chunk(10)
+                .<Place, Place>chunk(10)
                 .reader(jsonCoffeeItemReader()).processor(processor()).writer(jsonWriter())
                 .build();
     }
@@ -71,15 +70,15 @@ public class SpringBatchConfig {
     @Bean
     public Step LandmarkStep() throws IOException, InterruptedException, ApiException {
         return stepBuilderFactory.get("LandmarkStep")
-                .<AllData, AllData>chunk(10)
+                .<Place, Place>chunk(10)
                 .reader(jsonLandmarkItemReader()).processor(processor()).writer(jsonWriter())
                 .build();
     }
 
     @Bean
-    public JsonItemReader<AllData> jsonCoffeeItemReader() throws IOException, InterruptedException, ApiException {
+    public JsonItemReader<Place> jsonCoffeeItemReader() throws IOException, InterruptedException, ApiException {
         final ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        final JacksonJsonObjectReader<AllData> jsonObjectReader = new JacksonJsonObjectReader<>(AllData.class);
+        final JacksonJsonObjectReader<Place> jsonObjectReader = new JacksonJsonObjectReader<>(Place.class);
         jsonObjectReader.setMapper(mapper);
         GeoApiContext context1 = new GeoApiContext.Builder().apiKey("AIzaSyCZMPjDh82Z_NKVyeTHsddOYS_hMAmQg8w").build();
         PlacesSearchResponse results =  PlacesApi.textSearchQuery(context1, "coffeeshops+skopje+macedonia").await();
@@ -113,21 +112,21 @@ public class SpringBatchConfig {
         for(PlacesSearchResult[] p:responses1){
             responses2.addAll(Arrays.asList(p));
         }
-        List<AllData> allDataList = responses2.stream().map(BaseToFilteredDataMapper.INSTANCE::toDto).collect(Collectors.toList());
+        List<Place> placeList = responses2.stream().map(BaseToFilteredPlacesMapper.INSTANCE::toDto).collect(Collectors.toList());
 
         FileWriter writer = new FileWriter("src/main/resources/static/results.json");
-        gson.toJson(allDataList, writer);
+        gson.toJson(placeList, writer);
         writer.flush();
-        return new JsonItemReaderBuilder<AllData>().jsonObjectReader(jsonObjectReader)
+        return new JsonItemReaderBuilder<Place>().jsonObjectReader(jsonObjectReader)
                     .resource(new FileSystemResource("src/main/resources/static/results.json"))
                     .name("jsonItemReader")
                     .build();
     }
 
     @Bean
-    public JsonItemReader<AllData> jsonLandmarkItemReader() throws IOException, InterruptedException, ApiException {
+    public JsonItemReader<Place> jsonLandmarkItemReader() throws IOException, InterruptedException, ApiException {
         final ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        final JacksonJsonObjectReader<AllData> jsonObjectReader = new JacksonJsonObjectReader<>(AllData.class);
+        final JacksonJsonObjectReader<Place> jsonObjectReader = new JacksonJsonObjectReader<>(Place.class);
         jsonObjectReader.setMapper(mapper);
         GeoApiContext context1 = new GeoApiContext.Builder().apiKey("AIzaSyCZMPjDh82Z_NKVyeTHsddOYS_hMAmQg8w").build();
         PlacesSearchResponse results =  PlacesApi.textSearchQuery(context1, "landmarks+skopje+macedonia").await();
@@ -162,28 +161,28 @@ public class SpringBatchConfig {
             responses2.addAll(Arrays.asList(p));
         }
         responses2.forEach(i -> System.out.println(i.types));
-        List<AllData> allDataList = responses2.stream().map(BaseToFilteredDataMapper.INSTANCE::toDto).collect(Collectors.toList());
+        List<Place> placeList = responses2.stream().map(BaseToFilteredPlacesMapper.INSTANCE::toDto).collect(Collectors.toList());
 
         FileWriter writer = new FileWriter("src/main/resources/static/results1.json");
-        gson.toJson(allDataList, writer);
+        gson.toJson(placeList, writer);
         writer.flush();
-        return new JsonItemReaderBuilder<AllData>().jsonObjectReader(jsonObjectReader)
+        return new JsonItemReaderBuilder<Place>().jsonObjectReader(jsonObjectReader)
                 .resource(new FileSystemResource("src/main/resources/static/results1.json"))
                 .name("jsonItemReader")
                 .build();
     }
 
     @Bean
-    public RepositoryItemWriter<AllData> jsonWriter(){
-        RepositoryItemWriter<AllData> writer = new RepositoryItemWriter<>();
-        writer.setRepository(dataRepository);
+    public RepositoryItemWriter<Place> jsonWriter(){
+        RepositoryItemWriter<Place> writer = new RepositoryItemWriter<>();
+        writer.setRepository(placeRepository);
         writer.setMethodName("save");
         return writer;
     }
 
     @Bean
-    public DataProcessor processor(){
-        return new DataProcessor();
+    public PlaceProcessor processor(){
+        return new PlaceProcessor();
     }
 
 
