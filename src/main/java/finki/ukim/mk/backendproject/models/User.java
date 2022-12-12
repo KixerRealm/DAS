@@ -11,6 +11,8 @@ import javax.persistence.Id;
 public class User {
 
     @Id
+    private String id;
+
     private String username;
 
     private String password;
@@ -18,6 +20,4 @@ public class User {
     private String email;
 
     private String picture;
-
-
 }

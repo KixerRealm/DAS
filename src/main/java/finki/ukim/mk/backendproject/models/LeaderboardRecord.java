@@ -8,11 +8,11 @@ import java.time.LocalDateTime;
 public class LeaderboardRecord {
     private String username;
 
-    private int total;
+    private Integer total;
 
     private String game_id;
 
-    private GameType gamemode;
+    private GameType game_type;
 
     private String profile_pic;
 
