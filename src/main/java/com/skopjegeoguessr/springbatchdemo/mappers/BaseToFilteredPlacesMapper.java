@@ -1,4 +1,4 @@
-package com.skopjegeoguessr.springbatchdemo.config;
+package com.skopjegeoguessr.springbatchdemo.mappers;
 
 import com.google.maps.model.PlacesSearchResult;
 import com.skopjegeoguessr.springbatchdemo.model.Place;

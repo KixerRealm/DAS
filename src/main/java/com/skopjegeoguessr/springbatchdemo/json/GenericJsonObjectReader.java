@@ -1,4 +1,4 @@
-package com.skopjegeoguessr.springbatchdemo.config;
+package com.skopjegeoguessr.springbatchdemo.json;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.logging.Logger;

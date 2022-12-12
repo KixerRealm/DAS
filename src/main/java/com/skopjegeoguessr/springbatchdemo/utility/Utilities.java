@@ -1,4 +1,4 @@
-package com.skopjegeoguessr.springbatchdemo.config;
+package com.skopjegeoguessr.springbatchdemo.utility;
 import com.google.maps.GeoApiContext;
 import com.google.maps.errors.ApiException;
 import com.google.maps.model.PlacesSearchResponse;

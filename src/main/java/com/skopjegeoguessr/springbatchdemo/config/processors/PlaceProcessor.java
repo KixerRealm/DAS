@@ -1,8 +1,8 @@
-package com.skopjegeoguessr.springbatchdemo.config;
+package com.skopjegeoguessr.springbatchdemo.config.processors;
 
 import com.skopjegeoguessr.springbatchdemo.model.Place;
 
-import com.skopjegeoguessr.springbatchdemo.model.PlaceType;
+import com.skopjegeoguessr.springbatchdemo.model.enums.PlaceType;
 import org.springframework.batch.item.ItemProcessor;
 
 public class PlaceProcessor implements ItemProcessor<Place, Place> {

@@ -1,5 +1,7 @@
 package com.skopjegeoguessr.springbatchdemo.model;
 
+import com.skopjegeoguessr.springbatchdemo.model.converters.StringListConverter;
+import com.skopjegeoguessr.springbatchdemo.model.enums.PlaceType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
