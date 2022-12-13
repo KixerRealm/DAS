@@ -4,12 +4,14 @@ import finki.ukim.mk.backendproject.enumerators.GameType;
 
 import javax.persistence.Entity;
 import javax.persistence.ForeignKey;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 
 @Entity
 public class LeaderboardRecord {
     @Id
+    @GeneratedValue
     private String id;
 
     private String username;
