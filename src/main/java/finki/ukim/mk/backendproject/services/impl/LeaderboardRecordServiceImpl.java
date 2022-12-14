@@ -30,17 +30,12 @@ public class LeaderboardRecordServiceImpl implements LeaderboardRecordService {
     }
 
     @Override
-    public Optional<LeaderboardRecord> findByGameType(GameType gameType) {
-        return leaderboardRecordRepository.findByGame_type(gameType);
-    }
-
-    @Override
     public Optional<LeaderboardRecord> save(String id, String username, Integer total, String game_id, GameType game_type, String profile_pic, LocalDateTime started_at, LocalDateTime ended_at) {
         return Optional.of(leaderboardRecordRepository.save(new LeaderboardRecord(id, username, total, game_id, game_type ,profile_pic, started_at, ended_at)));
     }
 
     @Override
     public void deleteById(String id) {
-
+        leaderboardRecordRepository.deleteById(id);
     }
 }

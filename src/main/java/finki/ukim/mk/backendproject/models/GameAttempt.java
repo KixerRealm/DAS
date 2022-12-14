@@ -34,6 +34,53 @@ public class GameAttempt {
     }
 
     public GameAttempt() {
+    }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public GameType getGameType() {
+        return gameType;
+    }
+
+    public void setGameType(GameType gameType) {
+        this.gameType = gameType;
+    }
+
+    public LocalDateTime getStarted_at() {
+        return started_at;
+    }
+
+    public void setStarted_at(LocalDateTime started_at) {
+        this.started_at = started_at;
+    }
+
+    public LocalDateTime getEnded_at() {
+        return ended_at;
+    }
+
+    public void setEnded_at(LocalDateTime ended_at) {
+        this.ended_at = ended_at;
+    }
+
+    public Integer getTotal() {
+        return total;
+    }
+
+    public void setTotal(Integer total) {
+        this.total = total;
     }
 }

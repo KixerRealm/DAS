@@ -11,5 +11,4 @@ public interface LeaderboardRecordRepository extends JpaRepository<LeaderboardRe
     @Override
     Optional<LeaderboardRecord> findById(String s);
 
-    Optional<LeaderboardRecord> findByGame_type(GameType type);
 }

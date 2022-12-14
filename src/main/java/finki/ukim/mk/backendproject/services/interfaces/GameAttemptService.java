@@ -11,9 +11,9 @@ import java.util.Optional;
 
 public interface GameAttemptService {
     List<GameAttempt> findAll();
-    Optional<LeaderboardRecord> findById(String id);
+    Optional<GameAttempt> findById(String id);
 
-    Optional<LeaderboardRecord> save(String id, String email, GameType gameType, LocalDateTime started_at, LocalDateTime ended_at, Integer total);
+    Optional<GameAttempt> save(String id, String email, GameType gameType, LocalDateTime started_at, LocalDateTime ended_at, Integer total);
 
     void deleteById(String id);
 }
