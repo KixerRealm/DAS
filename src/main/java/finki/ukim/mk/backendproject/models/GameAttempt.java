@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Entity
+//@Entity
 public class GameAttempt {
 
     @Id
