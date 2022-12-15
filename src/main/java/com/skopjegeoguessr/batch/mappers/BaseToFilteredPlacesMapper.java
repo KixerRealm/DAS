@@ -1,7 +1,7 @@
-package com.skopjegeoguessr.springbatchdemo.mappers;
+package com.skopjegeoguessr.batch.mappers;
 
 import com.google.maps.model.PlacesSearchResult;
-import com.skopjegeoguessr.springbatchdemo.model.Place;
+import com.skopjegeoguessr.batch.model.Place;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;

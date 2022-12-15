@@ -1,6 +1,6 @@
-package com.skopjegeoguessr.springbatchdemo.repository;
+package com.skopjegeoguessr.batch.repository;
 
-import com.skopjegeoguessr.springbatchdemo.model.Place;
+import com.skopjegeoguessr.batch.model.Place;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PlaceRepository extends JpaRepository<Place, String> {

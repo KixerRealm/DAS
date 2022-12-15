@@ -1,7 +1,7 @@
-package com.skopjegeoguessr.springbatchdemo.model;
+package com.skopjegeoguessr.batch.model;
 
-import com.skopjegeoguessr.springbatchdemo.model.converters.StringListConverter;
-import com.skopjegeoguessr.springbatchdemo.model.enums.PlaceType;
+import com.skopjegeoguessr.batch.model.converters.StringListConverter;
+import com.skopjegeoguessr.batch.model.enums.PlaceType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -35,7 +35,7 @@ public class Place {
     @Convert(converter = StringListConverter.class)
     private List<String> types = new ArrayList<>();
 
-    @Column(name = "photoReference")
+    @Column(name = "photo_reference")
     private String photoReference;
 
     @Enumerated(EnumType.STRING)

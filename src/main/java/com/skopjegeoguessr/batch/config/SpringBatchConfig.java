@@ -1,4 +1,4 @@
-package com.skopjegeoguessr.springbatchdemo.config;
+package com.skopjegeoguessr.batch.config;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,11 +9,11 @@ import com.google.maps.GeoApiContext;
 import com.google.maps.PlacesApi;
 import com.google.maps.errors.ApiException;
 import com.google.maps.model.PlacesSearchResult;
-import com.skopjegeoguessr.springbatchdemo.config.processors.PlaceProcessor;
-import com.skopjegeoguessr.springbatchdemo.mappers.BaseToFilteredPlacesMapper;
-import com.skopjegeoguessr.springbatchdemo.model.Place;
-import com.skopjegeoguessr.springbatchdemo.repository.PlaceRepository;
-import com.skopjegeoguessr.springbatchdemo.utility.Utilities;
+import com.skopjegeoguessr.batch.config.processors.PlaceProcessor;
+import com.skopjegeoguessr.batch.mappers.BaseToFilteredPlacesMapper;
+import com.skopjegeoguessr.batch.model.Place;
+import com.skopjegeoguessr.batch.repository.PlaceRepository;
+import com.skopjegeoguessr.batch.utility.Utilities;
 import lombok.AllArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;

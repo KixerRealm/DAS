@@ -1,4 +1,4 @@
-package com.skopjegeoguessr.springbatchdemo.model.converters;
+package com.skopjegeoguessr.batch.model.converters;
 import java.util.Arrays;
 import java.util.List;
 

@@ -1,13 +1,13 @@
-package com.skopjegeoguessr.springbatchdemo;
+package com.skopjegeoguessr.batch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBatchDemoApplication {
+public class BatchApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBatchDemoApplication.class, args);
+        SpringApplication.run(BatchApplication.class, args);
     }
 
 }
