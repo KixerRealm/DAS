@@ -1,24 +1,26 @@
 package finki.ukim.mk.backendproject.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-//@Entity
+import javax.persistence.*;
+
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Table(name = "guesses")
 public class Guess {
 
-
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
+    @Column(name = "guess_location")
     private String location;
 
-    private String image;
+    @Column(name = "url")
+    private String image_url;
 
-    public Guess() {}
-
-    public Guess(String id, String location, String image) {
-        this.id = id;
-        this.location = location;
-        this.image = image;
-    }
 }

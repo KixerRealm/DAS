@@ -2,39 +2,41 @@ package finki.ukim.mk.backendproject.models;
 
 
 import com.sun.istack.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 
-//@Entity
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Table(name = "player")
 public class User {
 
-//    @NotNull
-//    @Id
-//    @GeneratedValue(generator = "system-uuid")
-//    @GenericGenerator(name = "system-uuid", strategy = "uuid")
+    @NotNull
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "player_Id")
     private String user_id;
 
+    @Column(name = "username")
     private String username;
 
+    @Column(name = "password")
     private String password;
 
+    @Column(name = "email")
     private String email;
 
+    @Column(name = "image_url")
     private String picture;
 
-    public User(String user_id, String username, String password, String email, String picture) {
-        this.user_id = user_id;
-        this.username = username;
-        this.password = password;
-        this.email = email;
-        this.picture = picture;
-    }
+    @ManyToMany
+    private List<LeaderboardRecord> recordList;
 
-    public User() {
-    }
 }

@@ -1,32 +1,39 @@
 package finki.ukim.mk.backendproject.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.time.LocalDateTime;
+import finki.ukim.mk.backendproject.enumerators.PlaceType;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-//@Entity
+import javax.persistence.*;
+import java.time.LocalDateTime;
+import java.util.List;
+
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Table(name = "games")
 public class Game {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String gameId;
 
-    private String email;
+    @Column(name = "user_id")
+    private String player_id;
 
+    @Column(name = "type")
+    @Enumerated(EnumType.STRING)
+    private PlaceType placeType;
+
+    @Column(name = "startedAt")
     private LocalDateTime started_at;
 
+    @Column(name = "endedAt")
     private LocalDateTime ended_at;
 
+    @Column(name = "score")
     private Integer points;
 
-    public Game() {}
-
-    public Game(String gameId, String email, LocalDateTime started_at, LocalDateTime ended_at, Integer points) {
-        this.gameId = gameId;
-        this.email = email;
-        this.started_at = started_at;
-        this.ended_at = ended_at;
-        this.points = points;
-    }
 }

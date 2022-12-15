@@ -1,12 +1,12 @@
 package finki.ukim.mk.backendproject.models;
 
-import finki.ukim.mk.backendproject.enumerators.GameType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -18,18 +18,14 @@ public class LeaderboardRecord {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
-    private String username;
-
-    private Integer total;
+    private String user_id;
 
     private String game_id;
 
-    private GameType game_type;
+    @ManyToMany
+    private List<User> userList;
 
-    private String profile_pic;
-
-    private LocalDateTime started_at;
-
-    private LocalDateTime ended_at;
+    @ManyToMany
+    private List<Game> gameList;
 
 }
