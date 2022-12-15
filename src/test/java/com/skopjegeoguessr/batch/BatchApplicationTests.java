@@ -1,10 +1,10 @@
-package com.skopjegeoguessr.springbatchdemo;
+package com.skopjegeoguessr.batch;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBatchDemoApplicationTests {
+class BatchApplicationTests {
 
     @Test
     void contextLoads() {

@@ -9,7 +9,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwUwY2SAFF20XAJMA11jAaDqYPjpSSUf2AZQoW6ZaPYU-v3oD7yM665dFbWB843oyNORCzYxKp4DpR4cTO6qL7LHahWHq1cvrlumOfFpdA58i079RJ5eaP6DHsqQHYYF3oV7Gx0_ViP6tEeTpaOfKDeUMPZrPPhkfv5IGAHIdOowQpB"
+    "photoReference": "ARywPAIBeRbFpQ2cpmzzNiZqqN7SgaT6x8PJcmYmwMTbTGEHbGvb5MowQ134UErSv9EQWmHnVyOU5By1kOoo7CbHbm0IhZdVRTstuRpILnYWS_6qZfe7eSLGJl77cgNGHRMlPqMmjfeYc7JfqbonRcB6dlH_rsQGyE3-3MF-RoQPeQEcLPMp"
   },
   {
     "id": "ChIJN5g3ra8VVBMRSB7eXi9zn9E",
@@ -21,7 +21,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDxnHUPfCkoLLLu-bSDw5Hobz80jQIcJNNFSUNN_5OeFsV6OAxaLgG7kMmeJRBmfMs7Af9kI_67CzljDsC_-DXxUpcO61XVlmiDU6m5Zz9zxqjCOylX0Mbkoe2z9dmZ-OQkt9g9mAFmkddVILEPsuqrA49MYJO_npSE7sX5EX5k4q4e6"
+    "photoReference": "ARywPALdH5wbCUxbvxeWGas-KxP-oIfkLOaGMk4R_eeIQPRPDH-udMeU7TFp28Gw2nDPLOuNkjYBY73ZBWT1Ggbw2YECFVdoYnrJR4VP6gvOYTHNJc7UgD5Hj1l7LWNogWn40Gdhg01p6AA7K4TUJ8EFEvAhZTTElZVQjE4M7JewRmJ9t2Lv"
   },
   {
     "id": "ChIJl97A7H8VVBMRd3r7oXM8hbc",
@@ -42,41 +42,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwqvSUrPJ4IHKD0fBhiziKRzb0p2O7aH2a40t5qh2CXYMsTjMYvRGOiJ_UxvkNAgO0vLzHAdOCqNISfDR9w3CtXKdEHHMWW48XdzUvVDv0BfSrjZxhI_zdBGOnyeC2h8Dk89GA39HMcY8itvaG2qpJkEILrl99pzoaL6bvLP2asC5pD"
-  },
-  {
-    "id": "ChIJVdnzZbQVVBMRkkEWVcgxj1E",
-    "lat": 41.99538,
-    "lng": 21.431234,
-    "name": "Monument „Tsar Samoil“",
-    "types": [
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDzqFoNlmbbAmDhJCJY2EA-4jKDw1PYGDAgqfCRDcUFTQTk4yLJYk_9vcWrOlWsXrdMRSUmNmasp0IYI8Q-bOgCEcgy8grzW4-xsjseMgcMy3gEFtZm1tjP4SHl2e_M0Kx64whqqyE34O_U4_8qbxTVs9VKrO4UkMySpZiaOT9Mgh8Oy"
-  },
-  {
-    "id": "ChIJvw-CmLEVVBMRkLlWg7eL3Wc",
-    "lat": 41.99591,
-    "lng": 21.431463,
-    "name": "Споменик „Воин на Коњ“",
-    "types": [
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDy9w5DLJPOd1VaUrt3JjwyP1LgEX6rOCbdtQCoC66dgVFJ_txIoTVWAzoYcm6d3Jm8btvAWmNGyTNbs2rCbUCXe3JDILsQ-mvyGPUNO8ldn82IHv8GA9M1Ql6KydI7A2TC-0rXJGQOKjbiJcOcuxnsDckub4BTgl9q31Qzha8jUli-M"
-  },
-  {
-    "id": "ChIJ8_HLtrUVVBMR6lIcYCWPyn0",
-    "lat": 41.99359,
-    "lng": 21.431711,
-    "name": "Feudal Tower",
-    "types": [
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDz4IdIyvMoHIGMkNTMfO9W5d6fDpvyB3N_35aPT_ZvHQ2JiY8584ZBBoOFeewOfG1G5sqj1N4EN5RjqK5OXGjrF1wMEbsDL03mst96zOtQe7OlHZJ9z2mPZ0tC6npyPxYITHD7zHkYWtEhQ4lEJm174Qiz0jGkUsNvSGJAG0v54YCeh"
+    "photoReference": "ARywPAK598qrcJxFkCW3sliCG4hcTPVRW78As4eKwmH4ojAdTt9J4bTu7MSl_mrAOb_RwkWKE7Xw9Q1Gh4v0cKIYdN5KMSTF2cv64s0WbrKTj_iZl2sRX9dhwO-cQxJFpfbB1UrKVFNz8swkomzRn7WqIa8thTGEJX3N8hScyqGhgeLwNa0q"
   },
   {
     "id": "ChIJzcKU4LMVVBMRPgoXjpkscJo",
@@ -88,7 +54,52 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDy0sUclaRWBNzPzjlzvALWaE5q71wgefWsQP_KvjSOaiUpycJ-dZfSomMNbJ8iLVXzKG-5EAXX2R9mr7IGzW-f9k9AF6j3ywj494g57IuBVuTg-l_IopUlcWSMa_0mFQEw9eOkvQbOfrkOpiNlWiljqey3qLoSfePbX2vQtvvG2_DJg"
+    "photoReference": "ARywPAKZ6hjA1Dg1UZhuJzsmISm7ac6Cc4M3prcc2kJmFg0QntrQt_pbyLC_mPFqOm-V2VU10HJkwFdc5CsQp08Foii_p9bSE8fgD0dkNoNhcbz-57MLhV-kPvRPA0uiZqfnkuHUfGHwagzwjxZoPvpnlMkKYwTS8aUFWmyaNIg3IT1VTDJ3"
+  },
+  {
+    "id": "ChIJVdnzZbQVVBMRkkEWVcgxj1E",
+    "lat": 41.99538,
+    "lng": 21.431234,
+    "name": "Monument „Tsar Samoil“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPAL1wcVKDMInj7KrtURPYsBvroEXnsPHP-3OshuKnG1ioglfGwNtjJmTxROjk2Ts9K1MwrAxWIZV9LVXhNjpKL6emHtsjUGRRjkDsrc3L-nn8CylD0BFUBeqx9oWi9YV3-3aGDUfcUub3TE1Fo6DsKw81s4ltoE-pPaU1_PmU_XMe1k6"
+  },
+  {
+    "id": "ChIJvw-CmLEVVBMRkLlWg7eL3Wc",
+    "lat": 41.99591,
+    "lng": 21.431463,
+    "name": "Споменик „Воин на Коњ“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPALI9NMQjo9v1mZiskNdGpI89CCo9RtPMFmTeSU28sNIbZSbn-AkIdtmDnSZXKZ-mg-iqL-w9RpdiKJlJjv42kop9bsIXwdJZRYHpVMhsoBk8t56YfpVZWnNddDfYRPCbi-YSaIa0wsXMKRlVnezkPaKm703uurSmwINb2GCCkg6Avep"
+  },
+  {
+    "id": "ChIJGwPymNoVVBMRjewYGjbi0wg",
+    "lat": 42.00042,
+    "lng": 21.432295,
+    "name": "Monument „Strength, Glory and Victory“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPAJoDqD82vIkqG5QCWJMPd_SH988qUTugXT4kEqWaIZ5XyCV3Y8KqHRoLx2VmKPf-r5Kv_ATeA7LBvYKg66dq28zAsqtMuPs77k9z9jwoJ3C1tWHMIcOKG5uup0k6OEITjvcl4gb0-5uzwwdGdCpuPnNmYNsibI3yC4ZlO2rBL5GIw5w"
+  },
+  {
+    "id": "ChIJ8_HLtrUVVBMR6lIcYCWPyn0",
+    "lat": 41.99359,
+    "lng": 21.431711,
+    "name": "Feudal Tower",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPAIrPXDUAm9rGqLRJH8JJzzkl8PNujmkdvbe5Sy8zPMF5nECwEc7bge4GH44UHolos6OXtcaSe8pR4umI242rdliW2-a_4UU6bfQL9ZMDTNN0nzPxELMWVIddLG3zLnb2gCMXv9i7YTbklQe3oAi2hS7EfddKdkZWQ5KUckkFyHDRjRo"
   },
   {
     "id": "ChIJl7cKNi0VVBMRpUc56gjho7w",
@@ -101,17 +112,6 @@
     ]
   },
   {
-    "id": "ChIJnSsZn-wVVBMR80TWrA8JHxA",
-    "lat": 41.996906,
-    "lng": 21.432241,
-    "name": "Monument „Iustinianus Primus“",
-    "types": [
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDzezKsydnv9t_zU7Y_29fhoD1ff4XYX4DjSuzt1gj8_wJvM-zELg0BgqPxo3SbAHVBIKnHdbY2zh0jYU3RHfmvkLriI3zlzz6xgTEKsVe7gCzKsOW5RLDCk95NzyczuMZW9ygvPt4S4G0esk3XVoYOGsi72xovNztAakFUghrkvYBzl"
-  },
-  {
     "id": "ChIJm1cd76QVVBMR1jrUxKdCKZo",
     "lat": 42.00038,
     "lng": 21.443378,
@@ -120,18 +120,18 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwnZiSZon-ZiQyWMzpLmb9pZ4DaOoDByV7uBiOBZlFOvl_jJUZb-mxhn_sk4xU_SQRfD_IKncNsDZSolwKInh7YNnJ4QTW_HSLwGSwhx3MBqiofU-xJGefDoE_e-ixbqbEPCiJKiSrDPFOOl_YwqyXLE04toymvd5YKu2wPONSlDKI0"
+    "photoReference": "ARywPAIHqyWAIcCBky7GceE9ud3n2kVaz03wtta1NEa2Cs4bfPeDG-V2d1xHEKUp_x7MuqdX6UXBGx00s543P9WJr1wNt9wDXDz63-PGi9_rBLuvtxoq2lNLsp7aApp7MHTkM_HKVHG3tLYY-04QoE6U5G7YpXcllGb8psElxF9K6q5MS-Pt"
   },
   {
-    "id": "ChIJjUZoNBsVVBMRCt3eHr2KT8w",
-    "lat": 41.99611,
-    "lng": 21.431002,
-    "name": "Monument „Dimitrija Chupovski“",
+    "id": "ChIJnSsZn-wVVBMR80TWrA8JHxA",
+    "lat": 41.996906,
+    "lng": 21.432241,
+    "name": "Monument „Iustinianus Primus“",
     "types": [
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwg6V9xRoiWLMJclev1ALrkJfWda7eESOajlaDiZUHq52aXR4cRFf_OyTik_oNZBcdKCj2d71amr0fMfP18EaEiUqzSzXcf2OIexonkC7iCspNDwXooeJwMVGHtU1AO4afdqnfRCM6T50nDyP_KKTB7lSh9SywpHq3fIMsl0dYlnJS2"
+    "photoReference": "ARywPAJLesAqHjO9pMFXURD9tNMZWtuAIoxIjdm1yHV4Yu7H_QWGr7nDFxc9cCN-7aA-ui2l_dPrsysOt-NORFoCIEhmfiR9h4zlqYc1rD-YtgRYT2lvDmm20Fyf33MThVkaYWMAqGTgY7KN7q1OZaZvtw0_-hVsfil4R-I9rj9DPygRxPEl"
   },
   {
     "id": "ChIJdSB5orEVVBMRsEiiuJiGQC4",
@@ -142,7 +142,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDx_viLjcINTtJe-ZnBjbegX6s6NtnMuAQyrexdMFFowJhhGhSn-JO-_XC6fLhwwk164wdvBayJhZHp0y_e1uWt9uHh2eM94mb6MfvwqXuSxQ-Abme9WMYrunWGwLQf_irI_StM04BrH7wcliwRBfSX1HWJVdoMnQfL3roXPqcsmcsOt"
+    "photoReference": "ARywPALOGGV8jJn7wsM3U_3LmfcIVqMbyfXP2M3bQfLmwcyzZNsiqieJeYaZpTWFqsqtO-XkUaldCgaI-GDkjkkOgVUirjq89spoK1Nm1iNEGkdPpPidfHcyWrWhdOKIozOSc80P3k8S__Up-96sW1lyzSvtZP01JvuYXVxFv--Kdl-jYFwp"
   },
   {
     "id": "ChIJeZzUtq8VVBMRphS9BgrYPDg",
@@ -154,7 +154,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDxOapiAP55Qq_IQXMWdQ3EV2iBE2MLYfULb6oW2IC7uIJfZDT_cJ6p8FCj1kp_B_3uA3dCaojAKU0_3HyjX1wIQH8VdGhYkI51V4Qx9Eyi77tUxgQB01x3xsuXkJbj9UMjXHZmgRhN_L68wf-Gmy2EWe2FVu56S2Hpku7PodDH5OKPY"
+    "photoReference": "ARywPAJQcS9E2Hn1AOKgN8KLEP0-zXOgdD8LFk54Us8oXmXnsRcIZ_F7_cgO-p6UCp-mwgMJ1Bm_TPRa0uwsWxpu8V1ZoAa-r5ZbBCHePPG_Egu2yucAkH8pW2ztbaIRYZ5mjxezVkvM3PClRlL6LAZAKMboi--ZUoBRewG0x5_9HbPVM9RS"
   },
   {
     "id": "ChIJfX-e-K4VVBMRNK4TurP3EH8",
@@ -167,19 +167,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDw_yOgVuFbNurfWTp2mPm4kWDdH7IrrZoE1tuU3lk3iLV80yTz4aBliIxr1ZwDONllmUkGWEdhOWhWo_z7PDCixFFims_W_oa7ba4lLnJwUVReqb3mgCes_bQ9y19SW7tKaIGNUQHfZROAsAgRY45Ypf_AYURwVM3KByM_S73J1EJBK"
-  },
-  {
-    "id": "ChIJQyQJdbQVVBMRlHmypEnmICQ",
-    "lat": 41.99621,
-    "lng": 21.431892,
-    "name": "Square „Macedonia“",
-    "types": [
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDxYr1mxdBabYSDrTu2A4g1l4aaZ9qvj2rtbLz3xed-RbXTEWA9LI8uvtRsgv_XAGoeYyOSwtb_OZTAncevphAjQXggE79w2mRit72wrl-ExOTpGF8oGPhuoLLhIw_HXj3EkGFS23VLrU2liisusDG5O0bqfGx972nLkXdoI69m96ZqH"
+    "photoReference": "ARywPAKLYxfsl7U7SIRcM10mxqZd2gWYf73VULbO5d-2nkyu3B2dFdmzPpHbOU-Htjz4nQlDg0NGIOikeABVJS0r8C6ehrwR16XAf_c8rXy7W28n4VnIUjtjPkJ2dn_LKi1aTap4H9MC5bg4acXjxjUKfz_qjHduKvDiLJ9RazXzRnygDmh2"
   },
   {
     "id": "ChIJ0QHgQrEVVBMRdEC0CEF8A9g",
@@ -200,7 +188,30 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDz512d3TbtrdFjd7XDBxEYeE-AwN1kfE_sSj8x0p6e_v-MHV1j4TpZ0QsADwk_LoCj1rD___k4TxRur3g2aHHR7c2Cf9WLRjYs6f0CASN4Gh1f909Qbs-SqJtNzlvlX_uGc92ex5P65sLmXmIFj4H18RxpOunN4a_TbXH7sQYPJIsiV"
+    "photoReference": "ARywPAJ9XawPC2iej62806feRIC7QSatEJ-OzeIchUep53j1RoZQTPXEhnuIQHNmoiechs3NyadqKZL1QF5XoVOtotQlMAY7WJBXALmhUTzFmPS0OPiw4Xj3r9GWnf0CMTf_Bz91_FD5RQrtIR0Aq5JpjstuPIdmx1Sv5BJv2D1_zrTPi0Ic"
+  },
+  {
+    "id": "ChIJjUZoNBsVVBMRCt3eHr2KT8w",
+    "lat": 41.99611,
+    "lng": 21.431002,
+    "name": "Monument „Dimitrija Chupovski“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPALvvEGGeUFwT_Bx5Ki4U1u2wL6E9XlPosI-xR5GG6djr_xFshRKCMO0mU85-Vlo4yw-YPyDd-5NpYQID-dBajpLAacZmrIIYVFb74JzxcDH784UHCDiZ9_6-4m0IYDDDJKOPPnqVe3cQkG03GH8RW1K_pdPwjxumqOC4bwNtvsduX-J"
+  },
+  {
+    "id": "ChIJQyQJdbQVVBMRlHmypEnmICQ",
+    "lat": 41.99621,
+    "lng": 21.431892,
+    "name": "Square „Macedonia“",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPAI-n3r2ukdEEgoOYuIltWeU_lW-YRZoke-9LinOFltnBZZx64pn-b1fHaPpsTDkfNaPW0yHveUb6SVLyTp1EHEcX0Hx2KzKnIjWtk7E-7Og-doPMOgP9Gekhl23g-bKvRx6zWfnVYc4LmfHKrVvUqeKCoBIDDMoQ14DZci6J2BvTCuU"
   },
   {
     "id": "ChIJq20tZrIVVBMRLjSS1I8llyo",
@@ -211,7 +222,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwlascDSG6YgXrrYDJGMPe6i-IiBTo_OT6TurJDiM-omSgRx240KyeUxLvViWZYjI8OjvlTks6E2cLA8x2mRLX1esxf3Yk62T1klV6_aTeBRSaX_gVBcM4CcT83WarYClHePVv-ygSokbPAO_6GsLcvhTstUd_iAj5ODX9ZvtwgqN-W"
+    "photoReference": "ARywPALz7KdNZZyWmF1tfLv_vbMTY1gUn2sw8mmU0BiJ6H7lcLRze196s6nAIkUPbo-Nxr51QI9c1WD2SjImyVfed-BVxu28V6t5Lw3EDY62X94b6oZcjKrCewOQuTH1iBxAUHOCQrl0QuzThaHOc7AcJF7LtWXyZO8D1vi9UHP8hUp5J7rz"
   },
   {
     "id": "ChIJoazI0KQVVBMRtV--d9Yn6YQ",
@@ -222,19 +233,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDzYPUdSb4U0ziOldIHfPk7_UIUUEzdjFBYY3-c2z0dvO6Ij7UonWEgw_VCQGTIdHk8qH2h9SBVxwVdRfI2Lq_rTy8oAP-CQITgCwsif-Oej00wcWaG82f3AuCkqroiPiujlMSlY6JKU5GvxLxKVHPBzsXZJ7XDd0o2agGfEcjU6n9Zc"
-  },
-  {
-    "id": "ChIJu9ZJLfsUVBMRn0ey-_Gsvjg",
-    "lat": 42.02241,
-    "lng": 21.418865,
-    "name": "Скопски аквадукт",
-    "types": [
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDxNfYpmW7N1R-x9okmTKwLMtwiey4bDHCMyEb2qJ-VS2ojB1l2hSNtf2IjSxZjoiqMq-sdISrxCeuACt683AhyIbbz-ShqmdL1IB2fqmwoWgu1sL-D8375gmgD7oFAWRgqUPxQANIakz-urb4TAr0lI6MtPwvQ5rHnP8-fLSpr3-yBx"
+    "photoReference": "ARywPAKteQgZkYIbcKSD1LheSeGKa1qZNkeuWcnSSTR6w5t8tslbrs3-gtexHUW73VBblGwydCPRqRq98THFLEHMly1SxgzPaDDrHD_y7dkM9A9EckKKnpTJdILl0zOaWghjLoW-780mL3PUj9MNKdIsXJxTBtBYz56596AOiyv-PZSi9bQZ"
   },
   {
     "id": "ChIJG755urEVVBMRUPqJREkQzyI",
@@ -243,12 +242,12 @@
     "name": "National Gallery of Macedonia Daut Pasha Hammam",
     "types": [
       "art_gallery",
-      "museum",
       "tourist_attraction",
+      "museum",
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDx-w97GU6wvUAImMIKFmUObNv9pEKuuVuu4LLN_gtEYia1-Bo507N5uScEujgCpLOCFeShwzH7Y45drwIWfQX8qS3kGRBBLiaaT0_GP29z9hmB6zWd5w6LpzTbFJZi2upoP_gbVbQu_gdmhrqYLq-QTty_8tjJaOduihJFFOXtObRu-"
+    "photoReference": "ARywPAJdxSmeNXORqkjlhGnVHxGQoo0H46SpimdrZFV6MDBqfMLjjg8-6KHg-JZ6689TNapfqV4ToVo_ZmTceTmy4VAKfh8j8uxW28RAXZfEvw_7o6Rwri9ZWATzhZLiC06x2WfsehG-TLGROIt_FXFXasw_a3_HeyW_T6F78DPtBZIJySL1"
   },
   {
     "id": "ChIJwyO9jgoVVBMR2_TlnoAM6DI",
@@ -259,18 +258,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwy5uYCT6QrBTKC1DLu7VfncyG4C5d-_OqURK0FcIYa4nc5rCUsGCtm9jXeVGOo2r_0enOrDmKYb4_cTA_6KIMMU8-sohZpGgy8BSC8nLXh31ZpaP-YPosK10jK5h9TU55uHu1-vBp70ercyfI4PkckPfFvvixqSZtGywPGEpPhVQ8o"
-  },
-  {
-    "id": "ChIJGwPymNoVVBMRjewYGjbi0wg",
-    "lat": 42.00042,
-    "lng": 21.432295,
-    "name": "Monument „Strength, Glory and Victory“",
-    "types": [
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDwkKF0K1pjZI7MTQbsj7ekQlNApRkZDV1tMf0RJ9gN4pY5-yEfBMAbooM0ACUXU3n5xt8REAL-mEa9Z2O_w6CIzYb-KIbBNtYZDErWjXfxScvbrK9JYyqo7xQe3egM7drCqzzEZTqu0WQJRJRZ8dW0jDck_2GpZSPYRS_EiBIzEjyRm"
+    "photoReference": "ARywPAJ16hU9BKHN3fLXWzXGF9qNFvj1ef1aC6sh2sLtVILxNf-ukLJialWe_lK6E_gtXTvSEhLQZD1t2-s6rRY5S3JDmY14As-6FjkYZ_TJ-xL1xlSwNk1UYoFjqQjFKiavBmEJ5gYM7KszypBUB93NuyZ0kVCxyE9o_ddVmx2xmJLdeyU8"
   },
   {
     "id": "ChIJ-9kz2MAVVBMRyy1kiPS8spo",
@@ -291,7 +279,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDzI-pzq8f0uhTNC61JzJxBEoZshpOI_UIfws9M5hxNAsKiR5Ld31R5Fh6A6D3PWn6re1SRpW_LyXlpacrPkvsJ2TdvkdehElR-__a4LJKxBKaBSdoGRqtlk2XljDaiN_G0gLjXDR9JclLGI-6sDK2bA2J6pEB8yuciKGfpaXiFHw4BN"
+    "photoReference": "ARywPAKUW8MBF-1UJsD3GqkbeGGQLTmtN0SZ3KPKeVCKNOBAIUMvaRPmkwPNtt4_Br3PUMIlHbyQVbp3YCMwGko5nfEbPxG0pR3niF9Ii_sWQWTaM_sbQ_k04ePH5P4XHkdDlDtv3F1WB27Rz_Wq1WdbTCa07CgN1tLQtLk_3C52R2JiEx_c"
   },
   {
     "id": "ChIJk2adrroVVBMRD73VDWiMxjs",
@@ -302,7 +290,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDzyfQ5jKT_QIfk2Wdnec_kKAm39PwVAQ9LD636eWtjCrVo2ZXt41iHF5Wx4TgbPdd5ltSTid1WUYpGcXQBENhujIGogqw06OkshA7SjNtCJR5-dBNkQkH1BqdcWXlTJwOunD0ZedP0zTQ_lov7v3DHlrOpKDf9P1gh_X2A-XmsKlN4g"
+    "photoReference": "ARywPALIR2trG2oyvWv4p8kjZyELz7mbSDIa4ATC3t9Ks-KQP17FOU3_loaFfVh2lLitAjgVBqSAdkJop3fwaRCFPoa_jGatSx5ztqHFMoX9M1mCNF2W6fgU9of7dSM9QKp9M3QISmT0garEXUaSbqmWWm7zlewu0fl6hO1jYtiGJnOFjPk2"
   },
   {
     "id": "ChIJAb9YzGcVVBMRw5OkvIEyiAc",
@@ -313,7 +301,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwBp_Cq0aNzuf_p-cOVjx3ocHGYenonShU2obhNJh2AtOba80z9sAFaDTh7L8cFaslouPIQFe-FH9sl5GF-fQKZq-YVNbKwqMGFl3POZ5ghaLDpwtO1qqWNh6PYAiyo_U3KHUwo_erW_haz_uFEcvb5ue6C1ZZRvDL7oTzxWcSsU_aX"
+    "photoReference": "ARywPAKQPUplf3CBvswXY0boczyAB0MZ0G2ix3aWZBFFP_SG3Ux5ZFqJrxIk6s3UOx43uTJMCD7r18xbznJRg2zGNvsJYF3XX23LWohMupwTCdWT5uTh3beZOGnrGr8_H0FD0QQkKcv0r3U1fbj_cUG40d1MdcAbpqWugTK76WPdANlOehtQ"
   },
   {
     "id": "ChIJe7fSCtkVVBMRjwiMJpFAWPE",
@@ -324,7 +312,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDyVklBoHogYimYKMTUvAIw-ro0M3_xdwJeeqSQz1RhPcoA5W0UvKa0hqPyZ-b8Ksk61bPuHDo906SvwsJuVWwpfGG-XLNaMqBo-3c4XqNJ4r4MPZAgPwnCmNf6_tb-nJuBJnSg-whZz3QG62F9CKvLosqrBFbjcAAXCKrfo_HXB0bhn"
+    "photoReference": "ARywPAK4KmDiofJzLhmJuICy1bMnjTvcBAHS7PDVNy8NzqrreMAUyUKxU1S_4_INS6trSrwcckmnz4Nezvs6gA4bGhVkHD3eIWIYmvXQWX-ZVBOHVrZE9-bd4PBpyW_4CgMQjgtWVvu-wYlHjxjFP9J-42HddKUfr516eFdyOXnEcz-UVLpi"
   },
   {
     "id": "ChIJc0yWgLEVVBMR9LEsnUIrAG8",
@@ -332,12 +320,12 @@
     "lng": 21.43341,
     "name": "Macedonian Holocaust Museum",
     "types": [
-      "museum",
       "tourist_attraction",
+      "museum",
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDy_NCSvJ5ZHr_dfJeV9iX8s-gMQ_DXjTTTSDwwIyEMW4bWh-NdRKAUozsAxJJsWWtlNMMtQYG6MWOJ1csQemBD2VfcfedQDAzldW1uylNSHtAV0w3_Fs4Ka91xYvJ8ytxGWUqOwI21Q0gqVt6ugttuj4dUhVNYl4Kw-H24a9dcb3vMd"
+    "photoReference": "ARywPAK6MNHysmfl08ZOvRXfsI5jpn2XHNu8dOA6WfVj39bM5Z7fJ_0xZOXjup_QKu4ftGyuypHl_bYDPydOjrPRSs0jIn5EnIIpgJr7TxItHvUHypxeaLgBg_4eEV-JSCzKt1yLap8rUUKovLyIKDK_S_veQQvHcv7W9Bd9X04nIMhDCW_V"
   },
   {
     "id": "ChIJw70_mDUVVBMRdQb5aZQl_rs",
@@ -348,7 +336,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDx2nEcA52zjnURsGG6vlt6-rOaBK9B5r0XM6QQ4xUbG5Dvtq9BiU5CoXKFmrj3Nu3hiL206XpReRROA5IE4m59q5PE7lFKWj18es4OBqUcONhIm-5Z62CgQaUd_qd-zbLoXXwV5ZYB2K_nL9b5JyVXQOhTEkyL2Ti5BHwTdn55l65ma"
+    "photoReference": "ARywPAKd-nwJHgEvbevUOFxqC2TaO7659XNxegxdryQCoeIwb_BIFqlexguyXypMmxK3RZklekiwrUpT1UgAWY4s3tV85t8mBO8h2hdeSw24zSC4y-uc1OYbBpOGdaGTmzCP8LsQ3uudfwg58zWyHjQBEmzND4Ub2638YUZw7Gw3RhhI7gpe"
   },
   {
     "id": "ChIJ8-NGLRgVVBMRaP9aSO_5AyI",
@@ -359,7 +347,19 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDx9KLW0ciQx2Db_dWKsz5c7Nul-v6TnRHVr-sla6OSW-YhUoKV7gmLW2qTiGncZLT0lcO9kjlvsJ17yHeVpWrKxmYtACw2197oZWkd4PfynT2ujH1wZOIthElkjZ-SK6J_puMbSi9tbzJTnwqHH43_AaYdYCm94lqdthwrtAMwcfTLu"
+    "photoReference": "ARywPAKOaR2GdrLzaZX71_xhBZ4nwTtxQGvwpnZQpg90rn-Jp4ErOpRECPoTmhh28yTrO0KGB4roTt65gCmAEf8gUcoeSellm8FpFs4yGYZDJGPkzJhWJWhF-Xu5ingJ86kPUE8jfKFIUcJLXdmu2sMifdEVEMjJZooROXtD0BuyKYZ4EUCR"
+  },
+  {
+    "id": "ChIJu9ZJLfsUVBMRn0ey-_Gsvjg",
+    "lat": 42.02241,
+    "lng": 21.418865,
+    "name": "Скопски аквадукт",
+    "types": [
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPAKvbwqzynzaPx9zCtfGqCXthX-dITTYPW-vJNSI5srvhntlaIvO3zU-00GPAK7lZfXJR3_HT7iSI_GuLiK-m0vvj_y3sO881JK6sB0aKJAxLudZu-hojwGyxr2DRkQC7nl64taUNUlVDNUnSVYYZNuEEuEBwU3OYQVZZC0Ind3CrgJ_"
   },
   {
     "id": "ChIJb4aC9m0VVBMRK2sObPTFFTU",
@@ -370,21 +370,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwLA0DvDBXO70ke6JErlwSXJz0OALgH65OI_5K4n16o5tZbTuGKuvp--iQbT_KvEIWkMrZs2iXPLIq0lltpCnooEtrdggaolLq0dX-d1gwzkHNJA-GQ2P8M5jW7JT9d97NidokXBQBwrNz3aQ3sThAEpdIhrA_Ea_E-XmHwpaKcu0cb"
-  },
-  {
-    "id": "ChIJsb8Mv0wUVBMRf9issIqO_gk",
-    "lat": 41.99868,
-    "lng": 21.426462,
-    "name": "Church „St. Clement of Ohrid“",
-    "types": [
-      "tourist_attraction",
-      "church",
-      "place_of_worship",
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDwN85tR_dyuVn9WrGXkMfmVueQ_n_To7l77tNYfn8QHh0AwzvBQiCXK1_SRZxhXH22ufhgOiOow-kZ-Mtt595GZVhAM2pxMY-S_dfqLetxoJok3y0_XiQOHYKNKQINi3eDpGRP4B8GAabCefs19xax-Z87IcGnfAatHCQ7MyE4r0U0T"
+    "photoReference": "ARywPAJqOVLmRBDml-j-apKJYkP7tklqibdNDjX5Kciyc_HeNFyk3_HkSybxwKSk762lBFDuZKug5R-wiFeSFALXTKbij6RDEdml8GojgcS2bqeCVTCdRHcpnfAZtypVlFR0WpUcjVp8tTlnJbFQi0kg65p0EBt9_cxR69uYvQetHbXGTyR1"
   },
   {
     "id": "ChIJ9xOWRK4VVBMRFvfRsTVuw_k",
@@ -398,7 +384,21 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwxRhakxMNdWbfIBgWpfBMKtuYC5lPuO2KYSME0JifoTP0g6OZsSWgft9qvEL7fpA-azioSvRKRluHebrrUWLZI8t7OqW0_HjKzudoCljkmYED4HmJFfnTJW-LXSUg0p8cw6QMgrS1HmFzwxCAChXWtfjVxhCQuugNyJLHhbnIccjVc"
+    "photoReference": "ARywPAKjgauEJ_Izq5TwXWDi_exF9gUpB1OVfQxoC8qXD-IP_ZEkifzHqqyrzI2-wl1GJbm6Sx6c57TRj5gf4ets7pY8Naqcv4Y8kdszwbtEn_SVzsfU8CZb6-c6vWTnEfx4XHMI_o-T0SKkj7DqcGythHOHN7RekGnwGYCaHn6L0S_Wu5pi"
+  },
+  {
+    "id": "ChIJsb8Mv0wUVBMRf9issIqO_gk",
+    "lat": 41.99868,
+    "lng": 21.426462,
+    "name": "Church „St. Clement of Ohrid“",
+    "types": [
+      "tourist_attraction",
+      "church",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPAJz9NLvrIOdq-9z8x3PXinmf4YRZHpyaDVgB52ZVO7mQ8kRLDxfYtIoWpHl0c3GtDAE2FOW2f_u4GAoF41HCD-lrR9y4qedCaFcGU0Y72CDpFEa8OYgCG5LcglTdHJ8l73D8qe6k6L2dXEcI6dzUcgFmHGsiFF2evYL1SqfknwFHGG6"
   },
   {
     "id": "ChIJzaXdliAVVBMRtnteI0NY5D0",
@@ -409,7 +409,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwCUuTO0-vGgyAXJzYRerGyj_wtl7HhDNAl3PHPIAq7oFUTHTZ67tTgZBq0D06yLEs89DDpHrS1RNzXFloqKl7BhQqALu6Koa1wVIogOpbyivmt8UD97QewcGPobmv5FoBEvCB4umtqfiFU4A6NXkJ9nFtfBJLcr1Kk0jyuXefXuU8c"
+    "photoReference": "ARywPAIgISP-ZJiwqIaHrMm0aILEvbS9krp3K3ove6wWAn59rP5L-4vpeYUsNEcVeIIta-YOF9DvlOdWaAKbnDNUjf1UzHAu3nA7zW6EzdsKkYB6tEiSFMXkY-82m7Xv2T3vq02ochQ_7gPAlxjweWzrYmZh5ywb4hjzf07qEw8Dyde3KtAQ"
   },
   {
     "id": "ChIJdcPD9UsVVBMRUAr2heoAHOo",
@@ -420,7 +420,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDz368-AnpptZTh--swwxUgCrsfazGmS1JZ-B-u270Ww4yw8JdJGqOuFMzyUBNYbOOKqVYxgmXnyPQ8sIIM1V_5XkMwqy1gpK_v8ADny2viUxuK-yq6aCcUoAuy0bqc7DgrupRGefpIgZp0-NTDqiGvtXkqLKvBMfvDk2pAe_RaFmHbp"
+    "photoReference": "ARywPAInv4Di18iIXxVwDsSGC3rr-VUavK-hDBP8yd1Nu_mkusiIUgX5Cxtp1YavEvOnk4PXg_IqQtqZTyot1HEZNXAvUvxSTZU7DKRp_mgay57RPhHhC6Pwyg4a98eTCRS0-69RZIqi3uaLAb0qkRdxGwO78ehLahtnvAHA7Kms47SVHy4w"
   },
   {
     "id": "ChIJ9bheqbUVVBMR_e0Sr1BQ-sQ",
@@ -428,23 +428,12 @@
     "lng": 21.430872,
     "name": "Memorial House of Mother Teresa",
     "types": [
-      "museum",
       "tourist_attraction",
+      "museum",
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDxdfuOdUopnMQZPFEJuz7pj6dd9TteE9GWZghbqdKHOf0dPcxKaRsixZNNQFlMGJauWNbGlKarzzdEzIWHu1SaK_NrUSy5owI4433o_K8LNrkNEUdCTW7TH8dkWHoAbuOVQ1XCvA9LWfpmHot8sn_sR_ddzKeKStN7KeFomN7LHQh2W"
-  },
-  {
-    "id": "ChIJP7va90gVVBMR99ACBzprvZg",
-    "lat": 42.019287,
-    "lng": 21.394691,
-    "name": "The Bardovci Hill",
-    "types": [
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDzUW6RsSv41vl8qm3Bg-tGq6i_nO7xGbOgFRjogPIJEX8V_X13fP4jCpzKMNWWbsPktkohO7n1jRXq5pw3SEwg73EPY0sH54tUx4S1cfna-s0IG3uJs7OHCXjQmor8EHZ2FHq-G1GKoIjRAKOd9o7IrSFTQxdUQviIdcFvoXx9FKWe0"
+    "photoReference": "ARywPALCd1ePFi9x2N2LrPIoeeV9W7Fxs7oAsqxU0S9t97BzFPZ-sQTCzQ_PorTj-7T-MUa8QFEW2AVt7gaxRmPwPVNuVZrYxr9IAYaPeH_icWS3y-ZkP3Q41PyoLrzZMGWQvDGfZUWIa9R6rKRR4v_cer7Gz_P8mp3xqfN8gY49ZsEM6S84"
   },
   {
     "id": "ChIJG2s_OrQVVBMRfCRVsE3u7S4",
@@ -456,13 +445,45 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDxK4lUaD439SGGjM9LACNyPAE4sgdalaoZquooSeP0WmLEzsa8ygKx_E3TkrDdrdlw_10KAlvsEU7xMtuc_vlXRXvrtgHBsp9NK47y3cQh-hAB7cwUoNeMffGmXGaKdgcv0tXTatnlO7y-BdZogxOIc2TbOWjL76x2knHQg-FTUMiRR"
+    "photoReference": "ARywPAI8VdyFLdnFByPflJS_9piyTpZmEdie-fAuJ7bCCoJA6PpbqsJAbbsWUD9uF4W2GKsnMlIifRPxNVFG3F0B79VKTn1Bdkhziz-OjaxJAXFsq-wdfSuPlh-ARnkmknp3RFXi2qK8UhMqdcUc_nUGbuJWk7sFb_DPcZRQtRC6EA0D2Sfl"
   },
   {
     "id": "ChIJGz0v-H4VVBMRHIFOcq9MNv8",
     "lat": 41.99554,
     "lng": 21.429993,
     "name": "Палата „Ристиќ“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ]
+  },
+  {
+    "id": "ChIJAz3oBQAVVBMR0SmjzKGTqPc",
+    "lat": 41.99665,
+    "lng": 21.434275,
+    "name": "Tsar „Dušan“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPAJE8GjslYLlXcZS4v0npuKtAKq89puxZL18kVJqB7Fp7sl-XDBsYWmCj483XD5-5sle9vL5WDmjzAl5QL0I6supogPBkVA_DcP_HSRxMXEeJcNgNFaShx4cFDUK4n3qDSo9NNJbhl4TMA-hQ2EVeMxUgLKQOOzfjyDljnQ6Xoq3-SVV"
+  },
+  {
+    "id": "ChIJP7va90gVVBMR99ACBzprvZg",
+    "lat": 42.019287,
+    "lng": 21.394691,
+    "name": "The Bardovci Hill",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPAKp-XcMFzDsTi0BGpSnXcw1gXymr3pUoVxtO2U2sSsI4y4NmdyVjQ967iH2RfTC-vWFep1XbLc5zNeEL4C1RJi2RFOz_lnXt_siBSKcbFW-mTJSWKcKpxTKuS_eT2ZbQiNU1is_aF9zWJa8n20mmmksrM3c1o8tG0zZDRnFyUOQG2PU"
+  },
+  {
+    "id": "ChIJNa0Ctm8VVBMRjttk_ZFrP3o",
+    "lat": 41.994034,
+    "lng": 21.433317,
+    "name": "Споменик на децата бегалци",
     "types": [
       "point_of_interest",
       "establishment"
@@ -477,28 +498,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDyL2GjunZgS101i03-G99tXrQupCS8xRkIdJoYIAg31n3nUS_rJtfCr7-PlFNNbswBhJgUDr_KDK7zsLdv_ozXNTW5hHYm9vW-Qvy6BpAGIpOjObceKIevF_9npe81RBPuKVr1gWzOe1gP8H8r5Zcogw4vNBlC-dzQpkU3kJkh0H4Fm"
-  },
-  {
-    "id": "ChIJa7q31aMVVBMRRovZOguhNzA",
-    "lat": 42.00175,
-    "lng": 21.461815,
-    "name": "Monument „Philip II of Macedonia“",
-    "types": [
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDwi9-zNVBsBHGFGpxydUXr69PQOiMQ6vKLZc5fXk3KXHpePwsieXQTp2A7Eb9Xri846I5A1_fJH54GW_8EceGiAyng9T87itGSehc5On0Mj_iIrSnX72yhyJZTM-7Rftyfv472dDBkWITbdDAOdpNyJVlQZvhor7ToBk-Ps32Pr6kBZ"
-  },
-  {
-    "id": "ChIJNa0Ctm8VVBMRjttk_ZFrP3o",
-    "lat": 41.994034,
-    "lng": 21.433317,
-    "name": "Споменик на децата бегалци",
-    "types": [
-      "point_of_interest",
-      "establishment"
-    ]
+    "photoReference": "ARywPAJ1iFCGeL9Y3aSlNOTmYWfhWBi03h4aBqEeIa5bKqxDXGB4NYhdoQxIQcZw7RIBBU61ha_kCDBbZc3BIa4rWOiJbR4dVw1Pk4MDpAqMiZ9ztr92MwVkBiyMpjPoyxChi9U-96WD1-n50yGIrCbhU_EtIitBAXuK_Nd830Se6PvcEMRD"
   },
   {
     "id": "ChIJkyyGoIUVVBMRkQMiff4DUZE",
@@ -509,18 +509,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDxmfSKpFgvn6qRENM8k4MayRrM2Tz1U_cbmHeJvX1JRtBjmtLTPa37QU5CMWwrsnBIHEwCOKjjgdQnJjmPbO-aYzOT_C4HtyWXfUyFiRAuW83F13vCPdyCTK2VRY_QTsjAE3SzsC04IwUWLrzSy5YoqqHzhAY4lJBm3QJWpY5slPwxh"
-  },
-  {
-    "id": "ChIJlUhpQWEVVBMR2MKr68w9YMQ",
-    "lat": 42.00903,
-    "lng": 21.384893,
-    "name": "The Path/Патче",
-    "types": [
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDwfqL5CrmvOjrkjP5ES45nNPP-VlQq_M88qQ3aBadyfPEmmdCXXuytOkATZHzNmAyZMvaLcVLOHo2XOv10WFuBPlNC6MzkE0keHKWEhe_sLOBMxsCG4OE7e6CENs7_a27ypj9zeYz6OTUoT_L_7cDMeKBvKIIKVY6YOsHgHWobG_Ixt"
+    "photoReference": "ARywPAKdUOWNrDnEIkYfNHaDvOjgaKaWuq5D9q2RsndndHXayj0byfmfI-IiLF1Vr_uAS6zx3oUmeV1D-H8gX376gafDPttUE-eFLLmY6ngVnWOuOkLf8bniiaZkTlyPjG8qeX05CIBuRdh1JYSkxTgO1Nkmd-gq3CNK8MO0X49I_Qy1-c2N"
   },
   {
     "id": "ChIJT23GY9EVVBMRA8I3oHELxUE",
@@ -531,18 +520,18 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDzGMWHAJdU6l99UwyY_3YX4LXFwUuouO2E1d-IwyJnRv_RemkmEllq8VYgiqXw1SsunYtB0JqjXaVqeQ2R1usbovzzlgH9sPHTUtlVT5Rt84KdVG0vaxFMXRgFmMyvxgrC7QiAuTpghl0g6SyXNW6Drs4XDzPWaRTxqPQCmYNfWV6V-"
+    "photoReference": "ARywPALmd4O2tObE4-y8ulas9BR2e_OJm6pEtFJALB4TRvrhHzozpZKo2fgX4Na59nHQVagWW7iZGLX2k7FRba6Aq4X4GbRQaw2TjmqJvvcCwJqgJmdg2WDcC4-uwgNsd-XMqNkQLsOHxrqPiJ0dUXL_5kc6b3qkqkHYydnP-yU8eWiQt21a"
   },
   {
-    "id": "ChIJyXGKy0UVVBMRHfr5UjlWtYM",
-    "lat": 41.997803,
-    "lng": 21.43462,
-    "name": "House „Ibni Pajko“",
+    "id": "ChIJlUhpQWEVVBMR2MKr68w9YMQ",
+    "lat": 42.00903,
+    "lng": 21.384893,
+    "name": "The Path/Патче",
     "types": [
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDyj9gRqDoZQzCdbH_LFMSMbo97dlMJogl6bN_y_6tkrSWpndrv6Avc5MTXOFHbHibLQhR4tqLj7NaiuwRzkuo3yv914BwvJBDdU3_g5K_6nAZQiTYq_AlUbImwy1uZIjDfy49k-ZdrEDXMcLI5eusuJz-1XGabPJlWgTqqcyW5vCwf3"
+    "photoReference": "ARywPALQVCeY1ZwTNftZvZ-zhXA86lUlTf5t97pYuEyAQH9af9BLA52sTTxuYvXR6QsuBHnx4P9euswEpHMQuKMPvv8XneMXZt7gSGyy3d-ulNFh5mxj4o5SgBQ9KUEqYCiBG_4JB6TWYHB2Jrum8IZFd032ELFFjUrbFKILYtogrw5FDnts"
   },
   {
     "id": "ChIJ3_maXm8VVBMR-jl1-L6g8CQ",
@@ -553,18 +542,18 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwhT5z6_gZRNIN9Ejm7LOwumdpSxnGJFALEKmcm8SfzpN-Wphrsy1Y1zDtpZEcQWIZOj-GBgW3ln0ZGEUxwImZTcs4Y-nNsQSyCw48mwCmJp3aNWtS1Xx895pkPSW3Y7rUGPHRO_dsS4Y_XAysP-y32PeYzqBVAqBzmkLkVYwJDA2Q1"
+    "photoReference": "ARywPAI_r_iQPv_O57CCk9pB_dPFJ1ybeac0JrESG_xB7EgeW_X0vai8QHghER8-63zs62bR0rxTGTXnCYhMxvNjYilG6XAO06G-Z8p1K42nCHB62iozRNZyHBTGl68Qw9pC28aA5w1ls_zXJX3Zlnt5sKFprtUHIafDlCN0CZQO3cIqDNTY"
   },
   {
-    "id": "ChIJG4wv3ZwVVBMR2PBeaivfZeA",
-    "lat": 42.00184,
-    "lng": 21.462254,
-    "name": "Square „Philip II”",
+    "id": "ChIJyXGKy0UVVBMRHfr5UjlWtYM",
+    "lat": 41.997803,
+    "lng": 21.43462,
+    "name": "House „Ibni Pajko“",
     "types": [
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDzV4CrLRrHh1TQC0EUTj4v8VryuPHZf6cubstVkUGQkTWIeXg5PQ31SRJCNrAiq_xrwwPDvkR6aPXPSM-xRTVprEkwI8j0ZUNGNS0q2Irhjw1nPgykzyGOtUkewZIy6PZ9QtmEGEmh9v6cZfayKnRPb29Dqb-VzNXznhned6IZJPvhU"
+    "photoReference": "ARywPALOTDEPzAoT_ytCmYwHZGvGlbGSmUHT6ww-GeXJ6wbY4NbpkUogdyxjOoIFbJGeW6iVmnoiVWbOSFWkkHHWsM5AMUTguzVr9XVO6HxhTYZ8nOMqUl6t5D04Gtbw3kD7f476WuYGIfzWQ6HM7TpMBod8i90u_f3Csb3UzQq2ICBwbUec"
   },
   {
     "id": "ChIJZ3grKTcVVBMRO9BgEZLE7CA",
@@ -575,7 +564,18 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDyh9nTMJ5sz7U9Frac4gBnum1lVl8dr9pp1U2Y91h6YOXzfX-V1QvaipHtZL7OXFxa6mAOmxURAdS3sZqmHOosDzYyisiwSl1PnIXnNl1POsdn0PesKAk8mFzLSXNdrZJhnUbXuB-HkrklEj-6oKQ2iU7kHC2vjLEx92RGS1EcS-nk0"
+    "photoReference": "ARywPAJZ2MKNKiLBXZbKI3q6CT_8_RS-iSrej6muMB8DMAhuwX0VwDAGfBLUDzwp5A_hWQHabmNWBy7yARWshMyn0bJ1yVpgouOtX1vgMUnm5LjVTcLee78X1cehV-MGD5Ke6W8it3nKRlOSY45UJyUtRpMQHk8dbJCZUoE-dFGdyn_oMXGM"
+  },
+  {
+    "id": "ChIJG4wv3ZwVVBMR2PBeaivfZeA",
+    "lat": 42.00184,
+    "lng": 21.462254,
+    "name": "Square „Philip II”",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPALYUOJWHhCPlHIHBS182uUvRNN4Nucg1YyCz13aa3ESnGUCou3W3nuNEnMTyqybEcAoQNuhK3Mz3YuRWKJkpKhNlkXk3ajFXGo2L5KjvyiBzUcaGoDIwZCZdmWGza7hLUntK_dbK7vZfyuPmoykENYTE2X0OEBmsNUpPpp3navttRoz"
   },
   {
     "id": "ChIJAQAAMKwVVBMRAz-uaD8LTfw",
@@ -586,18 +586,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDyf0ohZcleq2DpkcJGU6hDT6eb0VvRQl6XAlJvkYLEUFpRjtBxg3wh2excPOLHutPNU1FYPXCmfgLHiB64_yIM5MwyvDTxjJxSME3LIBkxfKcOY5PHHPDh819mB6JrGPqXe22AXBuW55L1-d1sWWAQE61FvnXx45nuj0_iHnSfIrNpB"
-  },
-  {
-    "id": "ChIJtbkXuYsVVBMROig7jmtFFO4",
-    "lat": 41.98323,
-    "lng": 21.470243,
-    "name": "Штркот на Аеродром",
-    "types": [
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDw1GZAwBffCJnqxrYRlapCgD8KAshgGLWmHGaSTasceRuyzRZWua1Fg0sbyDyM9a0aN6w3270VG1bW2uwhmnb7H2C8oDD2_QN2G6s_oCG4wkfoQ1f68eAYh4466HbHs9Ilf70k_nmQAK532FEuq1sZr9FG9m84SFwpcxGHVv7SVdtKq"
+    "photoReference": "ARywPALtKrv1hAnLdnyVtfdCWL6IipSxGW9ykdrgRoEBB5GIFZc09IXzpD13n3q45lh3Xvg3CvgOmOEKjslgkV1wgvgaimnOf7vY_OHOowcyF6iKCJ418FbqgP1gQm8qrPQHSPdBN90Fzuptqda4-htkxBQF6MMiowaJrkx9vCb897gWWIDO"
   },
   {
     "id": "ChIJIwP3_boVVBMRj15LkfXI6Ig",
@@ -608,7 +597,18 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDyIRsIYjPBBjdm5YYC2I5wGLtMmegVSATa0cHRfCkv52K8etKgCxFPj_wPVRJ0fyF3JXwI4rFKprthdbferYJwamYKbcV8_RQLwfJiTbzNXWE03jPnzjkdWmLlP8vu75zKMnuMNiIEAyPiX2zzJqys_0MXNISiKg5h1xL3ItOpXiIKq"
+    "photoReference": "ARywPAIfsGcLRwH7AAzvTW-KA5OH8aMCho-CVUI-ac1QpbmTokoI2LNbkr8Nz0DlnQ6EHsxroVcBxplbe7-u3pKFRazB1VPyJtXYY6he27Wy8ysgNMf7k1G7n-EGhHFkjkV9SrUdZxdV-E1RtNUiS2DgAn4mxUofnnGaNWI_nYttjdMglqq9"
+  },
+  {
+    "id": "ChIJtbkXuYsVVBMROig7jmtFFO4",
+    "lat": 41.98323,
+    "lng": 21.470243,
+    "name": "Штркот на Аеродром",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPAJOWDKkXEz1cRrE__kzAa3cx_UVjeobqY8ILZtbWH21erOJG29K3Vou4tm17FR0rVLlc0DUpOhUpJJlGG7QqIuAViafASmV9qOebRGhJpKvocO8W_Lz0leChjj5Zf0J5I2ffMchXXIxaBZE1UZYtsRhGDZXBnBtAAshU6Xsk46ylHh5"
   },
   {
     "id": "ChIJU2gjrn0VVBMR7zzvAivvosk",
@@ -619,7 +619,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDwKE90bA9Kst7a00MHE4b-bXG9JKmnH5NGPJuU1qHi73SeD6aJKFMd1EEVt2lIo9KLR90QlIWfmcU7xT8nn6ismUlc1o6pI8sCLtF40UTHrOUNTCOdvnAV4YCmz6uh5O2rluMnoMv3xemyjHRziBfBT_X52GadQ5JFQZzqJh2uY12pd"
+    "photoReference": "ARywPAK1X_6CQpys2bWq3scXF0q-j40wfT1D53LP6k9-hJdW-IPBb6ktJHOvyKoADj4HApHSGZWVxag6AJfXjhVeGz86AVvkEjQuNV30EOzfJgr68iwYeEsAzU9gO7uxKuyqxhzAPie-xdWAaC3YYfkRupzardzd5NuGfyWWhBfIwysO-o52"
   },
   {
     "id": "ChIJjfRZ7kUVVBMRThai1OGztC0",
@@ -642,7 +642,18 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDyJ22SxkAAnPzuowWQY4EMkzt-TJqYvH3vuysrTSCAXdtEiml61zqOSlF1-VUHjscwK8FwihBMHks3A6L3oLCElzaqSCANWhqCAQEho65cdZ-2clPKQGh1bN-kVvOJsbMsD66wS61soLEvA1a-eqeaEhr0bTKodp08xIOtrfqtD7iqD"
+    "photoReference": "ARywPAII4EyLyo_MGyXogagAL76lU_vcQBO2XGL8j7k2pjTOyle--EpW7XgBaVxa5jz5vB7GqCcUdqwjQDtXpWM2Fkut6rNTPFnSqSINdRleLne-c-WWslrtglubFOZS-kXdolgQyLcDtlyNqLvZHJy16xb7tljIsIYI0AoB9RPpDOGk0V8W"
+  },
+  {
+    "id": "ChIJ84mJMswVVBMRQaOQvu_yF-0",
+    "lat": 41.994366,
+    "lng": 21.432213,
+    "name": "Monument „Hristo Tatarčev“",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "photoReference": "ARywPAIfeNSA5KREEmKarxXvrGVyyTMCMBymdjXvEg1Aa97bbGxZhvPb1EDKz6aieSi5ywnHsJ3ib-qa5iAVQw_r6e643rJPNkc5gTWC-k1lTKWRA-Qgq6OHWojml_FId_xYfMyo5M36M5oCarS7mmAAxqLLsV0CVsntpj61MRdIKAlaBwuB"
   },
   {
     "id": "ChIJEVJRWHsVVBMRghnDoIZvEOE",
@@ -653,19 +664,7 @@
       "point_of_interest",
       "establishment"
     ],
-    "photoReference": "AW30NDzjoffU0cqV2_qWGtMIVFZ11K3PXNmQrh7QZ88rq6IJmxPn5-xLkNBgBnLWp0wNHUnKc3L0Eolcvz21cc5Aryo2BPjqfIndfzW9UB85J-b6paDrGABZntZZVuoSABzQf3ahLMm_vHjaaWuIwHltEX77DLnfOBdDPy2IhwqHsrA3WnmS"
-  },
-  {
-    "id": "ChIJL6lWg7kWVBMR_3lG08ZSQhc",
-    "lat": 41.965137,
-    "lng": 21.39435,
-    "name": "Millennium Cross",
-    "types": [
-      "tourist_attraction",
-      "point_of_interest",
-      "establishment"
-    ],
-    "photoReference": "AW30NDx1hx-eCkafn-IPQ4NyfftpSGbyrcicULoB0aRXDkawuMYI5MHi6h6WZdj3zyxX8yKejrz8IrJv_x30mRgHpzHVh1h1ItHOIBlgHOWn5SAsL1qFycHn6PV7iJOCvdHPUGYX7Oh3rVJwLVf45UoMkiwf__KzNVpdkCKoJ3xCxUiMkwpb"
+    "photoReference": "ARywPAJaoFjX0S_gL_umqMw6dMzC7o-vjdgUrqYIo4BUGwWer9GiTm7KeQn__GAs5H32W3IdPH4a1CPj1mHVu2lkvi7HnSd8PQeAmjjBtdORAmjh5s8dRr0-1te0zbemb4wc5uU19cFvWw5NgEBT_PsBae2xmbzYPXSeUahoWkTnBcY_G6hA"
   },
   {
     "id": "ChIJ91Os1uwVVBMRhAT1H-ChFt4",

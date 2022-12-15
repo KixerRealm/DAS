@@ -1,4 +1,4 @@
-package com.skopjegeoguessr.springbatchdemo.controller;
+package com.skopjegeoguessr.batch.controller;
 
 import org.springframework.batch.core.*;
 import org.springframework.batch.core.launch.JobLauncher;
