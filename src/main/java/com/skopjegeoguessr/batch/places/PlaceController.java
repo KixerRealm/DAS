@@ -1,6 +1,6 @@
 package com.skopjegeoguessr.batch.places;
 
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.*;
 import org.springframework.batch.core.launch.JobLauncher;
@@ -15,24 +15,25 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@AllArgsConstructor
+@RequiredArgsConstructor
 @RequestMapping("/jobs")
 public class PlaceController {
 
 	private final JobLauncher jobLauncher;
 
 	@Autowired
-	@Qualifier("jsonCoffeeJob")
+	@Qualifier("coffeeJob")
 	private Job job;
 
 	@Autowired
-	@Qualifier("jsonLandmarkJob")
+	@Qualifier("landmarkJob")
 	private Job job1;
 
-	@PostMapping("/jsonJob1")
+	@PostMapping("/jobs")
 	public void importJsonToDBJob() throws JobInstanceAlreadyCompleteException, JobExecutionAlreadyRunningException, JobParametersInvalidException, JobRestartException {
 		JobParameters jobParameters = new JobParametersBuilder()
-				.addLong("startAt ", System.currentTimeMillis()).toJobParameters();
+				.addLong("startAt ", System.currentTimeMillis())
+				.toJobParameters();
 		JobExecution jobExecution = jobLauncher.run(job, jobParameters);
 		log.info("Job Execution: " + jobExecution.getStatus());
 	}

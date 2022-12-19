@@ -39,7 +39,7 @@ import java.util.List;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-public class CoffeeJob {
+public class CoffeeJobConfig {
 
 	@Value("${gcp-key}")
 	private String gcpApiKey;
@@ -63,7 +63,7 @@ public class CoffeeJob {
 	private Step coffeeStep;
 
 	@Bean
-	public Job jsonCoffeeJob() {
+	public Job coffeeJob() {
 		return jobBuilderFactory.get("jsonCoffeeJob").start(coffeeStep).build();
 	}
 
@@ -76,7 +76,7 @@ public class CoffeeJob {
 	}
 
 	@Bean(name = "CoffeeReader")
-	public JsonItemReader<Place> jsonCoffeeItemReader() throws IOException, InterruptedException, ApiException {
+	public JsonItemReader<Place> coffeeItemReader() throws IOException, InterruptedException, ApiException {
 		final ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 		final JacksonJsonObjectReader<Place> jsonObjectReader = new JacksonJsonObjectReader<>(Place.class);
 		jsonObjectReader.setMapper(mapper);
