@@ -62,5 +62,4 @@ public class SpringBatchConfig {
         return new PlaceProcessor();
     }
 
-
 }
