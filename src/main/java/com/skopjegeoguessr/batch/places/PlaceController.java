@@ -29,7 +29,7 @@ public class PlaceController {
 	@Qualifier("landmarkJob")
 	private Job job1;
 
-	@PostMapping("/jobs")
+	@PostMapping("/coffee")
 	public void importJsonToDBJob() throws JobInstanceAlreadyCompleteException, JobExecutionAlreadyRunningException, JobParametersInvalidException, JobRestartException {
 		JobParameters jobParameters = new JobParametersBuilder()
 				.addLong("startAt", System.currentTimeMillis())

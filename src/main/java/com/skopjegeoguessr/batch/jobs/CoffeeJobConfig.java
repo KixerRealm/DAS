@@ -3,7 +3,6 @@ package com.skopjegeoguessr.batch.jobs;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-import com.google.maps.GeoApiContext;
 import com.google.maps.PlacesApi;
 import com.google.maps.errors.ApiException;
 import com.google.maps.model.PlacesSearchResponse;
@@ -41,16 +40,12 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CoffeeJobConfig {
 
-	@Value("${gcp-key}")
-	private String gcpApiKey;
-
 	private final JobBuilderFactory jobBuilderFactory;
 	private final StepBuilderFactory stepBuilderFactory;
 
 	private final UtilityService utilityService;
 
 	private final Gson gson;
-
 	private final PlaceProcessor processor;
 	private final RepositoryItemWriter<Place> writer;
 
@@ -82,8 +77,11 @@ public class CoffeeJobConfig {
 		final ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 		final JacksonJsonObjectReader<Place> jsonObjectReader = new JacksonJsonObjectReader<>(Place.class);
 		jsonObjectReader.setMapper(mapper);
-		GeoApiContext context1 = new GeoApiContext.Builder().apiKey(gcpApiKey).build();
-		PlacesSearchResponse results =  PlacesApi.textSearchQuery(context1, "coffeeshops+skopje+macedonia").await();
+		PlacesSearchResponse results = utilityService.wrapWithContext(context ->
+				PlacesApi.textSearchQuery(
+						context,
+						"coffeeshops+skopje+macedonia"
+				).await());
 
 		List<PlacesSearchResponse> responses = new java.util.ArrayList<>(List.of(results));
 		Thread.sleep(3000);
@@ -100,14 +98,14 @@ public class CoffeeJobConfig {
 			);
 		}
 		List<PlacesSearchResult[]> responses1 = new ArrayList<>();
-		for(PlacesSearchResponse p: responses){
+		for (PlacesSearchResponse p : responses) {
 			responses1.add(p.results);
 		}
 		List<PlacesSearchResult> responses2 = new ArrayList<>();
-		for(PlacesSearchResult[] p:responses1){
+		for (PlacesSearchResult[] p : responses1) {
 			responses2.addAll(Arrays.asList(p));
 		}
-		responses2.forEach(i -> log.info(Arrays.toString(i.types)));
+
 		List<Place> placeList = responses2.stream().map(PlaceMapper.INSTANCE::toEntity).toList();
 
 		FileWriter writer = new FileWriter("src/main/resources/static/results.json");
