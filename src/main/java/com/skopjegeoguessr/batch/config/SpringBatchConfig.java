@@ -25,6 +25,7 @@ import org.springframework.batch.item.data.RepositoryItemWriter;
 import org.springframework.batch.item.json.JacksonJsonObjectReader;
 import org.springframework.batch.item.json.JsonItemReader;
 import org.springframework.batch.item.json.builder.JsonItemReaderBuilder;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import com.google.maps.model.PlacesSearchResponse;
@@ -45,6 +46,9 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @EnableBatchProcessing
 public class SpringBatchConfig {
+
+    @Value("${gcp-key}")
+    private String gcpApiKey;
 
     private final JobBuilderFactory jobBuilderFactory;
 
@@ -84,7 +88,7 @@ public class SpringBatchConfig {
         final ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         final JacksonJsonObjectReader<Place> jsonObjectReader = new JacksonJsonObjectReader<>(Place.class);
         jsonObjectReader.setMapper(mapper);
-        GeoApiContext context1 = new GeoApiContext.Builder().apiKey("AIzaSyCZMPjDh82Z_NKVyeTHsddOYS_hMAmQg8w").build();
+        GeoApiContext context1 = new GeoApiContext.Builder().apiKey(gcpApiKey).build();
         PlacesSearchResponse results =  PlacesApi.textSearchQuery(context1, "coffeeshops+skopje+macedonia").await();
         Gson gson = new GsonBuilder().registerTypeAdapter(LocalTime.class, (JsonDeserializer<LocalTime>) (json, type, jsonDeserializationContext) -> {
             try{
@@ -132,7 +136,7 @@ public class SpringBatchConfig {
         final ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         final JacksonJsonObjectReader<Place> jsonObjectReader = new JacksonJsonObjectReader<>(Place.class);
         jsonObjectReader.setMapper(mapper);
-        GeoApiContext context1 = new GeoApiContext.Builder().apiKey("AIzaSyCZMPjDh82Z_NKVyeTHsddOYS_hMAmQg8w").build();
+        GeoApiContext context1 = new GeoApiContext.Builder().apiKey(gcpApiKey).build();
         PlacesSearchResponse results =  PlacesApi.textSearchQuery(context1, "landmarks+skopje+macedonia").await();
         Gson gson = new GsonBuilder().registerTypeAdapter(LocalTime.class, (JsonDeserializer<LocalTime>) (json, type, jsonDeserializationContext) -> {
             try{
