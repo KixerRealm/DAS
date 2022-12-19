@@ -10,11 +10,12 @@ import com.google.maps.PlacesApi;
 import com.google.maps.errors.ApiException;
 import com.google.maps.model.PlacesSearchResult;
 import com.skopjegeoguessr.batch.config.processors.PlaceProcessor;
-import com.skopjegeoguessr.batch.mappers.BaseToFilteredPlacesMapper;
+import com.skopjegeoguessr.batch.mapper.PlacesMapper;
 import com.skopjegeoguessr.batch.model.Place;
 import com.skopjegeoguessr.batch.repository.PlaceRepository;
-import com.skopjegeoguessr.batch.utility.Utilities;
-import lombok.AllArgsConstructor;
+import com.skopjegeoguessr.batch.utility.UtilityService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
@@ -39,17 +40,17 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Configuration
+@RequiredArgsConstructor
 @EnableBatchProcessing
-@AllArgsConstructor
 public class SpringBatchConfig {
 
-    private JobBuilderFactory jobBuilderFactory;
+    private final JobBuilderFactory jobBuilderFactory;
 
-    private StepBuilderFactory stepBuilderFactory;
-    private PlaceRepository placeRepository;
-
-    //public static final String GCP_API_KEY = "AIzaSyCZMPjDh82Z_NKVyeTHsddOYS_hMAmQg8w";
+    private final StepBuilderFactory stepBuilderFactory;
+    private final PlaceRepository placeRepository;
+    private final UtilityService utilityService;
 
     @Bean
     public Job jsonCoffeeJob() throws IOException, InterruptedException, ApiException {
@@ -99,7 +100,7 @@ public class SpringBatchConfig {
                 responses.get(responses.size() - 1).nextPageToken.length() != 0) {
             Thread.sleep(3000);
             responses.add(
-                    Utilities.wrapWithContext(context ->
+                    utilityService.wrapWithContext(context ->
                             PlacesApi.textSearchQuery(
                                     context,
                                     "coffeeshops+skopje+macedonia"
@@ -115,7 +116,7 @@ public class SpringBatchConfig {
         for(PlacesSearchResult[] p:responses1){
             responses2.addAll(Arrays.asList(p));
         }
-        List<Place> placeList = responses2.stream().map(BaseToFilteredPlacesMapper.INSTANCE::toDto).collect(Collectors.toList());
+        List<Place> placeList = responses2.stream().map(PlacesMapper.INSTANCE::toEntity).collect(Collectors.toList());
 
         FileWriter writer = new FileWriter("src/main/resources/static/results.json");
         gson.toJson(placeList, writer);
@@ -147,7 +148,7 @@ public class SpringBatchConfig {
                 responses.get(responses.size() - 1).nextPageToken.length() != 0) {
             Thread.sleep(3000);
             responses.add(
-                    Utilities.wrapWithContext(context ->
+                    utilityService.wrapWithContext(context ->
                             PlacesApi.textSearchQuery(
                                     context,
                                     "landmarks+skopje+macedonia"
@@ -163,8 +164,8 @@ public class SpringBatchConfig {
         for(PlacesSearchResult[] p:responses1){
             responses2.addAll(Arrays.asList(p));
         }
-        responses2.forEach(i -> System.out.println(i.types));
-        List<Place> placeList = responses2.stream().map(BaseToFilteredPlacesMapper.INSTANCE::toDto).collect(Collectors.toList());
+        responses2.forEach(i -> log.info(Arrays.toString(i.types)));
+        List<Place> placeList = responses2.stream().map(PlacesMapper.INSTANCE::toEntity).collect(Collectors.toList());
 
         FileWriter writer = new FileWriter("src/main/resources/static/results1.json");
         gson.toJson(placeList, writer);

@@ -4,6 +4,7 @@ import java.io.InputStream;
 import java.util.logging.Logger;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.json.JsonObjectReader;
 import org.springframework.core.io.Resource;
@@ -16,12 +17,10 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 
 /*
  * This class follows the structure and functions similar to JacksonJsonObjectReader, with
- * the difference that it expects a object as root node, instead of an array.
+ * the difference that it expects an object as root node, instead of an array.
  */
+@Slf4j
 public class GenericJsonObjectReader<T> implements JsonObjectReader<T>{
-
-    Logger logger = Logger.getLogger(GenericJsonObjectReader.class.getName());
-
     ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false);
     private JsonParser jsonParser;
     private InputStream inputStream;
@@ -54,15 +53,15 @@ public class GenericJsonObjectReader<T> implements JsonObjectReader<T>{
      */
     @Override
     public void open(Resource resource) throws Exception {
-        logger.info("Opening json object reader");
+        log.info("Opening json object reader");
         this.inputStream = resource.getInputStream();
         JsonNode jsonNode = this.mapper.readTree(this.inputStream).findPath(targetPath);
         if (!jsonNode.isMissingNode()) {
             this.jsonParser = startArrayParser(jsonNode);
-            logger.info("Reader open with parser reference: " + this.jsonParser);
+            log.info("Reader open with parser reference: {}", this.jsonParser);
             this.targetNode = (ArrayNode) jsonNode; // for testing purposes
         } else {
-            logger.severe("Couldn't read target node " + this.targetPath);
+            log.error("Couldn't read target node {}", this.targetPath);
             throw new RuntimeException();
         }
     }
@@ -73,7 +72,7 @@ public class GenericJsonObjectReader<T> implements JsonObjectReader<T>{
         try {
             if (this.jsonParser.nextToken() == JsonToken.START_OBJECT) {
                 T result = this.mapper.readValue(this.jsonParser, this.targetType);
-                logger.info("Object read: " + result.hashCode());
+                log.info("Object read: {}", result.hashCode());
                 return result;
             }
         } catch (IOException e) {

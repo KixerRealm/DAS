@@ -1,4 +1,4 @@
-package com.skopjegeoguessr.batch.model.dtos;
+package com.skopjegeoguessr.batch.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
