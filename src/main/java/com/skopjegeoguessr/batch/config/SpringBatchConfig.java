@@ -10,9 +10,9 @@ import com.google.maps.PlacesApi;
 import com.google.maps.errors.ApiException;
 import com.google.maps.model.PlacesSearchResult;
 import com.skopjegeoguessr.batch.config.processors.PlaceProcessor;
-import com.skopjegeoguessr.batch.mapper.PlacesMapper;
-import com.skopjegeoguessr.batch.model.Place;
-import com.skopjegeoguessr.batch.repository.PlaceRepository;
+import com.skopjegeoguessr.batch.places.PlaceMapper;
+import com.skopjegeoguessr.batch.places.model.Place;
+import com.skopjegeoguessr.batch.places.PlaceRepository;
 import com.skopjegeoguessr.batch.utility.UtilityService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -116,7 +116,7 @@ public class SpringBatchConfig {
         for(PlacesSearchResult[] p:responses1){
             responses2.addAll(Arrays.asList(p));
         }
-        List<Place> placeList = responses2.stream().map(PlacesMapper.INSTANCE::toEntity).collect(Collectors.toList());
+        List<Place> placeList = responses2.stream().map(PlaceMapper.INSTANCE::toEntity).collect(Collectors.toList());
 
         FileWriter writer = new FileWriter("src/main/resources/static/results.json");
         gson.toJson(placeList, writer);
@@ -165,7 +165,7 @@ public class SpringBatchConfig {
             responses2.addAll(Arrays.asList(p));
         }
         responses2.forEach(i -> log.info(Arrays.toString(i.types)));
-        List<Place> placeList = responses2.stream().map(PlacesMapper.INSTANCE::toEntity).collect(Collectors.toList());
+        List<Place> placeList = responses2.stream().map(PlaceMapper.INSTANCE::toEntity).collect(Collectors.toList());
 
         FileWriter writer = new FileWriter("src/main/resources/static/results1.json");
         gson.toJson(placeList, writer);

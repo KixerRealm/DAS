@@ -1,4 +1,4 @@
-package com.skopjegeoguessr.batch.controller;
+package com.skopjegeoguessr.batch.places;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.*;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/jobs")
-public class PlacesController {
+public class PlaceController {
 
 	@Autowired
 	private JobLauncher jobLauncher;

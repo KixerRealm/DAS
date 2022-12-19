@@ -1,4 +1,4 @@
-package com.skopjegeoguessr.batch.model.converter;
+package com.skopjegeoguessr.batch.places.model.converter;
 import java.util.Arrays;
 import java.util.List;
 

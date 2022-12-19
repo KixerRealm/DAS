@@ -1,15 +1,15 @@
-package com.skopjegeoguessr.batch.mapper;
+package com.skopjegeoguessr.batch.places;
 
 import com.google.maps.model.PlacesSearchResult;
-import com.skopjegeoguessr.batch.model.Place;
+import com.skopjegeoguessr.batch.places.model.Place;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;
 import org.mapstruct.Mapper;
 
 @Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE)
-public interface PlacesMapper {
-    PlacesMapper INSTANCE = Mappers.getMapper(PlacesMapper.class);
+public interface PlaceMapper {
+    PlaceMapper INSTANCE = Mappers.getMapper(PlaceMapper.class);
 
     @Mapping(target = "id", source = "placeId")
     @Mapping(target = "lat", source = "geometry.location.lat")

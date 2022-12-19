@@ -1,6 +1,6 @@
-package com.skopjegeoguessr.batch.model;
+package com.skopjegeoguessr.batch.places.model;
 
-import com.skopjegeoguessr.batch.model.converter.StringListConverter;
+import com.skopjegeoguessr.batch.places.model.converter.StringListConverter;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
