@@ -13,7 +13,7 @@ public class UtilityService {
     @Value("${gcp-key}")
     public String gcpApiKey;
 
-    public PlacesSearchResponse wrapWithContext(ContextedMethods methods) throws IOException, InterruptedException, ApiException {
+    public PlacesSearchResponse wrapWithContext(ContextMethod methods) throws IOException, InterruptedException, ApiException {
         GeoApiContext context = new GeoApiContext.Builder().apiKey(gcpApiKey).build();
         PlacesSearchResponse response = methods.execute(context);
         context.shutdown();
