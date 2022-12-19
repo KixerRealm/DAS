@@ -1,5 +1,6 @@
 package com.skopjegeoguessr.batch.places;
 
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.*;
 import org.springframework.batch.core.launch.JobLauncher;
@@ -14,11 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
+@AllArgsConstructor
 @RequestMapping("/jobs")
 public class PlaceController {
 
-	@Autowired
-	private JobLauncher jobLauncher;
+	private final JobLauncher jobLauncher;
 
 	@Autowired
 	@Qualifier("jsonCoffeeJob")
