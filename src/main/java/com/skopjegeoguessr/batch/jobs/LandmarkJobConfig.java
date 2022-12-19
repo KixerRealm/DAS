@@ -26,6 +26,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -54,17 +55,19 @@ public class LandmarkJobConfig {
 	private final PlaceProcessor processor;
 	private final RepositoryItemWriter<Place> writer;
 
+	@Lazy
 	@Autowired
 	@Qualifier("LandmarkReader")
 	private JsonItemReader<Place> reader;
 
+	@Lazy
 	@Autowired
 	@Qualifier("LandmarkStep")
 	private Step landmarkStep;
 
 	@Bean
 	public Job landmarkJob() {
-		return jobBuilderFactory.get("jsonLandmarkJob").start(landmarkStep).build();
+		return jobBuilderFactory.get("landmarkJob").start(landmarkStep).build();
 	}
 
 	@Bean(name = "LandmarkStep")

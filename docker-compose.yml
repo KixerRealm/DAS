@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+  sko-batch-postgres:
+    image: postgres:15-alpine
+    container_name: sko-batch-postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=sko
+      - POSTGRES_PASSWORD=sko-password
+      - POSTGRES_DB=sko-db
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./scripts:/docker-entrypoint-initdb.d/
+      - sko-batch-data:/var/lib/postgresql/data
+
+volumes:
+  sko-batch-data:
+    driver: local

@@ -32,7 +32,7 @@ public class PlaceController {
 	@PostMapping("/jobs")
 	public void importJsonToDBJob() throws JobInstanceAlreadyCompleteException, JobExecutionAlreadyRunningException, JobParametersInvalidException, JobRestartException {
 		JobParameters jobParameters = new JobParametersBuilder()
-				.addLong("startAt ", System.currentTimeMillis())
+				.addLong("startAt", System.currentTimeMillis())
 				.toJobParameters();
 		JobExecution jobExecution = jobLauncher.run(job, jobParameters);
 		log.info("Job Execution: " + jobExecution.getStatus());

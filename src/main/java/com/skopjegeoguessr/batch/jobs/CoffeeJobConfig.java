@@ -26,9 +26,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -54,17 +54,19 @@ public class CoffeeJobConfig {
 	private final PlaceProcessor processor;
 	private final RepositoryItemWriter<Place> writer;
 
+	@Lazy
 	@Autowired
 	@Qualifier("CoffeeReader")
 	private JsonItemReader<Place> reader;
 
+	@Lazy
 	@Autowired
 	@Qualifier("CoffeeStep")
 	private Step coffeeStep;
 
 	@Bean
 	public Job coffeeJob() {
-		return jobBuilderFactory.get("jsonCoffeeJob").start(coffeeStep).build();
+		return jobBuilderFactory.get("coffeeJob").start(coffeeStep).build();
 	}
 
 	@Bean(name = "CoffeeStep")
@@ -105,6 +107,7 @@ public class CoffeeJobConfig {
 		for(PlacesSearchResult[] p:responses1){
 			responses2.addAll(Arrays.asList(p));
 		}
+		responses2.forEach(i -> log.info(Arrays.toString(i.types)));
 		List<Place> placeList = responses2.stream().map(PlaceMapper.INSTANCE::toEntity).toList();
 
 		FileWriter writer = new FileWriter("src/main/resources/static/results.json");
