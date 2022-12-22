@@ -18,7 +18,7 @@ import java.util.List;
 public class Place {
 
     @Id
-    @Column(name = "id", length = 36)
+    @Column(name = "id", length = 36, unique = true)
     private String id;
 
     @Column(name = "lat")

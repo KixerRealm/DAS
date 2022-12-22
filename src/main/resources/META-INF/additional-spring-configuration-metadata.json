@@ -4,6 +4,11 @@
       "name": "sko.gcp-key",
       "type": "java.lang.String",
       "description": "API Key to access GCP Places API."
+    },
+    {
+      "name": "sko.queries",
+      "type": "java.lang.String",
+      "description": "List of all the queries we'd like to import using the composite import job."
     }
   ]
 }
