@@ -19,7 +19,7 @@ import java.util.Objects;
 @Service
 public class UtilityService {
 
-	@Value("${gcp-key}")
+	@Value("${sko.gcp-key}")
 	public String gcpApiKey;
 
 	public PlacesSearchResponse wrapWithContext(ContextMethod methods) throws IOException, InterruptedException, ApiException {
