@@ -7,7 +7,4 @@ import java.util.Locale;
 import java.util.Optional;
 
 public interface LeaderboardRecordRepository extends JpaRepository<LeaderboardRecord, String> {
-    @Override
-    Optional<LeaderboardRecord> findById(String s);
-
 }

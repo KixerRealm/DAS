@@ -11,4 +11,6 @@ public interface PlaceService {
     List<Place> findAll();
 
     List<Place> findAllByType(PlaceType type);
+
+    Place createPlace(Place place);
 }

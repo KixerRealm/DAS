@@ -7,6 +7,7 @@ import finki.ukim.mk.backendproject.services.interfaces.GameService;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,7 +30,7 @@ public class GameServiceImpl implements GameService {
     }
 
     @Override
-    public Optional<Game> save(String gameId, String player_id, PlaceType placeType, LocalDateTime started_at, LocalDateTime ended_at, Integer points) {
+    public Optional<Game> save(String gameId, String player_id, PlaceType placeType, Date started_at, Date ended_at, Integer points) {
         return Optional.of(gameRepository.save(new Game(gameId, player_id, placeType, started_at, ended_at, points)));
     }
 

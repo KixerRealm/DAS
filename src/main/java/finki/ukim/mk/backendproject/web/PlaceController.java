@@ -4,10 +4,7 @@ package finki.ukim.mk.backendproject.web;
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Place;
 import finki.ukim.mk.backendproject.services.interfaces.PlaceService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,5 +25,9 @@ public class PlaceController {
     @GetMapping("/{type}")
    public List<Place> placesByType (@PathVariable PlaceType type){
        return placeService.findAllByType(type);
+    }
+
+    @PostMapping
+    public Place createPlace(@RequestBody Place place) {return placeService.createPlace(place);
     }
 }

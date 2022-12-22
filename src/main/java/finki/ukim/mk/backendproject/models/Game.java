@@ -4,10 +4,8 @@ import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
-import java.time.LocalDateTime;
-import java.util.List;
+import java.util.Date;
 
 @Entity
 @NoArgsConstructor
@@ -28,10 +26,12 @@ public class Game {
     private PlaceType placeType;
 
     @Column(name = "startedAt")
-    private LocalDateTime started_at;
+    @Temporal(TemporalType.DATE)
+    private Date started_at;
 
     @Column(name = "endedAt")
-    private LocalDateTime ended_at;
+    @Temporal(TemporalType.DATE)
+    private Date ended_at;
 
     @Column(name = "score")
     private Integer points;

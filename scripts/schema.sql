@@ -1,42 +1,36 @@
-create table if not exists places(
-    place_id           PRIMARY KEY varchar(2500),
-    lat                float,
-    lng                float,
-    name               varchar(2500),
-    photo_reference    varchar(2500),
-    place_type         varchar(2500)
-    );
-
 create table if not exists games(
-    game_id         PRIMARY KEY varchar(2500),
-    player_id       varchar(2500),
-    place_type      varchar(2500),
-    started_at      date,
-    ended_at        date,
-    score           int
+    game_id             varchar(255) PRIMARY KEY,
+    user_id             varchar(255) NOT NULL,
+    type                varchar(255) NOT NULL,
+    started_at          timestamp NOT NULL,
+    ended_at            timestamp NOT NULL,
+    score               integer NOT NULL
 );
 
-create table if not exists users(
-    player_id       PRIMARY KEY varchar(2500),
-    username        varchar(2500),
-    password        varchar(2500),
-    email           varchar(2500),
-    image_url       varchar(2500),
-    leaderboard_id  varchar(2500),
-    CONSTRAINT FK_record
-        FOREIGN KEY (leaderboard_id) REFERENCES leaderboard_records(leaderboard_id)
+create table if not exists player (
+    player_id           varchar(255) PRIMARY KEY,
+    username            varchar(255) NOT NULL,
+    password            varchar(255) NOT NULL,
+    email               varchar(255) NOT NULL,
+    image_url           varchar(255)
 );
 
-create table if not exists leaderboard_records(
-    leaderboard_id   PRIMARY KEY varchar(2500),
-    player_id        varchar(2500),
-    game_id          varchar(2500),
-    CONSTRAINT FK_user
-        FOREIGN KEY (player_id) REFERENCES users (player_id)
+create table if not exists leaderboard_records (
+    id                  varchar(255) PRIMARY KEY,
+    user_id             varchar(255) NOT NULL,
+    game_id             varchar(255) NOT NULL
+);
+
+create table if not exists player_leaderboard_records (
+    player_id               varchar(255) NOT NULL,
+    leaderboard_record_id   varchar(255) NOT NULL,
+    PRIMARY KEY (player_id, leaderboard_record_id),
+    FOREIGN KEY (player_id) REFERENCES player(player_id),
+    FOREIGN KEY (leaderboard_record_id) REFERENCES leaderboard_records(id)
 );
 
 create table if not exists guess(
-    guess_id        PRIMARY KEY varchar(2500),
-    guess_place     varchar(2500),
-    image_url       varchar(2500)
+    guess_id        varchar(255) PRIMARY KEY,
+    guess_place     varchar(255),
+    image_url       varchar(255)
 );

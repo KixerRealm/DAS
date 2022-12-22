@@ -1,7 +1,5 @@
 package finki.ukim.mk.backendproject.services.impl;
 
-import finki.ukim.mk.backendproject.models.LeaderboardRecord;
-import finki.ukim.mk.backendproject.models.Place;
 import finki.ukim.mk.backendproject.models.User;
 import finki.ukim.mk.backendproject.repository.UserRepository;
 import finki.ukim.mk.backendproject.services.interfaces.UserService;
@@ -9,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.function.UnaryOperator;
+
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -20,12 +18,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<Place> save(String id, String username, String password, String email, String img_url, List<LeaderboardRecord> recordList) {
-        return Optional.empty();
+    public List<User> findAll() {
+        return userRepository.findAll();
     }
 
     @Override
-    public List<User> findAll() {
-        return userRepository.findAll();
+    public User createUser(User user) {
+        return userRepository.save(user);
+    }
+
+    @Override
+    public Optional<User> getUserById(String id) {
+        return userRepository.findById(id);
     }
 }

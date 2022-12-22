@@ -31,4 +31,9 @@ public class PlaceServiceImpl implements PlaceService {
     public List<Place> findAllByType(PlaceType type) {
         return placeRepository.findAllByType(type);
     }
+
+    @Override
+    public Place createPlace(Place place) {
+        return placeRepository.save(place);
+    }
 }
