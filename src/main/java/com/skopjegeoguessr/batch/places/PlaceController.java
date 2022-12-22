@@ -1,5 +1,6 @@
 package com.skopjegeoguessr.batch.places;
 
+import com.skopjegeoguessr.batch.utility.UtilityService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.*;
@@ -17,29 +18,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/jobs")
 public class PlaceController {
 
-	private final JobLauncher jobLauncher;
+	private final JobLauncher asyncJobLauncher;
+	private final UtilityService utilityService;
 
 	private final Job importJob;
 
 	@PostMapping("/coffee")
 	public void coffeeJobStart() throws JobInstanceAlreadyCompleteException, JobExecutionAlreadyRunningException, JobParametersInvalidException, JobRestartException {
-		JobParameters jobParameters = new JobParametersBuilder()
-				.addLong("startAt", System.currentTimeMillis())
-				.addString("query", "coffeeshops+skopje+macedonia")
-				.addString("result-location", "src/main/resources/static/results.json")
-				.toJobParameters();
-		JobExecution jobExecution = jobLauncher.run(importJob, jobParameters);
+		JobParameters jobParameters = utilityService.buildJobParameters("coffeeshops+skopje+macedonia");
+		JobExecution jobExecution = asyncJobLauncher.run(importJob, jobParameters);
 		log.info("Job Execution: " + jobExecution.getStatus());
 	}
 
 	@PostMapping("/landmark")
 	public void landmarkJobStart() throws JobInstanceAlreadyCompleteException, JobExecutionAlreadyRunningException, JobParametersInvalidException, JobRestartException {
-		JobParameters jobParameters = new JobParametersBuilder()
-				.addLong("startAt", System.currentTimeMillis())
-				.addString("query", "landmarks+skopje+macedonia")
-				.addString("result-location", "src/main/resources/static/results1.json")
-				.toJobParameters();
-		JobExecution jobExecution = jobLauncher.run(importJob, jobParameters);
+		JobParameters jobParameters = utilityService.buildJobParameters("landmarks+skopje+macedonia");
+		JobExecution jobExecution = asyncJobLauncher.run(importJob, jobParameters);
 		log.info("Job Execution: " + jobExecution.getStatus());
 	}
 }
