@@ -15,4 +15,6 @@ public interface GameService {
     Optional<Game> save(String gameId, String player_id, PlaceType placeType, LocalDateTime started_at, LocalDateTime ended_at, Integer points);
 
     void deleteById(String id);
+
+    List<Game> findAllGamesByGameTypeOrderByPoints(PlaceType type);
 }

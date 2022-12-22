@@ -9,4 +9,6 @@ import java.util.Optional;
 public interface PlaceService {
     Optional<Place> save(String id, Float lat, Float lng, String location_name, String photo_reference, PlaceType type);
     List<Place> findAll();
+
+    List<Place> findAllByType(PlaceType type);
 }

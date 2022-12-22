@@ -1,16 +1,18 @@
 package finki.ukim.mk.backendproject.web;
 
 //import finki.ukim.mk.backendproject.services.interfaces.GameAttemptService;
+import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Place;
 import finki.ukim.mk.backendproject.services.interfaces.PlaceService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("api/places/game/start")
+@RequestMapping("api/places/game")
 public class PlaceController {
     private final PlaceService placeService;
 
@@ -23,8 +25,8 @@ public class PlaceController {
         return this.placeService.findAll();
     }
 
-//    @GetMapping("/{id}")
-//    public Optional<GameAttempt> gameAttempt(@PathVariable String id){
-//        //return gameAttemptService.findById(id);
-//    }
+    @GetMapping("/{type}")
+   public List<Place> placesByType (@PathVariable PlaceType type){
+       return placeService.findAllByType(type);
+    }
 }
