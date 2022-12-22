@@ -17,8 +17,8 @@ public class Guess {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
-    @Column(name = "guess_location")
-    private String location;
+    @Column(name = "guess_place")
+    private String place;
 
     @Column(name = "url")
     private String image_url;
