@@ -8,8 +8,11 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 public class GameDto {
+    private String email;
     private PlaceType gameType;
-    private LocalDateTime started_at;
-    private LocalDateTime ended_at;
-    private Integer points;
+    //private LocalDateTime started_at;
+    //private LocalDateTime ended_at;
+    //private Integer points;
+
+
 }

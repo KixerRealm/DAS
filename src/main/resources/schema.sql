@@ -6,15 +6,24 @@ create table if not exists players (
     image_url           varchar(255)
 );
 
-create table if not exists games(
-    game_id             varchar(255) PRIMARY KEY,
-    player_id           varchar(255) NOT NULL,
-    type                varchar(255) NOT NULL,
-    started_at          timestamp NOT NULL,
-    ended_at            timestamp NOT NULL,
-    score               integer NOT NULL,
-    FOREIGN KEY (player_id) references player(player_id)
+create table if not exists guesses(
+    guess_id        varchar(255) PRIMARY KEY,
+    guess_place     varchar(255),
+    image_url       varchar(255)
 );
+
+create table if not exists games(
+    game_id                    SERIAL PRIMARY KEY,
+    player_id                  varchar(255) NOT NULL,
+    guess_id                   varchar(255) ,
+    game_type                  varchar(255) NOT NULL,
+    started_at                 timestamp ,
+    ended_at                   timestamp ,
+    total_points               integer NOT NULL,
+    FOREIGN KEY (player_id) references players(player_id),
+    FOREIGN KEY (guess_id) REFERENCES guesses(guess_id)
+);
+
 
 create table if not exists leaderboard_records (
     leaderboard_record_id           varchar(255) PRIMARY KEY,
@@ -23,11 +32,6 @@ create table if not exists leaderboard_records (
     time_completed                  timestamp NOT NULL,
     profile_picture_url             varchar(255),
     total_score                     integer NOT NULL,
-    FOREIGN KEY (player_id) REFERENCES player(player_id)
+    FOREIGN KEY (player_id) REFERENCES players(player_id)
 );
 
-create table if not exists guess(
-    guess_id        varchar(255) PRIMARY KEY,
-    guess_place     varchar(255),
-    image_url       varchar(255)
-);

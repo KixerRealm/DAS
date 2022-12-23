@@ -24,7 +24,10 @@ public class Game {
     @Column(name = "player_id")
     private String playerId;
 
-    @Column(name = "game_type")
+    @Column(name = "guess_id")
+    private String guessId;
+
+    @Column(name = "gameType")
     @Enumerated(EnumType.STRING)
     private PlaceType gameType;
 
@@ -36,7 +39,8 @@ public class Game {
     //@Temporal(TemporalType.DATE)
     private LocalDateTime ended_at;
 
-    @Column(name = "score")
-    private int points;
+    @Column(name = "totalPoints")
+    private int totalPoints;
+
 
 }
