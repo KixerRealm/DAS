@@ -9,6 +9,6 @@ import java.util.List;
 import java.util.Optional;
 
 public interface GameRepository extends JpaRepository<Game, String> {
-    List<Game> findAllByGameTypeOrderByPoints(PlaceType type);
-    List<Game> findByOrderByPoints();
+    List<Game> findAllByGameTypeOrderByTotalPoints(PlaceType type);
+    List<Game> findByOrderByTotalPoints();
 }

@@ -11,6 +11,8 @@ import java.util.Optional;
 
 public interface GuessService {
     List<Guess> findAll();
+    //Guess findOrderByRand();
+
     Optional<Guess> findById(String id);
 
     Optional<Guess> save(GuessDto guessDto) ;
