@@ -15,12 +15,13 @@ public class Guess {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "guess_id")
     private String id;
 
     @Column(name = "guess_place")
     private String place;
 
-    @Column(name = "url")
+    @Column(name = "image_url")
     private String image_url;
 
 }

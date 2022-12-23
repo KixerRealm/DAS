@@ -1,5 +1,6 @@
 package finki.ukim.mk.backendproject.services.impl;
 
+import finki.ukim.mk.backendproject.dtos.GameDto;
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Game;
 import finki.ukim.mk.backendproject.repository.GameRepository;
@@ -21,26 +22,35 @@ public class GameServiceImpl implements GameService {
 
     @Override
     public List<Game> findAll() {
-        return gameRepository.findAll();
+        return this.gameRepository.findAll();
     }
 
     @Override
     public Optional<Game> findById(String id) {
-        return gameRepository.findById(id);
+        return this.gameRepository.findById(id);
     }
 
     @Override
-    public Optional<Game> save(String gameId, String player_id, PlaceType placeType, Date started_at, Date ended_at, Integer points) {
-        return Optional.of(gameRepository.save(new Game(gameId, player_id, placeType, started_at, ended_at, points)));
+    public Optional<Game> save(GameDto gameDto) {
+        Game game = new Game();
+        game.setGameType(gameDto.getGameType());
+        game.setStarted_at(gameDto.getStarted_at());
+        game.setEnded_at(gameDto.getEnded_at());
+        game.setPoints(gameDto.getPoints());
+        return Optional.of(this.gameRepository.save(game));
     }
 
     @Override
     public void deleteById(String id) {
-        gameRepository.deleteById(id);
+        this.gameRepository.deleteById(id);
     }
 
     @Override
     public List<Game> findAllGamesByGameTypeOrderByPoints(PlaceType type) {
-        return gameRepository.findALlByPlaceTypeOrderByPoints(type);
+        if(type==PlaceType.ALL){
+            return this.gameRepository.findByOrderByPoints();
+        }else {
+            return this.gameRepository.findAllByGameTypeOrderByPoints(type);
+        }
     }
 }

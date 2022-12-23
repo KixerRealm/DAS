@@ -1,5 +1,6 @@
 package finki.ukim.mk.backendproject.services.impl;
 
+import finki.ukim.mk.backendproject.dtos.LeaderboardRecordDto;
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Game;
 import finki.ukim.mk.backendproject.models.LeaderboardRecord;
@@ -7,6 +8,7 @@ import finki.ukim.mk.backendproject.models.User;
 import finki.ukim.mk.backendproject.repository.GameRepository;
 import finki.ukim.mk.backendproject.repository.LeaderboardRecordRepository;
 import finki.ukim.mk.backendproject.repository.UserRepository;
+import finki.ukim.mk.backendproject.services.interfaces.GameService;
 import finki.ukim.mk.backendproject.services.interfaces.LeaderboardRecordService;
 import org.springframework.stereotype.Service;
 
@@ -18,31 +20,30 @@ import java.util.Optional;
 public class LeaderboardRecordServiceImpl implements LeaderboardRecordService {
     private final LeaderboardRecordRepository leaderboardRecordRepository;
     private final UserRepository userRepository;
-    private final GameRepository gameRepository;
+    private final GameService gameService;
 
     public LeaderboardRecordServiceImpl(LeaderboardRecordRepository leaderboardRecordRepository,
                                         UserRepository userRepository,
-                                        GameRepository gameRepository) {
+                                        GameService gameService) {
         this.leaderboardRecordRepository = leaderboardRecordRepository;
         this.userRepository = userRepository;
-        this.gameRepository = gameRepository;
+        this.gameService = gameService;
     }
 
     @Override
     public List<LeaderboardRecord> findAll() {
-        return leaderboardRecordRepository.findAll();
+        return this.leaderboardRecordRepository.findAll();
     }
 
     @Override
     public Optional<LeaderboardRecord> findById(String id) {
-        return leaderboardRecordRepository.findById(id);
+        return this.leaderboardRecordRepository.findById(id);
     }
 
     @Override
-    public Optional<LeaderboardRecord> save(String id, String user_id, Integer total, String game_id,
-                                            List<User> users, List<Game> games) {
+    public Optional<LeaderboardRecord> save(LeaderboardRecordDto leaderboardRecordDto) {
 
-        return Optional.of(new LeaderboardRecord(id, user_id, game_id, users, games));
+        return Optional.of(new LeaderboardRecord());
 
     }
 

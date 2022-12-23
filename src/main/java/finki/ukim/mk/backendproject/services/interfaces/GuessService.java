@@ -1,5 +1,6 @@
 package finki.ukim.mk.backendproject.services.interfaces;
 
+import finki.ukim.mk.backendproject.dtos.GuessDto;
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Guess;
 import finki.ukim.mk.backendproject.models.LeaderboardRecord;
@@ -12,7 +13,7 @@ public interface GuessService {
     List<Guess> findAll();
     Optional<Guess> findById(String id);
 
-    Optional<Guess> save(String id, String location, String image) ;
+    Optional<Guess> save(GuessDto guessDto) ;
 
     void deleteById(String id);
 }

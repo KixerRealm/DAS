@@ -1,5 +1,7 @@
 package finki.ukim.mk.backendproject.services.impl;
 
+import finki.ukim.mk.backendproject.dtos.GuessDto;
+import finki.ukim.mk.backendproject.models.Game;
 import finki.ukim.mk.backendproject.models.Guess;
 import finki.ukim.mk.backendproject.repository.GuessRepository;
 import finki.ukim.mk.backendproject.services.interfaces.GuessService;
@@ -27,8 +29,11 @@ public class GuessServiceImpl implements GuessService {
     }
 
     @Override
-    public Optional<Guess> save(String id, String location, String image) {
-        return Optional.of(guessRepository.save(new Guess(id, location, image)));
+    public Optional<Guess> save(GuessDto guessDto) {
+        Guess guess = new Guess();
+        guess.setPlace(guessDto.getPlace());
+        guess.setImage_url(guessDto.getImage_url());
+        return Optional.of(this.guessRepository.save(guess));
     }
 
     @Override

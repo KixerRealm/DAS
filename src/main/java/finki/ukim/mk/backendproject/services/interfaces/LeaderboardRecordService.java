@@ -1,5 +1,6 @@
 package finki.ukim.mk.backendproject.services.interfaces;
 
+import finki.ukim.mk.backendproject.dtos.LeaderboardRecordDto;
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Game;
 import finki.ukim.mk.backendproject.models.LeaderboardRecord;
@@ -13,8 +14,7 @@ public interface LeaderboardRecordService {
     List<LeaderboardRecord> findAll();
     Optional<LeaderboardRecord> findById(String id);
 
-    Optional<LeaderboardRecord> save(String id, String user_id, Integer total, String game_id,
-                                     List<User> users, List<Game> games);
+    Optional<LeaderboardRecord> save(LeaderboardRecordDto leaderboardRecordDto);
 
     void deleteById(String id);
 }

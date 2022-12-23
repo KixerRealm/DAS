@@ -5,7 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -16,24 +18,25 @@ public class Game {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String gameId;
+    @Column(name = "game_id")
+    private String id;
 
-    @Column(name = "user_id")
-    private String player_id;
+    @Column(name = "player_id")
+    private String playerId;
 
-    @Column(name = "type")
+    @Column(name = "game_type")
     @Enumerated(EnumType.STRING)
-    private PlaceType placeType;
+    private PlaceType gameType;
 
     @Column(name = "startedAt")
-    @Temporal(TemporalType.DATE)
-    private Date started_at;
+    //@Temporal(TemporalType.DATE)
+    private LocalDateTime started_at;
 
     @Column(name = "endedAt")
-    @Temporal(TemporalType.DATE)
-    private Date ended_at;
+    //@Temporal(TemporalType.DATE)
+    private LocalDateTime ended_at;
 
     @Column(name = "score")
-    private Integer points;
+    private int points;
 
 }

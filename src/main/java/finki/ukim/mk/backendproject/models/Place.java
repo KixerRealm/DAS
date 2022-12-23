@@ -15,13 +15,14 @@ import javax.persistence.*;
 public class Place {
 
     @Id
+    @Column(name = "place_id")
     private String id;
 
     @Column(name = "lat")
-    private Float lat;
+    private float lat;
 
     @Column(name = "lng")
-    private Float lng;
+    private float lng;
 
     @Column(name = "name")
     private String location_name;

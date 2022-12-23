@@ -15,14 +15,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name = "player")
+@Table(name = "players")
 public class User {
 
     @NotNull
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "player_Id")
-    private String user_id;
+    @Column(name = "player_id")
+    private String id;
 
     @Column(name = "username")
     private String username;
@@ -34,9 +34,12 @@ public class User {
     private String email;
 
     @Column(name = "image_url")
-    private String picture;
+    private String profilePictureUrl;
 
-    @ManyToMany
+    @OneToMany
     private List<LeaderboardRecord> recordList;
+
+    @OneToMany
+    private List<Game> games;
 
 }

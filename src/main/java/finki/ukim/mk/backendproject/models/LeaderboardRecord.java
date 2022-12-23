@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -16,16 +15,25 @@ import java.util.List;
 public class LeaderboardRecord {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "leaderboard_record_id")
     private String id;
 
-    private String user_id;
+    @Column(name = "player_id")
+    private String playerId;
 
-    private String game_id;
+    @Column(name = "player_username")
+    private String username;
 
-    @ManyToMany
-    private List<User> userList;
+    @Column(name = "profile_picture_url")
+    private String profilePictureUrl;
 
-    @ManyToMany
-    private List<Game> gameList;
+    @Column(name = "time_started")
+    private LocalDateTime timeStarted;
+
+    @Column(name = "time_completed")
+    private LocalDateTime timeCompleted;
+
+    @Column(name = "total")
+    private int total;
 
 }
