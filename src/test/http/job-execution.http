@@ -1,1 +1,7 @@
 POST http://localhost:9091/jobs/coffee
+
+###
+POST http://localhost:9091/jobs/landmark
+
+###
+POST http://localhost:9091/jobs/composite

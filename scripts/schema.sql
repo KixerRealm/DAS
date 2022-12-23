@@ -1,6 +1,6 @@
 create table if not exists places
 (
-    id              varchar(2500),
+    id              varchar(2500) primary key,
     lat             float,
     lng             float,
     name            varchar(2500),
