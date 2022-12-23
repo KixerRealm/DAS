@@ -6,7 +6,7 @@ import com.google.maps.model.PlacesSearchResponse;
 
 import java.io.IOException;
 
-public interface ContextedMethods {
+public interface ContextMethod {
 
     PlacesSearchResponse execute(GeoApiContext context) throws IOException, InterruptedException, ApiException;
 
