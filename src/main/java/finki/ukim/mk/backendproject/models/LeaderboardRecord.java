@@ -1,41 +1,39 @@
 package finki.ukim.mk.backendproject.models;
 
-import finki.ukim.mk.backendproject.enumerators.GameType;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.ForeignKey;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Table(name = "leaderboard_records")
 public class LeaderboardRecord {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "leaderboard_record_id")
     private String id;
 
+    @Column(name = "player_id")
+    private String playerId;
+
+    @Column(name = "player_username")
     private String username;
 
-    private Integer total;
+    @Column(name = "profile_picture_url")
+    private String profilePictureUrl;
 
-    private String game_id;
+    @Column(name = "time_started")
+    private LocalDateTime timeStarted;
 
-    private GameType game_type;
+    @Column(name = "time_completed")
+    private LocalDateTime timeCompleted;
 
-    private String profile_pic;
+    @Column(name = "total")
+    private int total;
 
-    private LocalDateTime started_at;
-
-    private LocalDateTime ended_at;
-
-    public LeaderboardRecord() {}
-
-    public LeaderboardRecord(String id, String username, Integer total, String game_id, GameType game_type, String profile_pic, LocalDateTime started_at, LocalDateTime ended_at) {
-        this.id = id;
-        this.username = username;
-        this.total = total;
-        this.game_id = game_id;
-        this.game_type = game_type;
-        this.profile_pic = profile_pic;
-        this.started_at = started_at;
-        this.ended_at = ended_at;
-    }
 }

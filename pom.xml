@@ -14,7 +14,7 @@
     <name>back-end-project</name>
     <description>back-end-project</description>
     <properties>
-        <java.version>16</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
 <!--        <dependency>-->
