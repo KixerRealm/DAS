@@ -3,12 +3,32 @@ import {executeLogin, LoginRequest} from "../hooks/useLogin";
 import {useMutation} from "@tanstack/react-query";
 import {useRouter} from "next/router";
 import {userAtom} from "../components/user-nav-bar";
+import {useAtom} from "jotai";
 import {useUpdateAtom} from "jotai/utils";
+import {useIdentify} from "../hooks/useIdentify";
+import {User} from "./api/oauth/login";
+import {useState} from "react";
 
 export default function Login() {
 
     const updateUser = useUpdateAtom(userAtom);
     const router = useRouter();
+    const [user, setUser] = useState<User>({});
+    const identity = useIdentify(async (data: User) => {
+        user.email = data?.email;
+        user.username = data?.username;
+        user.profilePictureUrl = data?.profilePictureUrl;
+
+        updateUser(user);
+        const {returnPath} = router.query;
+        if (returnPath != undefined) {
+            await router.push(returnPath as string);
+            return;
+        }
+        await router.push("/");
+    });
+
+    const identityMutate = identity.mutate;
 
     const {mutate, isLoading, error, isError} = useMutation({
         mutationFn: (event: any) => {
@@ -19,16 +39,19 @@ export default function Login() {
             return executeLogin(data);
         },
         onSuccess: async data => {
-            console.log(data);
-            updateUser(data);
-            const {returnPath} = router.query;
-            if (returnPath != undefined) {
-                await router.push(returnPath as string);
-                return;
-            }
-            await router.push("/");
+            setUser(prevState => ({
+                ...prevState,
+
+
+            }));
+
+            user.access_token = data.access_token;
+            user.refresh_token = data.refresh_token;
+
+            identityMutate(data?.access_token ?? '');
         }
     });
+
 
     return (
         <div className={'grid w-full min-h-screen place-items-center'} style={{

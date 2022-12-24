@@ -7,6 +7,7 @@ import {useRouter} from "next/router";
 import useListAttempts from "../hooks/useListAttempts";
 import useCurrentPlacements from "../hooks/useCurrentPlacements";
 import usePeakPlacements from "../hooks/usePeakPlacements";
+import Identicon from "../components/icons/identicon";
 
 export default function Profile() {
     const [user, _] = useAtom(userAtom);
@@ -38,14 +39,15 @@ export default function Profile() {
             <div className={'min-h-screen basis-1/6'}>
                 <div className={'h-full bg-zinc-800 pt-10 border-r-2 border-zinc-700'}>
                     <div className={'grid place-items-center'}>
-                        <Image
-                            className={"object-cover rounded-full border border-neutral-600 shadow drop-shadow mx-12"}
-                            src={user.profilePictureUrl} alt=""
-                            width={320} height={320}
-                        />
+                        {/*<Image*/}
+                        {/*    className={"object-cover rounded-full border border-neutral-600 shadow drop-shadow mx-12"}*/}
+                        {/*    src={user?.profilePictureUrl ?? ''} alt=""*/}
+                        {/*    width={320} height={320}*/}
+                        {/*/>*/}
+                        <Identicon size={'320'} value={user?.username ?? ''}/>
                         <hr className={"w-5/6 my-6 sm:mx-auto border-zinc-700 lg:my-8"}/>
                         <div className={"grid place-items-center"}>
-                            <h2 className={"font-bold text-3xl"}>{user.displayName}</h2>
+                            <h2 className={"font-bold text-3xl"}>{user.username}</h2>
                             <h3 className={"font-thin text-neutral-400"}>{user.email}</h3>
                         </div>
                         <hr className={"w-5/6 my-6 sm:mx-auto border-zinc-700 lg:my-8"}/>

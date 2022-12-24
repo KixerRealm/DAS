@@ -7,6 +7,7 @@ import {useHasMounted} from "../hooks/useHasMounted";
 import Image from 'next/image';
 import {useCallback, useState} from "react";
 import DropdownIcon from "./icons/dropdown-icon";
+import Identicon from "./icons/identicon";
 
 export const userAtom = atomWithStorage<User | null>('user', null);
 export const openAtom = atom(false);
@@ -42,16 +43,17 @@ export default function UserNavBar() {
                 <button onClick={() => setOpen(!open)}
                         className={"flex items-center text-sm font-medium rounded-lg hover:text-blue-500 md:mr-0 focus:ring-4 focus:ring-neutral-700 text-white px-12 w-full"}
                         type={"button"}>
-                    <Image className={"mr-2 rounded-full my-2"} src={user.profilePictureUrl}
-                           alt={"user photo"} width={30} height={30}/>
-                    <p className={'text-right w-full'}>{user.displayName}</p>
+                    {/*<Image className={"mr-2 rounded-full my-2"} src={user?.profilePictureUrl ?? ''}*/}
+                    {/*       alt={"user photo"} width={30} height={30}/>*/}
+                    <Identicon value={user?.username} size={'30'}/>
+                    <p className={'text-right w-full'}>{user.username}</p>
                     <DropdownIcon/>
                 </button>
 
                 <div
                     className={`${open ? 'block' : 'hidden'} z-10 rounded divide-y shadow bg-neutral-800 divide-neutral-600`}>
                     <div className={"py-3 px-4 text-sm text-white"}>
-                        <div className={"font-medium "}>{user.displayName}</div>
+                        <div className={"font-medium "}>{user.username}</div>
                         <div className={"truncate"}>{user.email}</div>
                     </div>
                     <ul className={"py-1 text-sm text-neutral-200"} onClick={() => setOpen(false)}>

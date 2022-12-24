@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {Duration} from "ts-duration";
 import {LeaderboardRecord} from "../pages/api/leaderboards";
-
+import Identicon from "./icons/identicon";
 
 interface LeaderboardRecordParameters {
     idx: number;
@@ -16,8 +16,9 @@ export default function LeaderboardRecordComponent(params: LeaderboardRecordPara
             <td
                 className={"py-4 px-6 font-medium whitespace-nowrap text-white"}>
                 <div className={"flex items-center"}>
-                    <Image src={params.record.profilePictureUrl} alt={""} width={40} height={40}
-                           className={"rounded-full"}/>
+                    {/*<Image src={params.record.profilePictureUrl} alt={""} width={40} height={40}*/}
+                    {/*       className={"rounded-full"}/>*/}
+                    <Identicon value={params.record.username} size={'40'}/>
                     {/* TODO: Make a link to user's profile */}
                     <p className={"ml-4"}>{params.record.username}</p>
                 </div>

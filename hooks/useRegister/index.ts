@@ -5,6 +5,7 @@ export type UserRegistration = {
     password: string;
     username: string;
     confirm: string;
+    profilePictureUrl: string;
 }
 
 export async function executeRegister(data: UserRegistration) {

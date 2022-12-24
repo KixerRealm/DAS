@@ -2,6 +2,7 @@ import Link from "next/link";
 import {useRouter} from "next/router";
 import {useMutation} from "@tanstack/react-query";
 import {executeRegister, UserRegistration} from "../hooks/useRegister";
+import {faker} from "@faker-js/faker";
 
 export default function Register() {
 
@@ -15,7 +16,8 @@ export default function Register() {
                 email: event.target.email.value,
                 username: event.target.username.value,
                 password: event.target.password.value,
-                confirm: event.target.confirm.value
+                confirm: event.target.confirm.value,
+                profilePictureUrl: faker.image.avatar()
             };
             return executeRegister(data);
         },

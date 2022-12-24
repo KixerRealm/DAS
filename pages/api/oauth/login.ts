@@ -6,11 +6,11 @@ import {faker} from "@faker-js/faker";
 
 
 export type User = {
-    email: string;
-    displayName: string;
-    profilePictureUrl: string;
-    access_token: string;
-    refresh_token: string;
+    email?: string;
+    username?: string;
+    profilePictureUrl?: string;
+    access_token?: string;
+    refresh_token?: string;
 }
 
 export const allowedEmails: string[] = [
@@ -39,9 +39,9 @@ export default function handler(
         return;
     }
 
-    res.status(200).json({
-        username: credentials.username,
-        displayName: faker.internet.userName(),
-        profilePictureUrl: faker.image.avatar()
-    });
+    // res.status(200).json({
+    //     username: credentials.username,
+    //     username: faker.internet.userName(),
+    //     profilePictureUrl: faker.image.avatar()
+    // });
 }
