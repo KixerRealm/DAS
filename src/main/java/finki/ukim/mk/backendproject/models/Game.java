@@ -39,4 +39,7 @@ public class Game {
     @ManyToOne(fetch = FetchType.LAZY)
     private Account account;
 
+    @Column(name = "ending_placement")
+    private Integer endingPlacement;
+
 }

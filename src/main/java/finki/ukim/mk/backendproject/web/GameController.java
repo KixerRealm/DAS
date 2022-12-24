@@ -1,5 +1,6 @@
 package finki.ukim.mk.backendproject.web;
 
+import finki.ukim.mk.backendproject.dtos.AttemptDto;
 import finki.ukim.mk.backendproject.dtos.GameDto;
 import finki.ukim.mk.backendproject.dtos.LeaderboardRecordDto;
 import finki.ukim.mk.backendproject.enums.PlaceType;
@@ -38,5 +39,23 @@ public class GameController {
 	@GetMapping("/leaderboards")
 	public ResponseEntity<List<LeaderboardRecordDto>> leaderboards(@RequestParam("gameMode") PlaceType placeType) {
 		return ResponseEntity.ok(gameService.leaderboards(placeType));
+	}
+
+
+	@GetMapping("/attempts")
+	public ResponseEntity<List<AttemptDto>> findAllByUser(JWTUser jwtUser) {
+		return ResponseEntity.ok(gameService.findByUser(jwtUser.getId()));
+	}
+
+
+	@GetMapping("/peak-placements")
+	public ResponseEntity<List<AttemptDto>> findPeakPlacements(JWTUser jwtUser) {
+		return ResponseEntity.ok(gameService.findPeakPlacementsByUser(jwtUser.getId()));
+	}
+
+
+	@GetMapping("/current-placements")
+	public ResponseEntity<List<AttemptDto>> findLatestPlacements(JWTUser jwtUser) {
+		return ResponseEntity.ok(gameService.findLatestPlacementsByUser(jwtUser.getId()));
 	}
 }
