@@ -12,9 +12,9 @@ public class PlaceTypeProcessor implements ItemProcessor<Place, Place> {
 	@Override
 	public Place process(Place place) {
 		if (place.getTypes().contains("cafe") || (place.getTypes().contains("food") && place.getTypes().contains("point_of_interest"))) {
-			place.setPlaceType(PlaceType.COFFEE_SHOP);
+			place.setPlaceType(PlaceType.COFFEE);
 		} else {
-			place.setPlaceType(PlaceType.LANDMARK);
+			place.setPlaceType(PlaceType.LANDMARKS);
 		}
 
 		return place;
