@@ -12,8 +12,8 @@ import java.util.List;
 public class GameDto {
     private String id;
     private PlaceType gameType;
-    private LocalDateTime started_at;
-    private LocalDateTime ended_at;
+    private LocalDateTime startedAt;
+    private LocalDateTime endedAt;
     private List<GuessDto> guesses;
     private Integer totalPoints;
 }

@@ -7,6 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface GameRepository extends JpaRepository<Game, String> {
-    List<Game> findAllByGameTypeOrderByTotalPoints(PlaceType type);
-    List<Game> findByOrderByTotalPoints();
+    List<Game> findAllByGameTypeAndEndedAtIsNotNullOrderByTotalPointsDesc(PlaceType placeType);
 }

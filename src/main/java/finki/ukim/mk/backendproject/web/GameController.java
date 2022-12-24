@@ -1,6 +1,7 @@
 package finki.ukim.mk.backendproject.web;
 
 import finki.ukim.mk.backendproject.dtos.GameDto;
+import finki.ukim.mk.backendproject.dtos.LeaderboardRecordDto;
 import finki.ukim.mk.backendproject.enums.PlaceType;
 import finki.ukim.mk.backendproject.models.Game;
 import finki.ukim.mk.backendproject.security.JWTUser;
@@ -32,5 +33,10 @@ public class GameController {
 	public ResponseEntity<Void> cancel(@RequestBody GameDto gameDto, JWTUser userRepresentation) {
 		gameService.cancel(gameDto, userRepresentation.getId());
 		return ResponseEntity.ok().build();
+	}
+
+	@GetMapping("/leaderboards")
+	public ResponseEntity<List<LeaderboardRecordDto>> leaderboards(@RequestParam("gameMode") PlaceType placeType) {
+		return ResponseEntity.ok(gameService.leaderboards(placeType));
 	}
 }
