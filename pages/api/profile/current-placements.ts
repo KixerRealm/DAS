@@ -4,8 +4,8 @@ import {GameModeType} from "../../../enums/game-mode-type";
 
 export type CurrentPlacement = {
     placement: number;
-    datePlayed: Date;
-    gameMode: GameModeType;
+    endedAt: Date;
+    gameType: GameModeType;
 }
 
 export default function handler(
@@ -19,8 +19,8 @@ export default function handler(
     for (let i = 0; i < 3; i++) {
         data.push({
             placement: faker.datatype.number({max: 15}),
-            datePlayed: faker.date.soon(5),
-            gameMode: Object.values(GameModeType)[i]
+            endedAt: faker.date.soon(5),
+            gameType: Object.values(GameModeType)[i]
         });
     }
 

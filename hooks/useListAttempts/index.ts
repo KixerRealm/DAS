@@ -6,12 +6,13 @@ import {useMutation, useQuery} from "@tanstack/react-query";
 import {QueryType} from "../../enums/query-type";
 
 type Attempt = {
-    timeTaken: number;
     id: string;
     placement: number;
-    gameMode: GameModeType;
-    datePlayed: Date;
+    gameType: GameModeType;
+    endedAt: Date;
     totalPoints: number;
+    minutes: number;
+    seconds: number;
 };
 
 function sliceIntoChunks(arr: Attempt[], chunkSize: number) {
@@ -23,13 +24,13 @@ function sliceIntoChunks(arr: Attempt[], chunkSize: number) {
     return res;
 }
 
-async function listAttempts(email: string) {
-    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/profile/attempts`, {
-        method: 'POST',
+async function listAttempts(token: string) {
+    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/game/attempts`, {
+        method: 'GET',
         headers: {
+            'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({email})
+        }
     }).then(async (res: any) => {
         if (res.status == 400) {
             const error = (await res.json()) as APIError;
@@ -39,7 +40,7 @@ async function listAttempts(email: string) {
         return (await res.json()) as Attempt[];
     }).then(async (res: Attempt[]) => {
         res = res.map(item => {
-            item.datePlayed = new Date(item.datePlayed);
+            item.endedAt = new Date(item.endedAt);
             return item;
         });
 
@@ -53,13 +54,13 @@ async function listAttempts(email: string) {
     });
 }
 
-export default function useListAttempts(email: string) {
+export default function useListAttempts(token: string) {
     return useQuery({
-        queryKey: [QueryType.LIST_ATTEMPTS, email],
+        queryKey: [QueryType.LIST_ATTEMPTS, token],
         queryFn: () => {
-            if (email == undefined)
+            if (token == undefined)
                 return null;
-            return listAttempts(email);
+            return listAttempts(token);
         },
         refetchOnWindowFocus: false
     });

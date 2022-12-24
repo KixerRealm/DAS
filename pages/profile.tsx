@@ -12,12 +12,12 @@ export default function Profile() {
     const [user, _] = useAtom(userAtom);
     const hasMounted = useHasMounted();
     const router = useRouter();
-    const {data} = useListAttempts(user?.email ?? '');
+    const {data} = useListAttempts(user?.access_token ?? '');
 
-    const currentPlacementsQuery = useCurrentPlacements(user?.email ?? '');
+    const currentPlacementsQuery = useCurrentPlacements(user?.access_token ?? '');
     const currentPlacements = currentPlacementsQuery.data;
 
-    const peakPlacementsQuery = usePeakPlacements(user?.email ?? '');
+    const peakPlacementsQuery = usePeakPlacements(user?.access_token ?? '');
     const peakPlacements = peakPlacementsQuery.data;
 
     if (!hasMounted) {
@@ -53,19 +53,18 @@ export default function Profile() {
                         <div className={'w-full pl-10'}>
                             <h1 className={'text-2xl font-semibold'}>Peak placements</h1>
                             <ul className={'list-disc pl-6 pt-4'}>
-                                {peakPlacements.map((placement, idx) => (
-                                    <li key={idx}>{translations[placement.gameMode]}:
-                                        #{placement.placement} ({placement.datePlayed.toLocaleDateString()})</li>
-                                ))}
+                                {peakPlacements.map((placement, idx) =>
+                                    <li key={idx}>{translations[placement.gameType]}:
+                                        #{placement.placement} ({placement.endedAt != null ? placement.endedAt.toLocaleDateString() : ''})</li>)}
                             </ul>
                         </div>
 
                         <div className={'w-full pl-10 mt-6'}>
-                            <h1 className={'text-2xl font-semibold'}>Current placements</h1>
+                            <h1 className={'text-2xl font-semibold'}>Latest placements</h1>
                             <ul className={'list-disc pl-6 pt-4'}>
                                 {currentPlacements.map((placement, idx) => (
-                                    <li key={idx}>{translations[placement.gameMode]}:
-                                        #{placement.placement} ({placement.datePlayed.toLocaleDateString()})</li>
+                                    <li key={idx}>{translations[placement.gameType]}:
+                                        #{placement.placement} ({placement.endedAt != null ? placement.endedAt.toLocaleDateString() : ''})</li>
                                 ))}
                             </ul>
                         </div>
@@ -86,7 +85,7 @@ export default function Profile() {
                                             <div className={"flex flex-col justify-between p-6 leading-normal"}>
                                                 <h5 className={
                                                     "mb-2 text-2xl font-bold tracking-tight text-neutral-900 dark:text-white"
-                                                }>{translations[item.gameMode]}</h5>
+                                                }>{translations[item.gameType]}</h5>
                                                 <p className={"font-normal text-neutral-300 mb-2 text-sm"}>
                                                     Total points: {item.totalPoints} p.
                                                 </p>
@@ -94,11 +93,11 @@ export default function Profile() {
                                                     Placed: #{item.placement}
                                                 </p>
                                                 <p className={"font-normal text-neutral-400"}>
-                                                    Date played: {item.datePlayed.toLocaleDateString()}
+                                                    Date played: {item.endedAt.toLocaleDateString()}
                                                 </p>
                                                 <p className={"font-normal mt-2 text-neutral-400"}>
                                                     Time taken:<br/>
-                                                    {Math.floor(item.timeTaken)} minutes {Math.round((item.timeTaken - Math.floor(item.timeTaken)) * 60)} seconds
+                                                    {item.minutes} minutes {item.seconds} seconds
                                                 </p>
                                             </div>
                                         </div>

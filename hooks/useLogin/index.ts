@@ -31,7 +31,8 @@ export async function executeLogin(data: LoginRequest) {
                 const error = (await res.json()) as APIError;
                 throw new Error(error.message);
             }
-
-            return (await res.json()) as User;
+            const user = (await res.json()) as User;
+            user.profilePictureUrl = user.profilePictureUrl ?? '';
+            return user;
         });
 }

@@ -4,8 +4,8 @@ import {GameModeType} from "../../../enums/game-mode-type";
 
 export type PeakPlacement = {
     placement: number;
-    datePlayed: Date;
-    gameMode: GameModeType;
+    endedAt: Date;
+    gameType: GameModeType;
 }
 
 export default function handler(
