@@ -4,7 +4,6 @@ import finki.ukim.mk.backendproject.dtos.LeaderboardRecordDto;
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Game;
 import finki.ukim.mk.backendproject.models.LeaderboardRecord;
-import finki.ukim.mk.backendproject.models.User;
 import finki.ukim.mk.backendproject.repository.GameRepository;
 import finki.ukim.mk.backendproject.repository.LeaderboardRecordRepository;
 import finki.ukim.mk.backendproject.services.interfaces.GameService;

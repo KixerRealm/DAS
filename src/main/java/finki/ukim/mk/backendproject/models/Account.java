@@ -5,31 +5,21 @@ import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.List;
 
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-public class User {
+@Entity(name = "accounts")
+public class Account {
 
-//    @NotNull
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "player_id")
+    @Id
+    @NotNull
+    @Column(name = "id")
     private String id;
-
-    @Column(name = "username")
-    private String username;
-
-    @Column(name = "password")
-    private String password;
-
-    @Column(name = "email")
-    private String email;
 
     @Column(name = "image_url")
     private String profilePictureUrl;

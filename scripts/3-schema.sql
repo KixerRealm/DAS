@@ -1,8 +1,5 @@
-create table if not exists players (
-    player_id           varchar(255) PRIMARY KEY,
-    username            varchar(255) NOT NULL,
-    password            varchar(255) NOT NULL,
-    email               varchar(255) NOT NULL,
+create table if not exists accounts (
+    id           varchar(255) PRIMARY KEY,
     image_url           varchar(255)
 );
 

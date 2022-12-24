@@ -3,7 +3,6 @@ package finki.ukim.mk.backendproject.services.impl;
 import finki.ukim.mk.backendproject.dtos.GameDto;
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Game;
-import finki.ukim.mk.backendproject.models.User;
 import finki.ukim.mk.backendproject.repository.GameRepository;
 import finki.ukim.mk.backendproject.services.interfaces.GameService;
 import finki.ukim.mk.backendproject.services.interfaces.UserService;

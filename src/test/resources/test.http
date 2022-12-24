@@ -5,7 +5,8 @@ POST https://localhost:9090/api/users
 Content-Type: application/json
 
 {
-  "username": "pazzio",
+  "username": "pazzio3",
   "password": "test",
-  "email": "csprogrammers@outlook.com"
+  "email": "csprogrammers3@outlook.com",
+  "profilePictureUrl": "test/location.jpg"
 }

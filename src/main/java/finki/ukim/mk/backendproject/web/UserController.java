@@ -2,7 +2,6 @@ package finki.ukim.mk.backendproject.web;
 
 
 import finki.ukim.mk.backendproject.dtos.UserDto;
-import finki.ukim.mk.backendproject.models.User;
 import finki.ukim.mk.backendproject.services.interfaces.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
