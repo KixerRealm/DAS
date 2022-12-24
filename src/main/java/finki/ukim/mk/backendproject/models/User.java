@@ -11,17 +11,15 @@ import javax.persistence.*;
 import java.util.List;
 
 
-@Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name = "players")
 public class User {
 
-    @NotNull
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "player_id")
+//    @NotNull
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Column(name = "player_id")
     private String id;
 
     @Column(name = "username")

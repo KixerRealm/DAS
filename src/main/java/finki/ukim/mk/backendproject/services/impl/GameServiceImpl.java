@@ -37,8 +37,8 @@ public class GameServiceImpl implements GameService {
     @Override
     public Optional<Game> save(GameDto gameDto) {
         Game game = new Game();
-        User user = this.userService.findByEmail(gameDto.getEmail());
-        game.setPlayerId(user.getId());
+//        User user = this.userService.findByEmail(gameDto.getEmail());
+//        game.setPlayerId(user.getId());
         game.setGameType(gameDto.getGameType());
         game.setStarted_at(LocalDateTime.from(LocalDateTime.now()));
         this.gameRepository.save(game);

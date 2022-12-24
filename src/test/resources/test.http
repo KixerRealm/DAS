@@ -1,0 +1,11 @@
+POST https://localhost:8443/realms/sko-realm/protocol/openid-connect/token
+
+###
+POST https://localhost:9090/api/users
+Content-Type: application/json
+
+{
+  "username": "pazzio",
+  "password": "test",
+  "email": "csprogrammers@outlook.com"
+}
