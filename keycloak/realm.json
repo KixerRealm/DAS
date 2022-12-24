@@ -1099,7 +1099,13 @@
       "clientAuthenticatorType": "client-secret",
       "secret": "Yn8JZT31j4cxQBRJQWUpP0hLMAI1shX7",
       "redirectUris": [],
-      "webOrigins": [],
+      "webOrigins": [
+        "",
+        "http://localhost:3000/",
+        "https://localhost:9090/",
+        "http://localhost:3000",
+        "https://locahost:9090"
+      ],
       "notBefore": 0,
       "bearerOnly": false,
       "consentRequired": false,
