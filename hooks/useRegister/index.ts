@@ -3,7 +3,7 @@ import {APIError} from "../../pages/api/leaderboards";
 export type UserRegistration = {
     email: string;
     password: string;
-    displayName: string;
+    username: string;
     confirm: string;
 }
 
@@ -12,7 +12,7 @@ export async function executeRegister(data: UserRegistration) {
         throw new Error("Passwords don't match!");
     }
 
-    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/oauth/register`, {
+    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/users`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

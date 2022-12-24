@@ -2,20 +2,32 @@ import {APIError} from "../../pages/api/leaderboards";
 import {User} from "../../pages/api/oauth/login";
 
 export type UserCredentials = {
-    email: string;
+    username: string;
     password: string;
 }
 
-export async function executeLogin(data: UserCredentials) {
-    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/oauth/login`, {
+export class LoginRequest implements UserCredentials, Record<string, string> {
+    [x: string]: string;
+    username: string = '';
+    password: string = '';
+    grant_type: string = "password";
+    client_id: string = "sko-client";
+    client_secret: string = "Yn8JZT31j4cxQBRJQWUpP0hLMAI1shX7";
+}
+
+export async function executeLogin(data: LoginRequest) {
+    return await fetch(`${process.env.NEXT_PUBLIC_KEYCLOAK_BASE}/realms/sko-realm/protocol/openid-connect/token`, {
         method: 'POST',
+        mode: 'cors',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/x-www-form-urlencoded'
         },
-        body: JSON.stringify(data)
+        body: new URLSearchParams(data)
     })
         .then(async res => {
+            console.log(res);
             if (res.status == 400) {
+                console.log(res);
                 const error = (await res.json()) as APIError;
                 throw new Error(error.message);
             }

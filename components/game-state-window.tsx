@@ -46,9 +46,10 @@ export default function GameStateWindow(params: GameStateWindowParameters) {
     const hasMounted = useHasMounted();
 
     const nextGuessMutation = useNextGuess(async (data: any) => {
+        console.log(`https://maps.googleapis.com/maps/api/place/photo?photo_reference=${data.photo_reference}&key=${process.env.NEXT_PUBLIC_MAPS_API_KEY!}`);
         setGameState(prevState => ({
             ...prevState,
-            image: data.image,
+            image: encodeURI(`https://maps.googleapis.com/maps/api/place/photo?photo_reference=${data.photo_reference}&key=${process.env.NEXT_PUBLIC_MAPS_API_KEY!}&maxwidth=320`),
             correctLocation: data.location
         }));
     });
@@ -84,17 +85,17 @@ export default function GameStateWindow(params: GameStateWindowParameters) {
             setGameCompleted(true);
             submitGameMutate({
                 id: gameState.id,
-                email: user?.email ?? "",
+                token: user?.access_token ?? "",
                 guesses: gameState.guessesMade.concat([submittedGuess]),
-                points: gameState.points + 2000
+                points: gameState.points + submittedGuess.points
             });
             setGameState(prevState => ({
                 ...prevState,
                 endedAt: new Date()
             }));
         }
-    }, [gameState.correctLocation, gameState.guessesLeft, gameState.guessesMade, gameState.id, gameState.points,
-        guess, nextGameMutate, params.gameModeType, setGameCompleted, setGameState, setGuess, submitGameMutate, user?.email]);
+    }, [gameState.correctLocation, gameState.guessesLeft, gameState.guessesMade, gameState.id, gameState.points, guess,
+        nextGameMutate, params.gameModeType, setGameCompleted, setGameState, setGuess, submitGameMutate, user?.access_token]);
 
 
     useEffect(() => {

@@ -7,7 +7,7 @@ import {deleteCookie, getCookie, setCookie} from "cookies-next";
 
 export type GameSubmissionRequest = {
     id: string;
-    email: string;
+    token: string;
     points: number;
     guesses: Guess[];
 };
@@ -17,7 +17,7 @@ export default function handler(
     res: NextApiResponse<APIError | object>
 ) {
     const submission = req.body as GameSubmissionRequest;
-    if (!allowedEmails.includes(submission.email)) {
+    if (!allowedEmails.includes(submission.token)) {
         res.status(400).json({
             message: 'User invalid... Please try again...'
         });

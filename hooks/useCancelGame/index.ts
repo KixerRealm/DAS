@@ -6,16 +6,17 @@ import {GameSubmissionRequest} from "../../pages/api/game/submit";
 
 type GameCancelRequest = {
     id: string,
-    email: string;
+    token: string;
 }
 
-export async function cancelGame(id: string, email: string) {
+export async function cancelGame(id: string, token: string) {
     return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/game/cancel`, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
         },
-        body: JSON.stringify({id, email})
+        body: JSON.stringify({id})
     }).then(async res => {
         if (res.status == 400) {
             const error = (await res.json()) as APIError;
@@ -27,7 +28,7 @@ export async function cancelGame(id: string, email: string) {
 export function useCancelGame(onSuccess: (data: any) => void) {
     return useMutation({
         mutationFn: (params: GameCancelRequest) => {
-            return cancelGame(params.id, params.email);
+            return cancelGame(params.id, params.token);
         },
         onSuccess
     });

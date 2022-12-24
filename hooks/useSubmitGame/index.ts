@@ -5,13 +5,14 @@ import {useEffect} from "react";
 import {GameSubmissionRequest} from "../../pages/api/game/submit";
 
 
-export async function submitGame(id: string, email: string, guesses: Guess[], points: number) {
+export async function submitGame(id: string, token: string, guesses: Guess[], points: number) {
     return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/game/submit`, {
         method: 'POST',
         headers: {
+            'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({id, email, guesses, points})
+        body: JSON.stringify({id, guesses, totalPoints: points})
     }).then(async res => {
         if (res.status == 400) {
             const error = (await res.json()) as APIError;
@@ -23,7 +24,7 @@ export async function submitGame(id: string, email: string, guesses: Guess[], po
 export function useSubmitGame(onSuccess: (data: any) => void) {
     return useMutation({
         mutationFn: (params: GameSubmissionRequest) => {
-            return submitGame(params.id, params.email, params.guesses, params.points);
+            return submitGame(params.id, params.token, params.guesses, params.points);
         },
         onSuccess
     });

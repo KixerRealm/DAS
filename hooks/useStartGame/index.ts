@@ -5,17 +5,18 @@ import {useMutation} from "@tanstack/react-query";
 import {useEffect} from "react";
 
 type StartGameParameters = {
-    email: string;
+    token: string;
     gameModeType: GameModeType;
 };
 
-export async function startGame(email: string, gameModeType: GameModeType) {
+export async function startGame(token: string, gameModeType: GameModeType) {
     return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/game/start`, {
         method: 'POST',
         headers: {
+            'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({email, gameType: gameModeType}),
+        body: JSON.stringify({gameType: gameModeType}),
     }).then(async res => {
         if (res.status == 400) {
             const error = (await res.json()) as APIError;
@@ -29,17 +30,17 @@ export async function startGame(email: string, gameModeType: GameModeType) {
 export function useStartGame(onSuccess: (data: any) => void) {
     return useMutation({
         mutationFn: (params: StartGameParameters) => {
-            return startGame(params.email, params.gameModeType);
+            return startGame(params.token, params.gameModeType);
         },
         onSuccess
     });
 }
 
-export function useStartGameEffect(email: string, gameModeType: GameModeType, onSuccess: (data: any) => void) {
+export function useStartGameEffect(token: string, gameModeType: GameModeType, onSuccess: (data: any) => void) {
     const {mutate} = useStartGame(onSuccess);
     useEffect(() => {
-        if (email == undefined || gameModeType == undefined)
+        if (token == undefined || gameModeType == undefined)
             return;
-        mutate({email, gameModeType});
-    }, [email, gameModeType, mutate]);
+        mutate({token, gameModeType});
+    }, [token, gameModeType, mutate]);
 }

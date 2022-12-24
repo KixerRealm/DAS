@@ -44,7 +44,7 @@ export default function GameCompletedModal(params: GameCompleteParameters) {
     const playAgainState = useCallback(() => {
         setGameState(new GameStateInstance());
         nextGuessMutate(params.type);
-        startGameMutate({email: user?.email ?? '', gameModeType: params.type});
+        startGameMutate({token: user?.access_token ?? '', gameModeType: params.type});
         setGameCompleted(false);
     }, [nextGuessMutate, params.type, setGameCompleted, setGameState, startGameMutate, user?.email]);
 

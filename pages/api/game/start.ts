@@ -28,7 +28,6 @@ class GameAttemptInstance implements GameAttempt {
     gameType: GameModeType = GameModeType.ALL;
     guesses: Guess[] = [];
     totalPoints?: number = undefined;
-
 }
 
 export default function handler(

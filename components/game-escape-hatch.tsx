@@ -25,8 +25,8 @@ export default function GameEscapeHatch() {
     });
 
     const cancelGame = useCallback(() => {
-        mutate({email: user?.email ?? '', id: gameState.id});
-    }, [gameState.id, mutate, user?.email]);
+        mutate({token: user?.access_token ?? '', id: gameState.id});
+    }, [gameState.id, mutate, user?.access_token]);
 
     if (!hasMounted) {
         return null;

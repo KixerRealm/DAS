@@ -9,6 +9,8 @@ export type User = {
     email: string;
     displayName: string;
     profilePictureUrl: string;
+    access_token: string;
+    refresh_token: string;
 }
 
 export const allowedEmails: string[] = [
@@ -23,7 +25,7 @@ export default function handler(
     res: NextApiResponse<User | APIError>
 ) {
     const credentials = req.body as UserCredentials;
-    if (!allowedEmails.includes(credentials.email)) {
+    if (!allowedEmails.includes(credentials.username)) {
         res.status(400).json({
             message: 'No user matches the given credentials!'
         });
@@ -38,7 +40,7 @@ export default function handler(
     }
 
     res.status(200).json({
-        email: credentials.email,
+        username: credentials.username,
         displayName: faker.internet.userName(),
         profilePictureUrl: faker.image.avatar()
     });

@@ -13,7 +13,7 @@ export default function Register() {
 
             const data: UserRegistration = {
                 email: event.target.email.value,
-                displayName: event.target.displayName.value,
+                username: event.target.username.value,
                 password: event.target.password.value,
                 confirm: event.target.confirm.value
             };
@@ -38,9 +38,9 @@ export default function Register() {
                         <form className={"space-y-6"} onSubmit={mutate}>
 
                             <div>
-                                <label htmlFor={"displayName"}
-                                       className={"block mb-2 text-sm font-medium text-white"}>Display Name</label>
-                                <input type={"text"} name={"displayName"} id={"displayName"}
+                                <label htmlFor={"username"}
+                                       className={"block mb-2 text-sm font-medium text-white"}>Username</label>
+                                <input type={"text"} name={"username"} id={"username"}
                                        className={"border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-neutral-800 border-neutral-500 placeholder-neutral-500 text-neutral-200"}
                                        placeholder={"DenjiKun69"} required/>
                             </div>

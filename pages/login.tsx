@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {executeLogin, UserCredentials} from "../hooks/useLogin";
+import {executeLogin, LoginRequest} from "../hooks/useLogin";
 import {useMutation} from "@tanstack/react-query";
 import {useRouter} from "next/router";
 import {userAtom} from "../components/user-nav-bar";
@@ -13,14 +13,13 @@ export default function Login() {
     const {mutate, isLoading, error, isError} = useMutation({
         mutationFn: (event: any) => {
             event.preventDefault();
-
-            const data: UserCredentials = {
-                email: event.target.email.value,
-                password: event.target.password.value
-            };
+            const data: LoginRequest = new LoginRequest();
+            data.username = event.target.username.value;
+            data.password = event.target.password.value;
             return executeLogin(data);
         },
         onSuccess: async data => {
+            console.log(data);
             updateUser(data);
             const {returnPath} = router.query;
             if (returnPath != undefined) {
@@ -47,9 +46,9 @@ export default function Login() {
                         <form className={"space-y-6"} onSubmit={mutate}>
 
                             <div>
-                                <label htmlFor={"email"}
-                                       className={"block mb-2 text-sm font-medium text-white"}>Email</label>
-                                <input type={"email"} name={"email"} id={"email"}
+                                <label htmlFor={"username"}
+                                       className={"block mb-2 text-sm font-medium text-white"}>Username</label>
+                                <input type={"username"} name={"username"} id={"username"}
                                        className={"border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-neutral-800 border-neutral-500 placeholder-neutral-500 text-neutral-200"}
                                        placeholder={"name@company.com"} required/>
                             </div>

@@ -60,7 +60,7 @@ export default function Game() {
         setGuess(new GuessInstance());
     });
 
-    useStartGameEffect(user?.email ?? "", query.gameType, async (data: any) => {
+    useStartGameEffect(user?.access_token ?? "", query.gameType, async (data: any) => {
         setGameState(prevState => ({
             ...prevState,
             id: data!.id
