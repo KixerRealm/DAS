@@ -1,7 +1,9 @@
 package finki.ukim.mk.backendproject.services.impl;
 
 import finki.ukim.mk.backendproject.dtos.GameDto;
-import finki.ukim.mk.backendproject.enumerators.PlaceType;
+import finki.ukim.mk.backendproject.dtos.UserDto;
+import finki.ukim.mk.backendproject.enums.PlaceType;
+import finki.ukim.mk.backendproject.models.Account;
 import finki.ukim.mk.backendproject.models.Game;
 import finki.ukim.mk.backendproject.repository.GameRepository;
 import finki.ukim.mk.backendproject.services.GameService;
@@ -33,12 +35,11 @@ public class GameServiceImpl implements GameService {
     }
 
     @Override
-    public Optional<Game> save(GameDto gameDto) {
+    public Optional<Game> save(GameDto gameDto, String userId) {
         Game game = new Game();
-//        User user = this.userService.findByEmail(gameDto.getEmail());
-//        game.setPlayerId(user.getId());
+        Account account = this.userService.getAccountById(userId);
+        game.setAccount(account);
         game.setGameType(gameDto.getGameType());
-        game.setStarted_at(LocalDateTime.from(LocalDateTime.now()));
         this.gameRepository.save(game);
         return Optional.of(game);
     }

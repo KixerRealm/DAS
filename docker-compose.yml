@@ -18,7 +18,7 @@ services:
     volumes:
       - ./keycloak/realm.json:/opt/keycloak/data/import/realm.json
     command:
-      - start '--optimized' --import-realm
+      - start '--optimized' --import-realm --http-enabled true --http-port 8100
 
   sko-batch-postgres:
     image: postgres:15-alpine

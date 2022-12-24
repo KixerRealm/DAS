@@ -71,6 +71,11 @@ public class KeycloakUserServiceImpl implements UserService {
 	}
 
 	@Override
+	public Account getAccountById(String id) {
+		return accountRepository.findById(id).orElse(null);
+	}
+
+	@Override
 	public UserDto findByEmail(String email) {
 		UserRepresentation keycloakUser = keycloak.searchByEmail(email, true).get(0);
 		Optional<Account> account = accountRepository.findById(keycloakUser.getId());

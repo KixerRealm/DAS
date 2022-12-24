@@ -1,4 +1,4 @@
-package finki.ukim.mk.backendproject.security;
+package finki.ukim.mk.backendproject.security.config;
 
 
 import org.apache.catalina.Context;

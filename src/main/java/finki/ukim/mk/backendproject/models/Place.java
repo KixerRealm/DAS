@@ -1,6 +1,6 @@
 package finki.ukim.mk.backendproject.models;
 
-import finki.ukim.mk.backendproject.enumerators.PlaceType;
+import finki.ukim.mk.backendproject.enums.PlaceType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

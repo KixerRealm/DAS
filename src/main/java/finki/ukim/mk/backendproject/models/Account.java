@@ -24,10 +24,4 @@ public class Account {
     @Column(name = "image_url")
     private String profilePictureUrl;
 
-    @OneToMany
-    private List<LeaderboardRecord> recordList;
-
-    @OneToMany
-    private List<Game> games;
-
 }

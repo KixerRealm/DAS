@@ -1,46 +1,39 @@
 package finki.ukim.mk.backendproject.models;
 
-import finki.ukim.mk.backendproject.enumerators.PlaceType;
+import finki.ukim.mk.backendproject.enums.PlaceType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.List;
 
+@Data
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 @Table(name = "games")
 public class Game {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "game_id")
+    @Column(name = "id")
     private String id;
 
-    @Column(name = "player_id")
-    private String playerId;
-
-    @Column(name = "guess_id")
-    private String guessId;
-
-    @Column(name = "gameType")
+    @Column(name = "game_type")
     @Enumerated(EnumType.STRING)
     private PlaceType gameType;
 
-    @Column(name = "startedAt")
-    //@Temporal(TemporalType.DATE)
-    private LocalDateTime started_at;
+    @Column(name = "started_at")
+    private LocalDateTime startedAt;
 
-    @Column(name = "endedAt")
-    //@Temporal(TemporalType.DATE)
-    private LocalDateTime ended_at;
+    @Column(name = "ended_at")
+    private LocalDateTime endedAt;
 
-    @Column(name = "totalPoints")
+    @Column(name = "total_points")
     private int totalPoints;
 
+    @JoinColumn(name = "account_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Account account;
 
 }

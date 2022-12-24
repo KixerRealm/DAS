@@ -1,6 +1,7 @@
-package finki.ukim.mk.backendproject.security;
+package finki.ukim.mk.backendproject.security.config;
 
 import org.apache.http.ssl.SSLContextBuilder;
+import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
 import org.keycloak.OAuth2Constants;
 import org.keycloak.admin.client.Keycloak;
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
 
 import javax.net.ssl.SSLContext;
+import javax.ws.rs.client.Client;
 import java.io.IOException;
 import java.security.KeyManagementException;
 import java.security.KeyStoreException;
@@ -36,17 +38,22 @@ public class KeycloakInstanceConfig {
 	private String trustStorePassword;
 
 	@Bean
-	public UsersResource keycloak() throws IOException, CertificateException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
+	public Client client() throws IOException, CertificateException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
 		SSLContext sslContext = new SSLContextBuilder()
 				.loadTrustMaterial(trustStore.getURL(), trustStorePassword.toCharArray())
 				.build();
+		return ResteasyClientBuilder.newBuilder().sslContext(sslContext).build();
+	}
+
+	@Bean
+	public UsersResource keycloak() throws IOException, CertificateException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException {
 		return KeycloakBuilder.builder()
 				.serverUrl(serverUrl)
 				.realm(realm)
 				.grantType(OAuth2Constants.CLIENT_CREDENTIALS)
 				.clientId(clientId)
 				.clientSecret(clientSecret)
-				.resteasyClient(ResteasyClientBuilder.newBuilder().sslContext(sslContext).build())
+				.resteasyClient(client())
 				.build().realm(realm).users();
 	}
 }

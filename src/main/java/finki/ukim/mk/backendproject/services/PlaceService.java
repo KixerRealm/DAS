@@ -1,6 +1,6 @@
 package finki.ukim.mk.backendproject.services;
 
-import finki.ukim.mk.backendproject.enumerators.PlaceType;
+import finki.ukim.mk.backendproject.enums.PlaceType;
 import finki.ukim.mk.backendproject.models.Place;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package finki.ukim.mk.backendproject.services.impl;
 
-import finki.ukim.mk.backendproject.enumerators.PlaceType;
+import finki.ukim.mk.backendproject.enums.PlaceType;
 import finki.ukim.mk.backendproject.models.Place;
 import finki.ukim.mk.backendproject.repository.PlaceRepository;
 import finki.ukim.mk.backendproject.services.PlaceService;
