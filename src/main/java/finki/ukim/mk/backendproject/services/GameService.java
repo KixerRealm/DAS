@@ -8,12 +8,9 @@ import java.util.List;
 import java.util.Optional;
 
 public interface GameService {
-    List<Game> findAll();
-    Optional<Game> findById(String id);
+    GameDto startGame(GameDto gameDto, String userId);
 
-    Optional<Game> save(GameDto gameDto, String userId);
+    GameDto submitGame(GameDto game, String userId);
 
-    void deleteById(String id);
-
-    List<Game> findAllGamesByGameTypeOrderByPoints(PlaceType type);
+    void cancel(GameDto game, String userId);
 }

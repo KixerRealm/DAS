@@ -6,10 +6,10 @@ create table if not exists accounts
 
 create table if not exists games
 (
-    id           SERIAL PRIMARY KEY,
+    id           varchar(255) NOT NULL PRIMARY KEY,
     account_id   varchar(255) NOT NULL,
     game_type    varchar(20)  NOT NULL,
-    started_at   timestamp default current_timestamp,
+    started_at   timestamp             default current_timestamp,
     ended_at     timestamp,
     total_points integer      NOT NULL default 0,
     FOREIGN KEY (account_id) references accounts (id)

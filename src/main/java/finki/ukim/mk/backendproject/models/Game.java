@@ -4,6 +4,8 @@ import finki.ukim.mk.backendproject.enums.PlaceType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
@@ -15,8 +17,9 @@ import java.time.LocalDateTime;
 public class Game {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "id", length = 36, unique = true)
+    @GeneratedValue(generator = "strategy-uuid2")
+    @GenericGenerator(name = "strategy-uuid2", strategy = "uuid2")
     private String id;
 
     @Column(name = "game_type")

@@ -33,16 +33,13 @@ import java.security.cert.CertificateException;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 
-
 	private final JwtAuthenticationProvider jwtAuthenticationProvider;
-
-
 
 	@Override
 	public void configure(HttpSecurity httpSecurity) throws Exception {
 		httpSecurity
 				.authorizeRequests()
-				.antMatchers("/api/users/**", "/well-known/jwks").permitAll()
+				.antMatchers("/api/users/**", "/well-known/jwks", "/api/places/next-guess").permitAll()
 				.anyRequest().authenticated()
 				.and()
 				.sessionManagement()

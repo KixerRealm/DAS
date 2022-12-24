@@ -7,15 +7,15 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+@Data
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 @Table(name = "places")
 public class Place {
 
     @Id
-    @Column(name = "place_id")
+    @Column(name = "id")
     private String id;
 
     @Column(name = "lat")
@@ -27,7 +27,7 @@ public class Place {
     @Column(name = "name")
     private String location_name;
 
-    @Column(name = "photoReference")
+    @Column(name = "photo_reference")
     private String photo_reference;
 
     @Enumerated(EnumType.STRING)
