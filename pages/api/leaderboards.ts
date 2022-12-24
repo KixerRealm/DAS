@@ -5,7 +5,7 @@ import {GameModeType} from "../../enums/game-mode-type";
 
 export type LeaderboardRecord = {
     username: string;
-    total: number;
+    totalPoints: number;
     timeCompleted: Date;
     timeStarted: Date;
     type: GameModeType;
@@ -43,8 +43,8 @@ export default function handler(
 
     function sortByTotalPoints() {
         return (a: LeaderboardRecord, b: LeaderboardRecord) =>
-            a.total < b.total ? 1 :
-                a.total > b.total ? -1 : 0;
+            a.totalPoints < b.totalPoints ? 1 :
+                a.totalPoints > b.totalPoints ? -1 : 0;
     }
 
     res.status(200).json(records.sort(sortByTotalPoints()));

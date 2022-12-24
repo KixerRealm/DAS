@@ -29,7 +29,7 @@ export default function LeaderboardRecordComponent(params: LeaderboardRecordPara
                 {Duration.millisecond(params.record.timeCompleted.valueOf() - params.record.timeStarted.valueOf()).minutes.toFixed(2)} minutes
             </td>
             <td className={"py-4 px-6"}>
-                {params.record.total}
+                {params.record.totalPoints}
             </td>
         </tr>
     );

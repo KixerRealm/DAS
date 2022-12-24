@@ -5,9 +5,11 @@ import {QueryType} from "../../enums/query-type";
 
 
 export async function fetchLeaderboards(gameMode: GameModeType): Promise<LeaderboardRecord[]> {
-    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/leaderboards?` + new URLSearchParams({
+    return await fetch(`${process.env.NEXT_PUBLIC_BE_BASE}/api/game/leaderboards?` + new URLSearchParams({
         gameMode
-    }))
+    }), {
+        method: 'GET'
+    })
         .then(async (data) => {
             if (data.status == 400) {
                 const error = (await data.json()) as APIError;
@@ -17,10 +19,10 @@ export async function fetchLeaderboards(gameMode: GameModeType): Promise<Leaderb
             return (await data.json()) as LeaderboardRecord[];
         })
         .then((data) => {
-
             return data.map<LeaderboardRecord>((item) => {
                 item.timeStarted = new Date(item.timeStarted);
                 item.timeCompleted = new Date(item.timeCompleted);
+                item.profilePictureUrl = item.profilePictureUrl ?? '';
                 return item;
             });
         });
