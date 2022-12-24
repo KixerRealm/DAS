@@ -3,7 +3,7 @@ package finki.ukim.mk.backendproject.services.impl;
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Place;
 import finki.ukim.mk.backendproject.repository.PlaceRepository;
-import finki.ukim.mk.backendproject.services.interfaces.PlaceService;
+import finki.ukim.mk.backendproject.services.PlaceService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

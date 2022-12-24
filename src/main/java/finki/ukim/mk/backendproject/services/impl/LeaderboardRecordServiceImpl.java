@@ -1,16 +1,12 @@
 package finki.ukim.mk.backendproject.services.impl;
 
 import finki.ukim.mk.backendproject.dtos.LeaderboardRecordDto;
-import finki.ukim.mk.backendproject.enumerators.PlaceType;
-import finki.ukim.mk.backendproject.models.Game;
 import finki.ukim.mk.backendproject.models.LeaderboardRecord;
-import finki.ukim.mk.backendproject.repository.GameRepository;
 import finki.ukim.mk.backendproject.repository.LeaderboardRecordRepository;
-import finki.ukim.mk.backendproject.services.interfaces.GameService;
-import finki.ukim.mk.backendproject.services.interfaces.LeaderboardRecordService;
+import finki.ukim.mk.backendproject.services.GameService;
+import finki.ukim.mk.backendproject.services.LeaderboardRecordService;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 

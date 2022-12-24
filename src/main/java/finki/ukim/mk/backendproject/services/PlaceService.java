@@ -1,4 +1,4 @@
-package finki.ukim.mk.backendproject.services.interfaces;
+package finki.ukim.mk.backendproject.services;
 
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Place;

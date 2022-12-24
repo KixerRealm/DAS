@@ -4,8 +4,8 @@ import finki.ukim.mk.backendproject.dtos.GameDto;
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Game;
 import finki.ukim.mk.backendproject.models.Guess;
-import finki.ukim.mk.backendproject.services.interfaces.GameService;
-import finki.ukim.mk.backendproject.services.interfaces.GuessService;
+import finki.ukim.mk.backendproject.services.GameService;
+import finki.ukim.mk.backendproject.services.GuessService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

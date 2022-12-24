@@ -6,7 +6,7 @@ import finki.ukim.mk.backendproject.mappers.UserMapper;
 import finki.ukim.mk.backendproject.models.Account;
 import finki.ukim.mk.backendproject.repository.AccountRepository;
 import finki.ukim.mk.backendproject.security.Credentials;
-import finki.ukim.mk.backendproject.services.interfaces.UserService;
+import finki.ukim.mk.backendproject.services.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.keycloak.admin.client.resource.UsersResource;

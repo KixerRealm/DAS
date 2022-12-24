@@ -1,4 +1,4 @@
-package finki.ukim.mk.backendproject.services.interfaces;
+package finki.ukim.mk.backendproject.services;
 
 import finki.ukim.mk.backendproject.dtos.LeaderboardRecordDto;
 import finki.ukim.mk.backendproject.models.LeaderboardRecord;

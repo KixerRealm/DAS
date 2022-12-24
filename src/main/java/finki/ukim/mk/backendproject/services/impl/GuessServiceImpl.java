@@ -1,10 +1,9 @@
 package finki.ukim.mk.backendproject.services.impl;
 
 import finki.ukim.mk.backendproject.dtos.GuessDto;
-import finki.ukim.mk.backendproject.models.Game;
 import finki.ukim.mk.backendproject.models.Guess;
 import finki.ukim.mk.backendproject.repository.GuessRepository;
-import finki.ukim.mk.backendproject.services.interfaces.GuessService;
+import finki.ukim.mk.backendproject.services.GuessService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

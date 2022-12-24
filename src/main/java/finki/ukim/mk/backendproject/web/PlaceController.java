@@ -3,7 +3,7 @@ package finki.ukim.mk.backendproject.web;
 //import finki.ukim.mk.backendproject.services.interfaces.GameAttemptService;
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Place;
-import finki.ukim.mk.backendproject.services.interfaces.PlaceService;
+import finki.ukim.mk.backendproject.services.PlaceService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

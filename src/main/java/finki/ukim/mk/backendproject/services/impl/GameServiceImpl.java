@@ -4,11 +4,10 @@ import finki.ukim.mk.backendproject.dtos.GameDto;
 import finki.ukim.mk.backendproject.enumerators.PlaceType;
 import finki.ukim.mk.backendproject.models.Game;
 import finki.ukim.mk.backendproject.repository.GameRepository;
-import finki.ukim.mk.backendproject.services.interfaces.GameService;
-import finki.ukim.mk.backendproject.services.interfaces.UserService;
+import finki.ukim.mk.backendproject.services.GameService;
+import finki.ukim.mk.backendproject.services.UserService;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
