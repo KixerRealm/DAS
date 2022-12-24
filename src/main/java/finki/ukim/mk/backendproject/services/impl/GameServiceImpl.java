@@ -55,7 +55,7 @@ public class GameServiceImpl implements GameService {
 		return gameRepository.findAllByGameTypeAndEndedAtIsNotNullOrderByTotalPointsDesc(placeType)
 				.stream().limit(15)
 				.map(GameMapper.INSTANCE::toDto)
-				.map(item -> GameMapper.INSTANCE.toLeaderboardDto(item, userService.getUserById(item.getId())))
+				.map(item -> GameMapper.INSTANCE.toLeaderboardDto(item, userService.getUserById(item.getUserId())))
 				.toList();
 	}
 

@@ -13,6 +13,7 @@ import java.util.List;
 public class GameDto {
 	private String id;
 	private PlaceType gameType;
+	private String userId;
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private LocalDateTime startedAt;
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")

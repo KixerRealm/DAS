@@ -17,6 +17,7 @@ public interface GameMapper {
 	GameMapper INSTANCE = Mappers.getMapper(GameMapper.class);
 
 	@Mapping(target = "placement", source = "endingPlacement")
+	@Mapping(target = "userId", source = "account.id")
 	GameDto toDto(Game game);
 
 	@Mapping(target = "gameId", source = "game.id")
