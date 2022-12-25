@@ -23,5 +23,5 @@ COPY --from=builder /opt/keycloak/ /opt/keycloak/
 ENV KC_DB_URL=${KC_DB_URL}
 ENV KC_DB_USERNAME=${KC_DB_USERNAME}
 ENV KC_DB_PASSWORD=${KC_DB_PASSWORD}
-ENV KC_HOSTNAME=localhost
+ENV KC_HOSTNAME=${KC_HOSTNAME}
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
