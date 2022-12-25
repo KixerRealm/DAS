@@ -1,34 +1,28 @@
 package finki.ukim.mk.backendproject.web;
 
 
-import finki.ukim.mk.backendproject.models.User;
-import finki.ukim.mk.backendproject.services.interfaces.UserService;
+import finki.ukim.mk.backendproject.dtos.UserDto;
+import finki.ukim.mk.backendproject.security.JWTUser;
+import finki.ukim.mk.backendproject.services.UserService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("api/users")
 public class UserController {
-    private final UserService userService;
+	private final UserService userService;
 
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }
+	@PostMapping
+	public ResponseEntity<UserDto> createUser(@RequestBody UserDto user) throws RuntimeException {
+		return ResponseEntity.ok(userService.createUser(user));
+	}
 
-    @GetMapping("/all")
-    public List<User> getAllUsers() {
-        return userService.findAll();
-    }
-
-    @PostMapping
-    public User createUser(@RequestBody User user) {
-        return userService.createUser(user);
-    }
-
-    @GetMapping("/{id}")
-    public Optional<User> getUserById(@PathVariable String id) {
-        return userService.getUserById(id);
-    }
+	@GetMapping("/identify")
+	public ResponseEntity<UserDto> identify(JWTUser jwtUser) {
+		return ResponseEntity.ok(userService.getUserById(jwtUser.getId()));
+	}
 }

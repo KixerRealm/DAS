@@ -1,0 +1,46 @@
+version: '3.3'
+
+services:
+  keycloak:
+    container_name: sko-keycloak
+    build:
+      context: ./keycloak
+    env_file:
+      - .env
+    ports:
+      - "8443:8443"
+      - "8100:8100"
+    depends_on:
+      - sko-postgres
+    command:
+      - start --optimized --import-realm --http-enabled true --http-port 8100
+
+  sko-postgres:
+    image: postgres:15-alpine
+    build:
+      context: ./scripts
+    container_name: sko-postgres
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "5433:5432"
+    volumes:
+      - sko-data:/var/lib/postgresql/data
+
+  sko-spring-boot:
+    image: sko/sko-spring-boot:latest
+    container_name: sko-spring-boot
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - '9090:9090'
+      - '8080:8080'
+    depends_on:
+      - sko-postgres
+      - sko-keycloak
+
+volumes:
+  sko-data:
+    driver: local

@@ -1,61 +1,87 @@
 package finki.ukim.mk.backendproject.services.impl;
 
+import finki.ukim.mk.backendproject.dtos.AttemptDto;
 import finki.ukim.mk.backendproject.dtos.GameDto;
-import finki.ukim.mk.backendproject.enumerators.PlaceType;
+import finki.ukim.mk.backendproject.dtos.LeaderboardRecordDto;
+import finki.ukim.mk.backendproject.dtos.UserDto;
+import finki.ukim.mk.backendproject.enums.PlaceType;
+import finki.ukim.mk.backendproject.mappers.GameMapper;
+import finki.ukim.mk.backendproject.models.Account;
 import finki.ukim.mk.backendproject.models.Game;
-import finki.ukim.mk.backendproject.models.User;
 import finki.ukim.mk.backendproject.repository.GameRepository;
-import finki.ukim.mk.backendproject.services.interfaces.GameService;
-import finki.ukim.mk.backendproject.services.interfaces.UserService;
+import finki.ukim.mk.backendproject.services.GameService;
+import finki.ukim.mk.backendproject.services.UserService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class GameServiceImpl implements GameService {
-    private final GameRepository gameRepository;
-    private final UserService userService;
+	private final GameRepository gameRepository;
+	private final UserService userService;
 
-    public GameServiceImpl(GameRepository gameRepository, UserService userService) {
-        this.gameRepository = gameRepository;
-        this.userService = userService;
-    }
+	@Override
+	public GameDto startGame(GameDto gameDto, String userId) {
+		Game game = new Game();
+		Account account = this.userService.getAccountById(userId);
+		game.setStartedAt(LocalDateTime.now());
+		game.setAccount(account);
+		game.setGameType(gameDto.getGameType());
+		this.gameRepository.save(game);
+		return GameMapper.INSTANCE.toDto(game);
+	}
 
-    @Override
-    public List<Game> findAll() {
-        return this.gameRepository.findAll();
-    }
+	@Override
+	public GameDto submitGame(GameDto game, String userId) {
+		Game entity = gameRepository.findById(game.getId()).orElseThrow();
+		entity.setTotalPoints(game.getTotalPoints());
+		entity.setEndedAt(LocalDateTime.now());
+		entity.setEndingPlacement(gameRepository.countByGameTypeAndTotalPointsGreaterThan(entity.getGameType(), game.getTotalPoints()) + 1);
+		// TODO: Add async validation of information/guesses
+		gameRepository.save(entity);
+		return GameMapper.INSTANCE.toDto(entity);
+	}
 
-    @Override
-    public Optional<Game> findById(String id) {
-        return this.gameRepository.findById(id);
-    }
+	@Override
+	public void cancel(GameDto game, String userId) {
+		gameRepository.deleteById(game.getId());
+	}
 
-    @Override
-    public Optional<Game> save(GameDto gameDto) {
-        Game game = new Game();
-        User user = this.userService.findByEmail(gameDto.getEmail());
-        game.setPlayerId(user.getId());
-        game.setGameType(gameDto.getGameType());
-        game.setStarted_at(LocalDateTime.from(LocalDateTime.now()));
-        this.gameRepository.save(game);
-        return Optional.of(game);
-    }
+	@Override
+	public List<LeaderboardRecordDto> leaderboards(PlaceType placeType) {
+		return gameRepository.findAllByGameTypeAndEndedAtIsNotNullOrderByTotalPointsDesc(placeType)
+				.stream().limit(15)
+				.map(GameMapper.INSTANCE::toDto)
+				.map(item -> GameMapper.INSTANCE.toLeaderboardDto(item, userService.getUserById(item.getUserId())))
+				.toList();
+	}
 
-    @Override
-    public void deleteById(String id) {
-        this.gameRepository.deleteById(id);
-    }
+	@Override
+	public List<AttemptDto> findByUser(String userId) {
+		return gameRepository.findAllByAccountIdAndEndedAtIsNotNullOrderByEndedAtDesc(userId)
+				.stream().map(GameMapper.INSTANCE::toDto)
+				.map(GameMapper.INSTANCE::toAttemptDto)
+				.toList();
+	}
 
-    @Override
-    public List<Game> findAllGamesByGameTypeOrderByPoints(PlaceType type) {
-        if(type==PlaceType.ALL){
-            return this.gameRepository.findByOrderByTotalPoints();
-        }else {
-            return this.gameRepository.findAllByGameTypeOrderByTotalPoints(type);
-        }
-    }
+	@Override
+	public List<AttemptDto> findPeakPlacementsByUser(String userId) {
+		List<String> peakIds = gameRepository.findPeakPlacementIdsByAccountId(userId);
+		return gameRepository.findAllByIdIn(peakIds)
+				.stream().map(GameMapper.INSTANCE::toDto)
+				.map(GameMapper.INSTANCE::toAttemptDto)
+				.toList();
+	}
+
+	@Override
+	public List<AttemptDto> findLatestPlacementsByUser(String userId) {
+		List<String> latestIds = gameRepository.findLatestPlacementIdsByAccountId(userId);
+		return gameRepository.findAllByIdIn(latestIds)
+				.stream().map(GameMapper.INSTANCE::toDto)
+				.map(GameMapper.INSTANCE::toAttemptDto)
+				.toList();
+	}
 }
