@@ -4,4 +4,4 @@ POST http://localhost:9091/jobs/coffee
 POST http://localhost:9091/jobs/landmark
 
 ###
-POST http://localhost:9091/jobs/composite
+POST http://35.246.159.1:9091/jobs/composite

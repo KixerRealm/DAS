@@ -14,6 +14,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
+
+import java.io.File;
 
 @Configuration
 @RequiredArgsConstructor
@@ -41,7 +44,7 @@ public class PlaceTypeStepConfig {
 	) {
 		return new JsonItemReaderBuilder<Place>()
 				.jsonObjectReader(new JacksonJsonObjectReader<>(Place.class))
-				.resource(new ClassPathResource("temp/places-photo-" + id + ".json"))
+				.resource(new FileSystemResource("/temp/places-photo-" + id + ".json"))
 				.name("placesTypeReader")
 				.build();
 	}

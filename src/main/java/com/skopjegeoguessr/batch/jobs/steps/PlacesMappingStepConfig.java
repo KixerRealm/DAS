@@ -18,6 +18,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
 
 @Configuration
 @RequiredArgsConstructor
@@ -46,7 +47,7 @@ public class PlacesMappingStepConfig {
 	) {
 		return new JsonItemReaderBuilder<PlacesSearchResult>()
 				.jsonObjectReader(new JacksonJsonObjectReader<>(PlacesSearchResult.class))
-				.resource(new ClassPathResource("temp/places-page-" + id + ".json"))
+				.resource(new FileSystemResource("/temp/places-page-" + id + ".json"))
 				.name("placesMappingReader")
 				.build();
 	}
@@ -56,11 +57,10 @@ public class PlacesMappingStepConfig {
 	public JsonFileItemWriter<Place> placesMappingWriter(
 			@Value("#{jobParameters['runId']}") String id
 	) {
-		final String fileName = "temp/places-mapping-" + id + ".json";
-		utilityService.createClassPathFile(fileName);
+		final String fileName = "/temp/places-mapping-" + id + ".json";
 		return new JsonFileItemWriterBuilder<Place>()
 				.jsonObjectMarshaller(new JacksonJsonObjectMarshaller<>())
-				.resource(new ClassPathResource(fileName))
+				.resource(new FileSystemResource(fileName))
 				.name("placesMappingWriter")
 				.build();
 	}

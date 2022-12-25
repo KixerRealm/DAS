@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
 
 import java.io.File;
 import java.io.IOException;
@@ -55,11 +56,10 @@ public class PlacesPageStepConfig {
 	public PlacesPageItemWriter placesPageWriter(
 			@Value("#{jobParameters['runId']}") String id
 	) {
-		final String fileName = "temp/places-page-" + id + ".json";
-		utilityService.createClassPathFile(fileName);
+		final String fileName = "/temp/places-page-" + id + ".json";
 		return new PlacesPageItemWriterBuilder()
 				.jsonObjectMarshaller(new JacksonJsonObjectMarshaller<>())
-				.resource(new ClassPathResource(fileName))
+				.resource(new FileSystemResource(fileName))
 				.name("placesPageWriter")
 				.build();
 	}
