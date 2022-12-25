@@ -7,19 +7,20 @@ async function identify(token: string) {
             'Authorization': `Bearer ${token}`
         }
     }).then(async (res: Response) => {
-        if (res.status == 400) {
-            throw new Error("error");
+        if (res.status != 200) {
+            throw new Error((await res.text()));
         }
 
         return (await res.json()) as User;
     })
 }
 
-export function useIdentify(onSuccess: (data: any) => void) {
+export function useIdentify(onSuccess: (data: any) => void, onError: (data: Error) => void) {
     return useMutation({
         mutationFn: (token: string) => {
             return identify(token);
         },
-        onSuccess
+        onSuccess,
+        onError
     });
 }

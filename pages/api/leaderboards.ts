@@ -16,6 +16,10 @@ export type APIError = {
     message: string;
 }
 
+export type KeycloakError = {
+    error_description: string;
+}
+
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<LeaderboardRecord[] | APIError>

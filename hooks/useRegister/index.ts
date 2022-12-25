@@ -21,9 +21,8 @@ export async function executeRegister(data: UserRegistration) {
         body: JSON.stringify(data)
     })
         .then(async res => {
-            if (res.status == 400) {
-                const error = (await res.json()) as APIError;
-                throw new Error(error.message);
+            if (res.status != 200) {
+                throw new Error(await res.text());
             }
         });
 }

@@ -8,29 +8,33 @@ import {useUpdateAtom} from "jotai/utils";
 import {useIdentify} from "../hooks/useIdentify";
 import {User} from "./api/oauth/login";
 import {useState} from "react";
+import {KeycloakError} from "./api/leaderboards";
 
 export default function Login() {
 
     const updateUser = useUpdateAtom(userAtom);
+    const [error, setError] = useState<string | null>(null);
     const router = useRouter();
     const [user, setUser] = useState<User>({});
     const identity = useIdentify(async (data: User) => {
-        user.email = data?.email;
-        user.username = data?.username;
-        user.profilePictureUrl = data?.profilePictureUrl;
+            user.email = data?.email;
+            user.username = data?.username;
+            user.profilePictureUrl = data?.profilePictureUrl;
 
-        updateUser(user);
-        const {returnPath} = router.query;
-        if (returnPath != undefined) {
-            await router.push(returnPath as string);
-            return;
-        }
-        await router.push("/");
-    });
+            updateUser(user);
+            const {returnPath} = router.query;
+            if (returnPath != undefined) {
+                await router.push(returnPath as string);
+                return;
+            }
+            await router.push("/");
+        },
+        (error: Error) => setError(error.message)
+    );
 
     const identityMutate = identity.mutate;
 
-    const {mutate, isLoading, error, isError} = useMutation({
+    const {mutate} = useMutation({
         mutationFn: (event: any) => {
             event.preventDefault();
             const data: LoginRequest = new LoginRequest();
@@ -41,15 +45,14 @@ export default function Login() {
         onSuccess: async data => {
             setUser(prevState => ({
                 ...prevState,
-
-
             }));
 
             user.access_token = data.access_token;
             user.refresh_token = data.refresh_token;
 
             identityMutate(data?.access_token ?? '');
-        }
+        },
+        onError: (error: Error) => setError(error.message)
     });
 
 
@@ -82,8 +85,8 @@ export default function Login() {
                                        className={"border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-neutral-800 border-neutral-500 placeholder-neutral-500 text-neutral-200"}
                                        required/>
                             </div>
-                            {error != null && error instanceof Error ?
-                                <h1 className={"text-red-500 text-sm text-left mb-4"}>{error.message}</h1> :
+                            {error != null ?
+                                <h1 className={"text-red-500 text-sm text-left mb-4"}>{error}</h1> :
                                 <div className={'mb-4'}/>
                             }
                             <div className={"flex justify-between"}>

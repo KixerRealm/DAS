@@ -4,8 +4,7 @@ import Link from "next/link";
 import {atomWithStorage} from "jotai/utils";
 import {User} from "../pages/api/oauth/login";
 import {useHasMounted} from "../hooks/useHasMounted";
-import Image from 'next/image';
-import {useCallback, useState} from "react";
+import {useCallback} from "react";
 import DropdownIcon from "./icons/dropdown-icon";
 import Identicon from "./icons/identicon";
 
@@ -13,8 +12,8 @@ export const userAtom = atomWithStorage<User | null>('user', null);
 export const openAtom = atom(false);
 
 export default function UserNavBar() {
-    const [user, setUser] = useAtom(userAtom);
     const hasMounted = useHasMounted();
+    const [user, setUser] = useAtom(userAtom);
     const [open, setOpen] = useAtom(openAtom);
 
     const handleLogout = useCallback(async () => {
@@ -45,7 +44,7 @@ export default function UserNavBar() {
                         type={"button"}>
                     {/*<Image className={"mr-2 rounded-full my-2"} src={user?.profilePictureUrl ?? ''}*/}
                     {/*       alt={"user photo"} width={30} height={30}/>*/}
-                    <Identicon value={user?.username} size={'30'}/>
+                    <Identicon value={user?.username ?? ''} size={'30'}/>
                     <p className={'text-right w-full'}>{user.username}</p>
                     <DropdownIcon/>
                 </button>

@@ -1,4 +1,4 @@
-import {APIError} from "../../pages/api/leaderboards";
+import {APIError, KeycloakError} from "../../pages/api/leaderboards";
 import {User} from "../../pages/api/oauth/login";
 
 export type UserCredentials = {
@@ -25,12 +25,11 @@ export async function executeLogin(data: LoginRequest) {
         body: new URLSearchParams(data)
     })
         .then(async res => {
-            console.log(res);
-            if (res.status == 400) {
-                console.log(res);
-                const error = (await res.json()) as APIError;
-                throw new Error(error.message);
+            if (res.status != 200) {
+                const error = (await res.json()) as KeycloakError;
+                throw new Error(error.error_description);
             }
+
             const user = (await res.json()) as User;
             user.profilePictureUrl = user.profilePictureUrl ?? '';
             return user;
