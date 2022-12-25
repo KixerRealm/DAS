@@ -29,15 +29,12 @@ public class JwtAuthenticationProvider implements AuthenticationProvider {
 	@Override
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 		BearerTokenAuthenticationToken token = (BearerTokenAuthenticationToken) authentication;
-		System.out.println("Called authenticate :P");
 		Jwt jwt;
 		try {
 			jwt = this.jwtDecoder.decode(token.getToken());
-			System.out.println("decoded...");
 		} catch (JwtValidationException ex) {
 			return null;
 		}
-		System.out.println(jwt.getClaims().get("authorities"));
 		JWTUser user = new JWTUser(jwt, Collections.emptyList());
 		user.setId(jwt.getClaimAsString("sub"));
 		return user;

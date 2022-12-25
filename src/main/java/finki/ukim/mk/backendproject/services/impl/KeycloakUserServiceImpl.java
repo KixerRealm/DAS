@@ -15,10 +15,8 @@ import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import javax.ws.rs.core.Response;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -45,15 +43,20 @@ public class KeycloakUserServiceImpl implements UserService {
 	}
 
 	@Override
-	public UserDto createUser(UserDto user) {
+	public UserDto createUser(UserDto user) throws RuntimeException {
 		CredentialRepresentation credential = Credentials.createPasswordCredentials(user.getPassword());
 		List<CredentialRepresentation> creds = Collections.singletonList(credential);
 
 		UserRepresentation userRepresentation = UserMapper.INSTANCE.toRepresentation(user);
 		userRepresentation.setCredentials(creds);
 		userRepresentation.setEnabled(true);
-		keycloak.create(userRepresentation);
-
+		Response result = keycloak.create(userRepresentation);
+		if(!result.getStatusInfo().getFamily().equals(Response.Status.Family.SUCCESSFUL)) {
+			HashMap<String, String> resultMap = result.readEntity(HashMap.class);
+			if(resultMap.containsKey("errorMessage")) {
+				throw new RuntimeException(resultMap.get("errorMessage"));
+			}
+		}
 		UserRepresentation keycloakUser = keycloak.searchByUsername(user.getUsername(), true).get(0);
 		// TODO: Update so we use a separate AccountService
 		Account account = AccountMapper.INSTANCE.toEntity(keycloakUser);
@@ -66,7 +69,7 @@ public class KeycloakUserServiceImpl implements UserService {
 	@Override
 	public UserDto getUserById(String id) {
 		Optional<Account> account = accountRepository.findById(id);
-		return account.map(value -> UserMapper.INSTANCE.toDto(keycloak.get(id).toRepresentation(), value)).orElse(null);
+		return account.map(value -> UserMapper.INSTANCE.toDto(keycloak.get(id).toRepresentation(), value)).orElseThrow(() -> new RuntimeException("User only exists in Keycloak. Please contact the administrators of the site."));
 
 	}
 

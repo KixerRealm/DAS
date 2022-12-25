@@ -5,6 +5,7 @@ import finki.ukim.mk.backendproject.dtos.UserDto;
 import finki.ukim.mk.backendproject.security.JWTUser;
 import finki.ukim.mk.backendproject.services.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,23 +16,13 @@ import java.util.List;
 public class UserController {
 	private final UserService userService;
 
-	@GetMapping("/all")
-	public List<UserDto> getAllUsers() {
-		return userService.findAll();
-	}
-
 	@PostMapping
-	public UserDto createUser(@RequestBody UserDto user) {
-		return userService.createUser(user);
-	}
-
-	@GetMapping("/{id}")
-	public UserDto getUserById(@PathVariable String id) {
-		return userService.getUserById(id);
+	public ResponseEntity<UserDto> createUser(@RequestBody UserDto user) throws RuntimeException {
+		return ResponseEntity.ok(userService.createUser(user));
 	}
 
 	@GetMapping("/identify")
-	public UserDto identify(JWTUser jwtUser) {
-		return userService.getUserById(jwtUser.getId());
+	public ResponseEntity<UserDto> identify(JWTUser jwtUser) {
+		return ResponseEntity.ok(userService.getUserById(jwtUser.getId()));
 	}
 }
