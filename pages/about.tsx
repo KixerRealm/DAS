@@ -100,7 +100,7 @@ export default function About() {
                                 <li className={'text-neutral-200 my-3'}>
                                     Previous difficult projects:
                                     <ul className={'list-disc list-inside pl-5 mt-2'}>
-                                        <li><RedirectAnchor url={'https://github.com/KixerRealm/Yu-Gi-Oh-Backend'}
+                                        <li><RedirectAnchor url={'https://github.com/KixerRealm/vp_yu-gi-oh'}
                                                             text={'Yu-Gi-Oh!'}/></li>
                                         <li><RedirectAnchor
                                             url={'https://github.com/DrejSamurai/Carbon-2D-Game-Project'}
@@ -153,7 +153,7 @@ export default function About() {
                                 <li className={'text-neutral-200 my-3'}>
                                     Previous difficult projects:
                                     <ul className={'list-disc list-inside pl-5 mt-2'}>
-                                        <li><RedirectAnchor url={'https://github.com/KixerRealm/Yu-Gi-Oh-Backend'}
+                                        <li><RedirectAnchor url={'https://github.com/DrejSamurai/vp_yu-gi-oh'}
                                                             text={'Yu-Gi-Oh!'}/></li>
                                         <li><RedirectAnchor
                                             url={'https://github.com/DrejSamurai/Carbon-2D-Game-Project'}

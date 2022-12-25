@@ -51,7 +51,7 @@ export default function handler(
                 a.totalPoints > b.totalPoints ? -1 : 0;
     }
 
-    res.status(200).json(records.sort(sortByTotalPoints()));
+    // res.status(200).json(records.sort(sortByTotalPoints()));
 }
 
 
