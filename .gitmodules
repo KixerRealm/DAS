@@ -2,15 +2,4 @@
 	path = Domasna rabota 2/technical prototype
 	url = https://github.com/KixerRealm/DAS.git
 	branch = feature/SKO-12-front-end-project
-[submodule "front-end-project"]
-    	path = Domasna rabota 3/front-end-project
-	url = https://github.com/KixerRealm/DAS.git
-	branch = feature/SKO-12-front-end-project
-[submodule "back-end-project"]
-    	path = Domasna rabota 3/back-end-project
-	url = https://github.com/KixerRealm/DAS.git
-	branch = feature/SKO-10-back-end-project
-[submodule "spring-batch-project"]
-    	path = Domasna rabota 3/spring-batch-project
-	url = https://github.com/KixerRealm/DAS.git
-	branch = feature/SKO-13-spring-batch-project
+
