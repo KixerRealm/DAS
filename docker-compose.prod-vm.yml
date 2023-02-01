@@ -2,10 +2,8 @@ version: '3.3'
 
 services:
   sko-keycloak:
-    image: skopje-geoguessr.com:443/sko/sko-keycloak
+    image: skopje-geoguessr.com:443/sko/sko-keycloak:latest
     container_name: sko-keycloak
-    build:
-      context: ./keycloak
     env_file:
       - .env
     ports:
@@ -17,9 +15,7 @@ services:
       - start --optimized --import-realm --http-enabled true --http-port 8100
 
   sko-postgres:
-    image: skopje-geoguessr.com:443/sko/sko-postgres
-    build:
-      context: ./scripts
+    image: skopje-geoguessr.com:443/sko/sko-postgres:latest
     container_name: sko-postgres
     restart: always
     env_file:

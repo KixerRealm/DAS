@@ -1107,7 +1107,13 @@
         "https://skopje-geoguessr.vercel.app/",
         "https://35.246.159.1:9090/",
         "https://skopje-geoguessr.vercel.app",
-        "https://35.246.159.1:9090"
+        "https://35.246.159.1:9090",
+        "https://skopje-geoguessr-v2.vercel.app",
+        "https://skopje-geoguessr-v2.vercel.app/",
+        "https://skopje-geoguessr.com:9090/",
+        "https://skopje-geoguessr.com:9090",
+        "https://34.107.43.65:9090/",
+        "https://34.107.43.65:9090"
       ],
       "notBefore": 0,
       "bearerOnly": false,
